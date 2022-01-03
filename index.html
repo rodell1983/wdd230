@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Car Connection</title>
+    <meta
+      name="description"
+      content="Classic car connection is a place where classic car owners and enthusiast can get together. 
+      Learn the history of cars, but or sell vehicles, and chat and learn about classics"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="header-logo">
+          <a href="index.html" title="Home">
+            <img
+              class="logo"
+              src="images/ccc_logo_nt.png"
+              alt="Classic Car Connection logo"
+            />
+          </a>
+        </div>
+        <div class="header-title">
+          <h1>Classic Car Connection</h1>
+          <div class="login-button">
+            <a href="sign-up.html">Login<span class="button-span"></span></a>
+          </div>
+        </div>
+        <div class="header-nav">
+          <nav>
+            <ul class="main-menu">
+              <li class="main-menu-active">
+                <a href="index.html" title="Home - Classic Car Connection"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="history1940.html" title="History - Timeline of Cars"
+                  >History</a
+                >
+              </li>
+              <li>
+                <a href="buy-sell.html" title="Buy/Sell - Marketplace for Cars"
+                  >Buy/Sell</a
+                >
+              </li>
+              <li>
+                <a href="forum.html" title="Forum - Helpful tips">Forum</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <h2>So Many Things to Explore...</h2>
+        <div class="home-slideshow">
+          <div class="slides">
+            <a href="history1940.html" title="History">
+              <img
+                class="slide-img style-img"
+                src="images/mustang-rear.jpg"
+                alt="Mustang Reiw View"
+              />
+            </a>
+            <h3>History</h3>
+            <p>
+              Learn about the history of cars as you search through the decades
+            </p>
+          </div>
+          <div class="slides">
+            <a href="buy-sell.html" title="Marketplace"
+              ><img
+                class="slide-img style-img"
+                src="images/camaro-front.jpg"
+                alt="Camaro Front End"
+            /></a>
+            <h3>Marketplace</h3>
+            <p>
+              Looking to Buy or Sell a classic car? Classic Car Connection has
+              you covered.
+            </p>
+          </div>
+          <div class="slides">
+            <a href="forum.html" title="Forum"
+              ><img
+                class="slide-img style-img"
+                src="images/challenger.jpg"
+                alt="Dodge Challenger"
+            /></a>
+            <h3>Forum</h3>
+            <p>Chat with fellow car enthusiast on our forum.</p>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </main>
+      <footer>
+        <p>&#169; 2021 Classic Car Connection - Robert Odell - WDD130</p>
+        <div class="login-button">
+          <a href="sign-up.html">Sign-up<span class="button-span"></span></a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      //autoSlides();
+
+      function autoSlides() {
+        plusSlides(1);
+        setTimeout(autoSlides, 5000); // Change image every 5 seconds
+      }
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>
