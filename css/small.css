@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noticia Text", Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: darkcyan;
+  border-radius: 10px;
+  padding: 2rem;
+  color: white;
+  justify-items: center;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 50%;
+}
+
+footer {
+  text-align: center;
+}
+
+.page {
+  max-width: 900px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo {
+  border-radius: 8px;
+}
+
+.shadow {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
