@@ -6,6 +6,7 @@ body {
   font-family: "Noticia Text", Arial, sans-serif;
   margin: 0 auto;
   padding: 0;
+  background-color: lightcyan;
 }
 
 header,
@@ -18,10 +19,13 @@ footer {
 
 header {
   display: grid;
+  border-radius: 8px 8px 0 0;
 }
 
 main {
   padding: 1rem;
+  border-left: 2px solid #666;
+  border-right: 2px solid #666;
 }
 
 h1 {
@@ -36,8 +40,9 @@ img {
 
 footer {
   text-align: center;
+  border-radius: 0 0 8px 8px;
   font-size: 18px;
-  padding: 2rem;
+  padding: .5rem;
 }
 
 .page {
