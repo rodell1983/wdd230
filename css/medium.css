@@ -1,5 +1,14 @@
 @media only screen and (min-width: 32.5em) {
+  header {
+    grid-template-columns: 220px 1fr;
+    justify-content: left;
+    align-items: center;
+  }
+
   img {
-      width: 100%;
+    border-radius: 8px 0 0 8px;
+    justify-self: left;
+    margin: 0;
+    width: 150px;
   }
 }
