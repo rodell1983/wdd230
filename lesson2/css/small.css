@@ -63,10 +63,6 @@ footer {
   max-width: 1000px;
 }
 
-.logo {
-  border-radius: 8px;
-}
-
 .principle-box {
   border-radius: 5px;
   border: 1px solid #666;
@@ -79,10 +75,4 @@ footer {
 
 .shadow {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.title {
-  width: 100%;
-  display: flex;
-  align-items: center;
 }
