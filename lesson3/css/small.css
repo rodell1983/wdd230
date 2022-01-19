@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Noticia Text", Arial, sans-serif;
+  font-family: "Montserrat Alternates", Arial, sans-serif;
   margin: 0 auto;
   padding: 0;
 }
@@ -21,7 +21,7 @@ header {
   align-items: center;
 }
 
-header, main, .main-menu ul li{
+header, main{
   border: 1px solid #226cb1;
 }
 
@@ -50,6 +50,12 @@ footer {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+.main-menu ul li {
+  border-bottom: 2px solid #226cb1;
+}
+.main-menu ul li:last-child {
+  border-right: 2px solid #226cb1;
 }
 
 .main-menu ul li a {
