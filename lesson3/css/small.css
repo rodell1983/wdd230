@@ -73,7 +73,8 @@ footer {
   text-align: center;
   padding: 0.75rem;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.3);
 }
 .main-menu a:hover {
   background-color: var(--orange);
