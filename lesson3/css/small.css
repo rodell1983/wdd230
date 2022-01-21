@@ -88,7 +88,6 @@ footer {
   height: 100px;
   color: #fff;
   text-align: center;
-  text-justify: center;
 }
 .dark-blue-tab{
   background-color: var(--dark-blue);
