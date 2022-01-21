@@ -11,4 +11,8 @@
   .main-menu ul li:last-child {
     border-right: 2px solid #226cb1;
   }
+  .color-body {
+    grid-column: 2;
+    padding: 1rem;
+  }
 }
