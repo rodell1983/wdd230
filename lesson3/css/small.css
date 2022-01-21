@@ -1,7 +1,7 @@
 
 :root {
   --dark-blue: #226cb1;
-  --light-blue: #20a8e0;
+  --light-blue: #1D9CD3;
   --orange: #f07c25;
 }
 
@@ -73,7 +73,7 @@ footer {
   text-align: center;
   padding: 0.75rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 18px;
   text-shadow: 2px 2px 3px rgba(0,0,0,.3);
 }
 .main-menu a:hover {
