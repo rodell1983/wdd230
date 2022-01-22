@@ -12,7 +12,6 @@ body {
 header,
 footer {
   background-color: rgb(0, 100, 100);
-  border-radius: 10px;
   color: white;
   justify-items: center;
 }
@@ -50,6 +49,7 @@ footer {
   background-color: #fff;
   margin: 0 auto;
   padding: 0;
+  border-radius: 8px;
 }
 
 .shadow {
