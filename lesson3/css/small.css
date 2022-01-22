@@ -1,18 +1,11 @@
-
 :root {
   --dark-blue: #226cb1;
-  --light-blue: #1D9CD3;
-  --orange: #EA6E10;
-}
-
-* {
-  box-sizing: border-box;
+  --light-blue: #1d9cd3;
+  --orange: #ea6e10;
 }
 
 body {
   font-family: "Montserrat Alternates", Arial, sans-serif;
-  margin: 0 auto;
-  padding: 0;
   line-height: 1.75rem;
 }
 
@@ -29,7 +22,8 @@ header {
   align-items: center;
 }
 
-header, main{
+header,
+main {
   border: 1px solid var(--dark-blue);
 }
 
@@ -60,9 +54,11 @@ footer {
   padding: 0;
   overflow: hidden;
 }
+
 .main-menu ul li {
   border-bottom: 2px solid var(--dark-blue);
 }
+
 .main-menu ul li:last-child {
   border-right: 2px solid var(--dark-blue);
 }
@@ -74,13 +70,15 @@ footer {
   padding: 0.75rem;
   text-decoration: none;
   font-size: 20px;
-  text-shadow: 2px 2px 3px rgba(0,0,0,.3);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
+
 .main-menu a:hover {
   background-color: var(--orange);
   color: #fff;
 }
-.main-menu ul li.active a{
+
+.main-menu ul li.active a {
   background-color: var(--orange);
 }
 
@@ -90,16 +88,17 @@ footer {
   color: #fff;
   text-align: center;
   font-size: 20px;
-  text-shadow: 2px 2px 3px rgba(0,0,0,.3);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
-.dark-blue-tab{
+
+.dark-blue-tab {
   background-color: var(--dark-blue);
 }
 
-.light-blue-tab{
+.light-blue-tab {
   background-color: var(--light-blue);
 }
 
-.orange-tab{
+.orange-tab {
   background-color: var(--orange);
 }
