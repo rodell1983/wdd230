@@ -84,6 +84,17 @@ footer {
   font-weight: bold;
 }
 
+.persona-group{
+  display: grid;
+  grid-gap: .5rem;
+}
+
+.persona{
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: .5rem;
+}
+
 .color-tab {
   width: 200px;
   height: 100px;
