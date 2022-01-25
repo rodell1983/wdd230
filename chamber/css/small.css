@@ -1,0 +1,148 @@
+:root {
+  --dark-blue: #226cb1;
+  --light-blue: #1d9cd3;
+  --orange: #ea6e10;
+}
+
+body {
+  font-family: "Montserrat Alternates", Arial, sans-serif;
+  line-height: 1.75rem;
+}
+
+header,
+footer {
+  background-color: var(--dark-blue);
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr auto;
+  align-items: center;
+}
+
+header,
+main,
+.header-logo-container {
+  border: 1px solid var(--dark-blue);
+}
+
+main {
+  display: grid;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+footer {
+  display: flex;
+  padding: 1rem;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  width: 150px;
+  grid-row: 1/4;
+  align-self: start;
+}
+
+.social-bar {
+  width: 120px;
+  justify-self: right;
+}
+
+/* Navigation */
+
+.navigation a.ham::before {
+  content: "\2630";
+}
+
+.main-menu {
+  margin: 0;
+  background-color: var(--light-blue);
+  grid-column: 1/4;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation li {
+  display: none;
+  border-bottom: 2px solid var(--dark-blue);
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li:last-child {
+  border-right: 2px solid var(--dark-blue);
+}
+
+.navigation li a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.main-menu a:hover {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.navigation li.active a {
+  background-color: var(--orange);
+}
+
+.responsive li {
+  display: block;
+}
+
+.responsive a.ham::before {
+  content: "X";
+}
+
+.menu-font {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.persona-group {
+  display: grid;
+  grid-gap: 0.5rem;
+}
+
+.persona {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.color-tab {
+  width: 200px;
+  height: 100px;
+}
+
+.dark-blue-tab {
+  background-color: var(--dark-blue);
+}
+
+.light-blue-tab {
+  background-color: var(--light-blue);
+}
+
+.orange-tab {
+  background-color: var(--orange);
+}
