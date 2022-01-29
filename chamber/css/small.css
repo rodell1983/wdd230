@@ -11,28 +11,26 @@ body {
 
 header,
 footer {
+  display: grid;
   background-color: var(--dark-blue);
   color: #fff;
   text-align: center;
 }
 
 header {
-  display: grid;
   align-items: center;
   grid-template-columns: auto auto auto 42px;
 }
 
+.title {
+  padding: 0.5rem;
+}
 .title h1 {
   font-size: 16px;
 }
 
 .title p {
   font-size: 14px;
-}
-.footer-logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .logo {
@@ -68,7 +66,7 @@ footer {
 }
 
 .social-bar {
-  display: flex;
+  display: grid;
   justify-self: right;
 }
 .social-icon {
@@ -143,7 +141,6 @@ footer {
   top: 0px;
   right: 0;
 }
-
 
 .dark-blue-tab {
   background-color: var(--dark-blue);
