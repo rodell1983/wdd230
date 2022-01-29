@@ -18,10 +18,26 @@ footer {
 
 header {
   display: grid;
-  grid-template-columns: 150px 1fr auto;
   align-items: center;
+  grid-template-columns: auto auto auto 42px;
 }
 
+.title h1 {
+  font-size: 16px;
+}
+
+.title p {
+  font-size: 14px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+}
 header,
 main,
 .header-logo-container {
@@ -34,8 +50,11 @@ main {
   background-color: #fff;
 }
 
+data {
+  grid-column: 1/5;
+}
+
 footer {
-  display: flex;
   padding: 1rem;
 }
 
@@ -45,16 +64,17 @@ footer {
 }
 
 .header-logo {
-  width: 150px;
-  grid-row: 1/4;
-  align-self: start;
+  width: 100px;
 }
 
 .social-bar {
-  width: 120px;
+  display: flex;
   justify-self: right;
 }
-
+.social-icon {
+  width: 24px;
+  padding: 0.25rem;
+}
 /* Navigation */
 
 .navigation a.ham::before {
@@ -64,7 +84,7 @@ footer {
 .main-menu {
   margin: 0;
   background-color: var(--light-blue);
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
 
 .navigation {
@@ -77,10 +97,6 @@ footer {
 .navigation li {
   display: none;
   border-bottom: 2px solid var(--dark-blue);
-}
-
-.navigation li:first-child {
-  display: block;
 }
 
 .navigation li:last-child {
@@ -119,21 +135,15 @@ footer {
   font-weight: bold;
 }
 
-.persona-group {
-  display: grid;
-  grid-gap: 0.5rem;
+.navigation li:first-child {
+  display: block;
+  text-align: right;
+  background-color: var(--dark-blue);
+  position: absolute;
+  top: 0px;
+  right: 0;
 }
 
-.persona {
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 0.5rem;
-}
-
-.color-tab {
-  width: 200px;
-  height: 100px;
-}
 
 .dark-blue-tab {
   background-color: var(--dark-blue);

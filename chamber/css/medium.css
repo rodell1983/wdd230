@@ -1,43 +1,10 @@
 @media only screen and (min-width: 32.5em) {
  
-
-  .main-menu ul li {
-    border-bottom: none;
-    border-left: 2px solid #226cb1;
-  }
-
-  .main-menu ul li:last-child {
-    border-right: 2px solid #226cb1;
-  }
-
-  .persona-group{
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .color-body {
-    grid-column: 2;
-    padding: 1rem;
-  }
-
-  .main-menu {
-    grid-column: 2/4;
-  }
-
-  .main-menu ul li:first-child {
-    display: none;
-  }
-
-  .navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
+    .header-logo {
+        width: 150px;
+    
+      }
+      .social-icon {
+        width: 32px;
+      }
 }
