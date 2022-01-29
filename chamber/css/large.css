@@ -1,9 +1,8 @@
-@media only screen and (min-width: 50em) {
-
+@media only screen and (min-width: 60em) {
   header {
     grid-template-columns: auto auto auto;
   }
-  
+
   .main-menu ul li {
     border-bottom: none;
     border-left: 2px solid #226cb1;
@@ -13,9 +12,7 @@
     border-right: 2px solid #226cb1;
   }
 
-
   .main-menu {
-
     grid-column: 2;
     grid-row: 1;
   }
@@ -28,17 +25,16 @@
   }
 
   .navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
 }
