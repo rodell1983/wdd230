@@ -24,4 +24,19 @@
   .time-stamp {
     grid-column: 1/4;
   }
+
+  .time-stamp {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
+  .time-el {
+    padding: .5rem;
+  }
+
+  .time-el:nth-child(n+2)::before{
+    content: "| ";
+  }
 }
