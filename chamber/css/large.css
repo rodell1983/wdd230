@@ -37,4 +37,11 @@
   .navigation li:first-child {
     display: none;
   }
+
+  .time-stamp {
+    display: flex;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }

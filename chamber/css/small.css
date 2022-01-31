@@ -75,7 +75,7 @@ footer {
 }
 /* Navigation */
 
-.navigation a.ham::before {
+.navigation a.ham::after {
   content: "\2630";
 }
 
@@ -121,7 +121,7 @@ footer {
   display: block;
 }
 
-.responsive a.ham::before {
+.responsive a.ham::after {
   content: "X";
 }
 
