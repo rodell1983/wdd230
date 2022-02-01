@@ -16,7 +16,7 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 
 
 // select the elements to manipulate (output to)
-const datefield = document.querySelector("data");
+const datefield = document.querySelector(".date");
 
 // derive the current date using a date object
 const now = new Date();

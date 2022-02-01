@@ -48,9 +48,6 @@ main {
   background-color: #fff;
 }
 
-data {
-  grid-column: 1/5;
-}
 
 footer {
   padding: 1rem;
@@ -140,6 +137,11 @@ footer {
   position: absolute;
   top: 0px;
   right: 0;
+}
+
+
+.date {
+  grid-column: 1/5;
 }
 
 .dark-blue-tab {
