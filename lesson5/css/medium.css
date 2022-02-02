@@ -1,0 +1,42 @@
+@media only screen and (min-width: 32.5em) {
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .header-logo {
+    width: 150px;
+  }
+  .social-icon {
+    width: 32px;
+  }
+
+  .social-bar {
+    display: flex;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .title p {
+    font-size: 1rem;
+  }
+
+  .time-stamp {
+    grid-column: 1/4;
+  }
+
+  .time-stamp {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
+  .time-el {
+    padding: .5rem;
+  }
+
+  .time-el:nth-child(n+2)::before{
+    content: "| ";
+  }
+}
