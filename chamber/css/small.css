@@ -22,10 +22,13 @@ header {
   grid-template-columns: auto auto auto 42px;
   position: relative;
 }
+h2 {
+  text-align: center;
+}
 
 main {
   display: grid;
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
   background-color: var(--light-blue);
   padding: 1rem;
 }
@@ -170,26 +173,28 @@ footer {
   font-weight: bold;
   text-align: center;
   transition: 0.5s;
-  padding: .75rem;
+  padding: 0.75rem;
 }
 
 .hero img {
   flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .hero {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .hero h2 {
   position: absolute;
+  top: 1rem;
   width: 100%;
   top: 2rem;
-  color: #fff;
+  background-color: #fff;
+  padding: .5rem;
 }
