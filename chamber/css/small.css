@@ -217,3 +217,8 @@ footer {
 .join {
   display: grid;
 }
+
+.spotlight {
+  border: 2px solid var(--dark-blue);
+  margin-bottom: .5rem;
+}
