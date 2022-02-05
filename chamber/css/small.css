@@ -102,14 +102,16 @@ footer {
   border-right: 2px solid var(--dark-blue);
 }
 
-.navigation li a {
+.navigation li a,
+.join-button a {
   display: block;
   padding: 0.75rem;
   text-decoration: none;
   transition: 0.5s;
 }
 
-.main-menu a:hover {
+.main-menu a:hover,
+.join-button a:hover {
   background-color: var(--orange);
   color: #fff;
 }
@@ -196,5 +198,22 @@ footer {
   width: 100%;
   top: 2rem;
   background-color: #fff;
-  padding: .5rem;
+  padding: 0.5rem;
+}
+
+.floating a {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.join-button a {
+  border-radius: 4px;
+  background-color: var(--dark-blue);
+  padding: 1rem;
+}
+
+.join {
+  display: grid;
 }
