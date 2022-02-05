@@ -9,6 +9,7 @@
       name="description"
       content="Sunnyville Chamber of Commerce home page. "
     />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +23,12 @@
   </head>
   <body>
     <div class="page">
+      <div class="banner">
+        <p>
+          🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+          p.m.
+        </p>
+      </div>
       <header>
         <div class="logo">
           <picture
@@ -71,6 +78,7 @@
       <main>
         <div class="hero home-block">
           <h2>Welcome to Sunnyville</h2>
+          <img src="images/hero.jpg" alt="Sunnyville Scene" />
         </div>
         <div class="event home-block">
           <h2>Ribbon Cutting</h2>
@@ -83,11 +91,18 @@
           </p>
         </div>
         <div class="weather home-block">
-          <h2>Weather</h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          nulla hic esse veniam aliquam cum voluptates magnam illum tenetur
-          dignissimos sequi repellat nobis, soluta beatae maxime reiciendis sit
-          perspiciatis odit.
+          <a
+            class="weatherwidget-io"
+            href="https://forecast7.com/en/36d17n115d14/las-vegas/?unit=us"
+            data-label_1="Sunnyville"
+            data-label_2="WEATHER"
+            data-font="Roboto Slab"
+            data-mode="Current"
+            data-days="3"
+            data-theme="pure"
+            >Sunnyville WEATHER</a
+          >
+          
         </div>
         <div class="news home-block">
           <h2>News</h2>
@@ -108,13 +123,15 @@
               numquam?
             </p>
           </div>
-          <div class="spotlight"><h2>Spotlight 2</h2>
+          <div class="spotlight">
+            <h2>Spotlight 2</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
               omnis, porro temporibus beatae cumque iste adipisci quos esse,
               ipsa sed nulla qui est sit corporis veniam, eaque iusto in
               numquam?
-            </p></div>
+            </p>
+          </div>
         </div>
         <div class="join home-block"><h2>Join</h2></div>
       </main>

@@ -20,6 +20,7 @@ footer {
 header {
   align-items: center;
   grid-template-columns: auto auto auto 42px;
+  position: relative;
 }
 
 main {
@@ -160,4 +161,35 @@ footer {
 
 .orange-tab {
   background-color: var(--orange);
+}
+
+.banner {
+  background-color: var(--orange);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+  padding: .75rem;
+}
+
+.hero img {
+  flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.hero {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero h2 {
+  position: absolute;
+  width: 100%;
+  top: 2rem;
+  color: #fff;
 }

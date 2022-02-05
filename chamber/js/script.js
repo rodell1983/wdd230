@@ -1,10 +1,22 @@
 
+// Load date string for header
+
 let date = new Date(document.lastModified);
 let dateString = `Last Updated: ${date.toLocaleString()}`;
 
 document.getElementById("current-year").textContent = date.getFullYear();
 document.getElementById("current-date").textContent = dateString;
 
+
+// Display Banner on Mon & Tue
+const day = date.getDay()
+if (day == 1 || day == 2) {
+	document.querySelector(".banner").style.display = 'block';
+}else{
+	document.querySelector(".banner").style.display = 'none';
+}
+
+// Configure Hamburger menu
 
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
@@ -27,3 +39,16 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 // long, medium, short options ... try them
 
 datefield.innerHTML = `<em>${fulldateUK}</em>`;
+
+
+// Weather
+!(function (d, s, id) {
+	var js,
+	  fjs = d.getElementsByTagName(s)[0];
+	if (!d.getElementById(id)) {
+	  js = d.createElement(s);
+	  js.id = id;
+	  js.src = "https://weatherwidget.io/js/widget.min.js";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}
+  })(document, "script", "weatherwidget-io-js");
