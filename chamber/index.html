@@ -90,22 +90,25 @@
       </header>
 
       <main>
-        <picture class="hero home-block">
+        <div class="hero home-block">
           <h2>Welcome to Sunnyville</h2>
-          <source media="(min-width: 60em)" srcset="images/hero-large.webp" />
-          <source media="(min-width: 32.5em)" srcset="images/hero-med.webp" />
-          <source media="(max-width: 520px)" srcset="images/hero-small.webp" />
-          <img src="images/hero-small.webp" alt="" />
+          <picture>
+            <source media="(min-width: 60em)" srcset="images/hero-large.webp" />
+            <source media="(min-width: 32.5em)" srcset="images/hero-med.webp" />
+            <source
+              media="(max-width: 520px)"
+              srcset="images/hero-small.webp"
+            />
+            <img src="images/hero-small.webp" alt="" />
+          </picture>
           <div class="join-button floating">
             <a class="menu-font" href="#">Join Chamber!</a>
           </div>
-        </picture>
+        </div>
         <div class="event home-block">
           <h2>Ribbon Cutting</h2>
           <h3>Mom's Diner</h3>
-          <p>
-            Join us this Saturday for our grand openning. 10% off.
-          </p>
+          <p>Join us this Saturday for our grand openning. 10% off.</p>
         </div>
         <div class="weather home-block">
           <h2>Weather</h2>
