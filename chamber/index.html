@@ -34,7 +34,7 @@
           <picture
             ><img
               class="header-logo"
-              src="images/sunnyville.jpg"
+              src="images/sunnyville.webp"
               alt="Sunnyville logo"
           /></picture>
           <div class="title">
@@ -52,8 +52,8 @@
           >
             <img
               class="social-icon"
-              src="images/facebook.png"
-              alt="instagram.com"
+              src="images/facebook.webp"
+              alt="facebook.com"
             />
           </a>
           <a
@@ -64,7 +64,7 @@
           >
             <img
               class="social-icon"
-              src="images/instagram.png"
+              src="images/instagram.webp"
               alt="instagram.com"
             />
           </a>
@@ -90,13 +90,19 @@
       </header>
 
       <main>
-        <div class="hero home-block">
+        <picture class="hero home-block">
           <h2>Welcome to Sunnyville</h2>
-          <img src="images/hero.jpg" alt="Sunnyville Scene" />
+          <img
+            srcset="images/hero-small.webp 500w, images/hero-med.webp 900w"
+            sizes="(min-width: 36em) 33.3vw,
+      100vw"
+            src="images/hero-small.webp"
+            alt="Sunnyville Scene"
+          />
           <div class="join-button floating">
             <a class="menu-font" href="#">Join Chamber!</a>
           </div>
-        </div>
+        </picture>
         <div class="event home-block">
           <h2>Ribbon Cutting</h2>
           <h3>Mom's Diner</h3>
@@ -108,7 +114,7 @@
           </p>
         </div>
         <div class="weather home-block">
-          <a
+          <!--<a
             class="weatherwidget-io"
             href="https://forecast7.com/en/36d17n115d14/las-vegas/?unit=us"
             data-label_1="Sunnyville"
@@ -119,6 +125,7 @@
             data-theme="pure"
             >Sunnyville WEATHER</a
           >
+          -->
         </div>
         <div class="news home-block">
           <h2>News</h2>
@@ -161,7 +168,7 @@
           <picture>
             <img
               class="header-logo"
-              src="images/sunnyville.jpg"
+              src="images/sunnyville.webp"
               alt="Sunnyville logo"
             />
           </picture>
