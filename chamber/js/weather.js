@@ -1,5 +1,5 @@
-let temp = parseInt(document.getElementById("weather-temp").innerText);
-let windSpeed = parseFloat(
+const temp = parseInt(document.getElementById("weather-temp").innerText);
+const windSpeed = parseFloat(
   document.getElementById("weather-windspeed").innerText
 );
 
@@ -10,7 +10,7 @@ document.getElementById("weather-windchill").innerText = windChill(
 
 function windChill(t, s) {
   if (t <= 50 && s > 3) {
-    chill =
+    const chill =
       35.74 +
       0.6215 * t -
       35.75 * Math.pow(s, 0.16) +
