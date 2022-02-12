@@ -92,13 +92,10 @@
       <main>
         <picture class="hero home-block">
           <h2>Welcome to Sunnyville</h2>
-          <img
-            srcset="images/hero-small.webp 500w, images/hero-med.webp 900w"
-            sizes="(min-width: 36em) 33.3vw,
-      100vw"
-            src="images/hero-small.webp"
-            alt="Sunnyville Scene"
-          />
+          <source media="(min-width: 60em)" srcset="images/hero-large.webp" />
+          <source media="(min-width: 32.5em)" srcset="images/hero-med.webp" />
+          <source media="(max-width: 520px)" srcset="images/hero-small.webp" />
+          <img src="images/hero-small.webp" alt="" />
           <div class="join-button floating">
             <a class="menu-font" href="#">Join Chamber!</a>
           </div>
@@ -108,24 +105,25 @@
           <h3>Mom's Diner</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            eaque praesentium reiciendis optio, non, sequi quae veritatis vitae
-            at distinctio totam id perferendis delectus alias quaerat
-            voluptatibus earum. Animi, sequi.
+            eaque praesentium reiciendis optio, non
           </p>
         </div>
         <div class="weather home-block">
-          <!--<a
-            class="weatherwidget-io"
-            href="https://forecast7.com/en/36d17n115d14/las-vegas/?unit=us"
-            data-label_1="Sunnyville"
-            data-label_2="WEATHER"
-            data-font="Roboto Slab"
-            data-mode="Current"
-            data-days="3"
-            data-theme="pure"
-            >Sunnyville WEATHER</a
-          >
-          -->
+          <h2>Weather</h2>
+
+          <div class="weather-sky">
+            <img src="images/sun.webp" alt="sun" />
+            <span class="temp">
+              <span id="weather-temp">40</span><sup>°F</sup>
+            </span>
+          </div>
+
+          <dl>
+            <dt>Wind Speed:</dt>
+            <dd><span id="weather-windspeed">5</span> mph</dd>
+            <dt>Wind Chill:</dt>
+            <dd id="weather-windchill">N/A</dd>
+          </dl>
         </div>
         <div class="news home-block">
           <h2>News</h2>
@@ -198,5 +196,6 @@
       </footer>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

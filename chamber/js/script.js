@@ -26,7 +26,6 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 
 
-
 // select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");
 
@@ -39,16 +38,3 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 // long, medium, short options ... try them
 
 datefield.innerHTML = `<em>${fulldateUK}</em>`;
-
-
-// Weather
-!(function (d, s, id) {
-	var js,
-	  fjs = d.getElementsByTagName(s)[0];
-	if (!d.getElementById(id)) {
-	  js = d.createElement(s);
-	  js.id = id;
-	  js.src = "https://weatherwidget.io/js/widget.min.js";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}
-  })(document, "script", "weatherwidget-io-js");

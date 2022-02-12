@@ -33,6 +33,17 @@ main {
   padding: 1rem;
 }
 
+dt {
+  float: left;
+  clear: left;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0px;
+}
+
 .title {
   padding: 0.5rem;
 }
@@ -179,9 +190,7 @@ footer {
 }
 
 .hero img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
 }
 
 .hero {
@@ -221,4 +230,13 @@ footer {
 .spotlight {
   border: 2px solid var(--dark-blue);
   margin-bottom: .5rem;
+}
+
+.weather {
+  display: block;
+}
+
+.temp {
+  font-size: 2rem;
+  font-weight: bold;
 }
