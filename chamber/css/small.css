@@ -233,7 +233,8 @@ footer {
 }
 
 .weather {
-  display: block;
+  display: grid;
+  justify-content: center;
 }
 
 .temp {
