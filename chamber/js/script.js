@@ -1,8 +1,9 @@
 
 // Load date string for header
 
-let date = new Date(document.lastModified);
-let dateString = `Last Updated: ${date.toLocaleString()}`;
+let modDate = new Date(document.lastModified);
+let date = new Date();
+let dateString = `Last Updated: ${modDate.toLocaleString()}`;
 
 document.getElementById("current-year").textContent = date.getFullYear();
 document.getElementById("current-date").textContent = dateString;
@@ -10,7 +11,8 @@ document.getElementById("current-date").textContent = dateString;
 
 // Display Banner on Mon & Tue
 const day = date.getDay()
-if (day == 1 || day == 2) {
+
+if (day === 1 || day === 2) {
 	document.querySelector(".banner").style.display = 'block';
 }else{
 	document.querySelector(".banner").style.display = 'none';
