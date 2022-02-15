@@ -1,0 +1,14 @@
+main {
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: .5rem;
+}
+
+img {
+    border-radius: 6px;
+    box-shadow: inset 4px 4px 10px rgba(255, 255, 255, .4);
+}
