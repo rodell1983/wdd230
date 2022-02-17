@@ -10,3 +10,7 @@ img {
     border-radius: 6px;
     box-shadow: inset 4px 4px 10px rgba(255, 255, 255, .4);
 }
+
+img[data-src]{
+    filter:blur(3px);
+}
