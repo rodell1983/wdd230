@@ -60,6 +60,7 @@ dd {
 
 .logo {
   display: flex;
+  margin: .2rem 0 0 .2rem;
 }
 header,
 main,
@@ -260,7 +261,7 @@ footer {
 	padding: 0;
 	background: #fff;
 	overflow: hidden;
-  border-radius: .5rem;
+  border-radius: .5rem .5rem 0 0 ;
 }
 
 .visits {
