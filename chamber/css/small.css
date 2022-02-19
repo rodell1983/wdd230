@@ -26,12 +26,15 @@ h2 {
   text-align: center;
 }
 
-main {
+.home-main, .discover-main, .discover-blocks{
   display: grid;
   grid-gap: 0.5rem;
   background-color: var(--light-blue);
   padding: 1rem;
+  justify-items: center;
 }
+
+
 
 dt {
   float: left;
@@ -241,3 +244,29 @@ footer {
   font-size: 2rem;
   font-weight: bold;
 }
+
+.discover-block {
+  display: grid;
+  justify-items: center;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: .5rem;
+}
+
+
+.discover-block picture {
+  width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+  border-radius: .5rem;
+}
+
+.visits {
+  background-color: #fff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  padding: .5rem;
+}
+

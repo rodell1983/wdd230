@@ -1,3 +1,4 @@
+
 @media only screen and (min-width: 60em) {
   header {
     grid-template-columns: auto auto auto;
@@ -38,9 +39,14 @@
     display: none;
   }
 
-  main {
+  .home-main {
     grid-template-columns: 25% auto 25%;
   }
+
+  .discover-blocks{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .hero{
     grid-column: 2;
     grid-row: 1/3;
@@ -69,6 +75,10 @@
   .weather{
     grid-column: 1;
     grid-row: 2;
+  }
+
+  .active {
+    color: #ddd;
   }
 
 
