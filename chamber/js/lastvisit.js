@@ -1,5 +1,5 @@
 // Load the local storage and set the element variable
-const lastVisit = Number(localStorage.getItem('lastVisit'));
+const lastVisit = localStorage.getItem('lastVisit');
 const visitEL = document.querySelector('.last-visit');
 
 // Factor to adjust date string
