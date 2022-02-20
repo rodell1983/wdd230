@@ -77,8 +77,9 @@
     grid-row: 2;
   }
 
-  .active {
-    color: #ddd;
+  .active::before {
+    padding-right: .25rem;
+    content: "\2022";
   }
 
 
