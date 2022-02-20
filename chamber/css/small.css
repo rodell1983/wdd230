@@ -26,15 +26,14 @@ h2 {
   text-align: center;
 }
 
-.home-main, .discover-main, .discover-blocks{
+.home-main,
+.discover-main,
+.discover-blocks {
   display: grid;
   grid-gap: 0.5rem;
   background-color: var(--light-blue);
   padding: 1rem;
-  justify-items: center;
 }
-
-
 
 dt {
   float: left;
@@ -60,7 +59,7 @@ dd {
 
 .logo {
   display: flex;
-  margin: .2rem 0 0 .2rem;
+  margin: 0.2rem 0 0 0.2rem;
 }
 header,
 main,
@@ -89,6 +88,12 @@ footer {
   width: 24px;
   padding: 0.25rem;
 }
+
+.social-bar img:hover {
+  filter: brightness(115%);
+  transition: all 0.5s ease-out;
+}
+
 /* Navigation */
 
 .navigation a.ham::after {
@@ -233,7 +238,7 @@ footer {
 
 .spotlight {
   border: 2px solid var(--dark-blue);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .weather {
@@ -251,23 +256,23 @@ footer {
   justify-items: center;
   border-radius: 1rem;
   background-color: #fff;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-
-
-.discover-block picture {
+.discover-block-text{
+  align-items: start;
+}
+.discover-block-pic {
   width: 100%;
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	overflow: hidden;
-  border-radius: .5rem .5rem 0 0 ;
+  height: fit-content;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .visits {
   background-color: #fff;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  width: fit-content;
-  padding: .5rem;
+  justify-self: center;
+  padding: 0.5rem;
+  font-weight: bold;
 }
-
