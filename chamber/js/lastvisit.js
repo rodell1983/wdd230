@@ -20,4 +20,4 @@ if (lastVisit == null){
     visitEL.textContent = `Welcome Back, It's been ${daysBetweenVisits} days since your last visit.`;
 }
 
-localStorage.setItem('lastVisit', Date.now())
+localStorage.setItem('lastVisit', Date.now());
