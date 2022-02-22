@@ -94,8 +94,47 @@
         <div class="date"></div>
       </header>
       <main class="join-main">
-        
-      </main>
+        <form class="join-form" method="get" action="thanks.html">
+          <fieldset>
+            <legend>Applicant Info</legend>
+            <label
+              >First name:<input type="text" name="fname" required
+            /></label>
+            <label>Last name:<input type="text" name="lname" required /></label>
+            <label
+              >Title:<input
+                type="text"
+                name="lname"
+                pattern="[a-zA-Z0-9]+[a-zA-Z0-9 -]+{3}"
+            /></label>
+            <label
+              >Email:<input
+                type="email"
+                name="email"
+                placeholder="yourname@company.com"
+                required
+            /></label>
+            <label>Cell #:<input type="tel" name="phone" required /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Business</legend>
+            <label
+              >Business Name:<input type="text" name="bname" required
+            /></label>
+            <label>Membership Level</label>
+            <select id="mlevel" name="mlevel">
+              <option value="np">Non Profit</option>
+              <option value="bronze">Bronze</option>
+              <option value="silver">Silver</option>
+              <option value="gold">Gold</option>
+            </select>
+            <label
+              >Business Description<textarea name="bdescription"></textarea>
+            </label>
+          </fieldset>
+          <input type="hidden"  name="date" >
+        </form>
+      </main
       <footer>
         <div class="footer-logo">
           <picture>
