@@ -4,6 +4,8 @@
   --orange: #ea6e10;
 }
 
+/* Elements */
+
 body {
   font-family: "Montserrat Alternates", Arial, sans-serif;
   line-height: 1.75rem;
@@ -22,17 +24,13 @@ header {
   grid-template-columns: auto auto auto 42px;
   position: relative;
 }
+header,
+main,
+.header-logo-container {
+  border: 1px solid var(--dark-blue);
+}
 h2 {
   text-align: center;
-}
-
-.home-main,
-.discover-main,
-.discover-blocks {
-  display: grid;
-  grid-gap: 0.5rem;
-  background-color: var(--light-blue);
-  padding: 1rem;
 }
 
 dt {
@@ -46,6 +44,13 @@ dd {
   margin-left: 0px;
 }
 
+footer {
+  padding: 1rem;
+}
+
+/* Common Classes*/
+
+/* Header */
 .title {
   padding: 0.5rem;
 }
@@ -60,20 +65,6 @@ dd {
 .logo {
   display: flex;
   margin: 0.2rem 0 0 0.2rem;
-}
-header,
-main,
-.header-logo-container {
-  border: 1px solid var(--dark-blue);
-}
-
-footer {
-  padding: 1rem;
-}
-
-.page {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .header-logo {
@@ -92,6 +83,15 @@ footer {
 .social-bar img:hover {
   filter: brightness(115%);
   transition: all 0.5s ease-out;
+}
+
+.home-main,
+.discover-main,
+.discover-blocks {
+  display: grid;
+  grid-gap: 0.5rem;
+  background-color: var(--light-blue);
+  padding: 1rem;
 }
 
 /* Navigation */
@@ -165,27 +165,13 @@ footer {
   right: 0;
 }
 
-.home-block {
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 0.75rem;
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .date {
   grid-column: 1/5;
-}
-
-.dark-blue-tab {
-  background-color: var(--dark-blue);
-}
-
-.light-blue-tab {
-  background-color: var(--light-blue);
-}
-
-.orange-tab {
-  background-color: var(--orange);
 }
 
 .banner {
@@ -195,6 +181,15 @@ footer {
   font-weight: bold;
   text-align: center;
   transition: 0.5s;
+  padding: 0.75rem;
+}
+
+/* Home Page */
+
+.home-block {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   padding: 0.75rem;
 }
 
@@ -251,6 +246,8 @@ footer {
   font-weight: bold;
 }
 
+/* Discover Page */
+
 .discover-block {
   display: grid;
   justify-items: center;
@@ -258,7 +255,7 @@ footer {
   background-color: #fff;
   padding: 0.5rem;
 }
-.discover-block-text{
+.discover-block-text {
   align-items: start;
 }
 .discover-block-pic {
@@ -275,4 +272,42 @@ footer {
   justify-self: center;
   padding: 0.5rem;
   font-weight: bold;
+}
+
+/* Join Page */
+
+form {
+  display: grid;
+}
+
+fieldset {
+  display: grid;
+}
+
+input, textarea, button {
+  padding: .5rem;
+  margin: .5rem;
+}
+
+label,input{
+  display:flex;
+  flex-direction:column;
+}
+
+button {
+    float: right;
+}
+
+/* Siteplan */
+
+.dark-blue-tab {
+  background-color: var(--dark-blue);
+}
+
+.light-blue-tab {
+  background-color: var(--light-blue);
+}
+
+.orange-tab {
+  background-color: var(--orange);
 }
