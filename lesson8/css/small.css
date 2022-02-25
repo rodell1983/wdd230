@@ -7,6 +7,7 @@ main {
   padding: 2rem;
   border-radius: 8px;
   justify-content: center;
+  overflow-x:auto;
 }
 table {
   border-collapse: collapse;
@@ -47,4 +48,8 @@ caption {
 caption, tfoot tr:last-child {
   background-color: #008a8a;
   color: #fff;
+}
+table.bodywrapcenter>tr>td {
+  width: 100%;
+  float: left;
 }
