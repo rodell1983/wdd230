@@ -1,18 +1,21 @@
 html {
-    font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  background: radial-gradient(#666, #aaa);
 }
-
+main {
+  display: grid;
+  padding: 2rem;
+  border-radius: 8px;
+  justify-content: center;
+}
 table {
   border-collapse: collapse;
   border: 2px solid rgb(200, 200, 200);
-  letter-spacing: 1px;
-  font-size: 0.8rem;
 }
 caption {
   background-color: #008a8a;
   color: #fff;
 }
-
 
 td,
 th {
@@ -20,13 +23,12 @@ th {
   padding: 10px 20px;
 }
 
-
 td {
   text-align: center;
 }
 
-tr:first-child{
-    background-color: #00a3a3;
+tr:first-child {
+  background-color: #00a3a3;
 }
 
 tr:nth-child(even) td {
@@ -38,7 +40,7 @@ tr:nth-child(odd) td {
 }
 
 tfoot {
-    background-color: #008a8a;
+  background-color: #008a8a;
 }
 
 caption {
