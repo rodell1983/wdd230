@@ -12,10 +12,7 @@ table {
   border-collapse: collapse;
   border: 2px solid rgb(200, 200, 200);
 }
-caption {
-  background-color: #008a8a;
-  color: #fff;
-}
+
 
 td,
 th {
@@ -31,13 +28,14 @@ tr:first-child {
   background-color: #00a3a3;
 }
 
-tr:nth-child(even) td {
+tbody tr:nth-child(even) td {
   background-color: #7fffd4;
 }
 
-tr:nth-child(odd) td {
+tbody tr:nth-child(odd) td {
   background-color: #00f0f0;
 }
+
 
 tfoot {
   background-color: #008a8a;
@@ -45,4 +43,8 @@ tfoot {
 
 caption {
   padding: 10px;
+}
+caption, tfoot tr:last-child {
+  background-color: #008a8a;
+  color: #fff;
 }
