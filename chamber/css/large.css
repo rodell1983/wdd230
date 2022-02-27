@@ -21,9 +21,6 @@
     grid-column: 3;
   }
 
-  .main-menu ul li:first-child {
-    display: none;
-  }
 
   .navigation {
     display: flex;

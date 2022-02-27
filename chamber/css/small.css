@@ -87,6 +87,7 @@ footer {
 
 .home-main,
 .discover-main,
+.join-main,
 .discover-blocks {
   display: grid;
   grid-gap: 0.5rem;
@@ -123,7 +124,7 @@ footer {
 }
 
 .navigation li a,
-.join-button a {
+.join-button a{
   display: block;
   padding: 0.75rem;
   text-decoration: none;
@@ -131,7 +132,7 @@ footer {
 }
 
 .main-menu a:hover,
-.join-button a:hover {
+.join-button:hover {
   background-color: var(--orange);
   color: #fff;
 }
@@ -214,18 +215,23 @@ footer {
   padding: 0.5rem;
 }
 
-.floating a {
+.floating {
   position: absolute;
   bottom: 1rem;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
-.join-button a {
+.join-button{
   border-radius: 4px;
   background-color: var(--dark-blue);
-  padding: 1rem;
+  padding: .5rem;
+  border: 1px solid #fff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 1rem;
+  cursor: pointer;
 }
+
 
 .join {
   display: grid;
@@ -276,26 +282,39 @@ footer {
 
 /* Join Page */
 
-form {
+.join-form {
   display: grid;
+
+}
+
+fieldset, legend {
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 fieldset {
   display: grid;
+  background-color: #fff;
 }
 
-input, textarea, button {
+legend {
+  background-color: var(--dark-blue);
+  color: white;
+  border: 1px solid #fff;
+  
+}
+
+input, textarea, button, select {
   padding: .5rem;
   margin: .5rem;
+  border-radius: 4px;
+  border: 2px solid var(--dark-blue);
 }
 
 label,input{
   display:flex;
   flex-direction:column;
-}
-
-button {
-    float: right;
 }
 
 /* Siteplan */
