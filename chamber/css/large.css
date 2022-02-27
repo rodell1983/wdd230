@@ -79,5 +79,18 @@
     content: "\2022";
   }
 
-
+  .join-form {
+    grid-template-columns: 1fr 1fr;
+  
+  }
+  .join-form-group {
+    grid-column: 1/2;
+  }
+  .join-form-details{
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  .join-form button{
+    grid-column: 1/2;
+  }
 }

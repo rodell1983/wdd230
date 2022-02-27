@@ -90,9 +90,6 @@
   .logo{
     margin: 1rem 0 0 1rem;
   }
-  .join-form {
-    grid-template-columns: 1fr 1fr;
   
-  }
 }
 
