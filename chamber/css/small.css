@@ -55,11 +55,11 @@ footer {
   padding: 0.5rem;
 }
 .title h1 {
-  font-size: 16px;
+  font-size: 1.25rem;
 }
 
 .title p {
-  font-size: 14px;
+  font-size: .9rem;
 }
 
 .logo {
@@ -340,6 +340,7 @@ input {
 
 .thankyou {
   display: grid;
+  padding: 2rem;
   background-color: var(--orange);
   border-radius: 8px;
 }
