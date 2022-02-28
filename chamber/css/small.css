@@ -162,8 +162,8 @@ footer {
   text-align: right;
   background-color: var(--dark-blue);
   position: absolute;
-  top: 0px;
-  right: 0;
+    top: 1rem;
+    right: 0;
 }
 
 .page {
@@ -175,7 +175,7 @@ footer {
   grid-column: 1/5;
 }
 
-.shaddow {
+.shadow {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
