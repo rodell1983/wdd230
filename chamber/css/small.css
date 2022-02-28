@@ -323,7 +323,6 @@ input {
 
 .membership-option {
   border-bottom: 2px solid var(--light-blue);
-  position: relative;
 }
 
 .membership-option p {
@@ -331,14 +330,15 @@ input {
 }
 
 .join-price {
+  width: 100%;
+  text-align: right;
   font-variant: small-caps;
   font-weight: bold;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  
 }
 
 .medal{
+  margin-top: 1rem;
   width: 100px;
   float: left;
 }
