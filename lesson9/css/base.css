@@ -21,11 +21,15 @@ p {
   font-weight: bold;
   padding: 0.5rem;
   margin: 0;
+  text-align: center;
 }
 
+footer{
+  text-align: center;
+}
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   background-color: #555;
   grid-gap: 1rem;
@@ -35,10 +39,16 @@ p {
 .card {
   display: grid;
   justify-items: center;
-  width: 350px;
+  max-width: 300px;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   background: radial-gradient(#999, #bbb, #555);
   border: 10px double gold;
+}
+
+.card img {
+  width: 260px;
+  border-radius: 5px;
+  box-shadow:inset 0 0 10px rgba(255, 255, 255, 0.3);
 }
