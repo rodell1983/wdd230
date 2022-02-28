@@ -283,9 +283,14 @@ footer {
 
 /* Join Page */
 
+.join-main{
+  justify-items: center;
+}
+
 .join-form {
   display: grid;
-  grid-row-gap: 1rem;
+  grid-gap: 1rem;
+
 }
 
 fieldset,
@@ -329,10 +334,6 @@ input {
   border-bottom: none;
 }
 
-.membership-option p {
-  text-align: center;
-}
-
 .membership-option ul {
   display: grid;
 }
@@ -346,7 +347,7 @@ input {
 }
 
 .medal{
-  margin-top: 1rem;
+  margin: 1rem;
   width: 100px;
   float: left;
 }
