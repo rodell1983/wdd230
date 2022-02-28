@@ -180,6 +180,7 @@ footer {
 }
 
 .banner {
+  display: none;
   background-color: var(--orange);
   color: #fff;
   font-size: 20px;
