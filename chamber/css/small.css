@@ -322,8 +322,8 @@ input {
 }
 
 .membership-option {
-  display: grid;
   border-bottom: 2px solid var(--light-blue);
+  position: relative;
 }
 
 .membership-option p {
@@ -331,9 +331,20 @@ input {
 }
 
 .join-price {
-  justify-self: right;
   font-variant: small-caps;
   font-weight: bold;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.medal{
+  width: 100px;
+  float: left;
+}
+
+.medal img {
+  width: 100%;
 }
 
 /* Thank You Page */
