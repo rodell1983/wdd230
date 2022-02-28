@@ -1,6 +1,6 @@
 body,
 h1 {
-  background-color: #777;
+  background-color: #ccc;
 }
 h1 {
   font-size: 3rem;
@@ -39,7 +39,7 @@ footer{
 .card {
   display: grid;
   justify-items: center;
-  max-width: 300px;
+  width: 280px;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
