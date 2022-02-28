@@ -49,7 +49,7 @@ footer {
 .card {
   display: grid;
   justify-items: center;
-  width: 280px;
+  width: 260px;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
@@ -58,7 +58,7 @@ footer {
 }
 
 .card img {
-  width: 260px;
+  width: 250px;
   border-radius: 5px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
