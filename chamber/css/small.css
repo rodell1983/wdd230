@@ -325,8 +325,16 @@ input {
   border-bottom: 2px solid var(--light-blue);
 }
 
+.membership-option:last-of-type {
+  border-bottom: none;
+}
+
 .membership-option p {
   text-align: center;
+}
+
+.membership-option ul {
+  display: grid;
 }
 
 .join-price {
