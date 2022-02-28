@@ -95,17 +95,29 @@
       </header>
       <main class="join-main">
         <form class="join-form" method="get" action="thanks.html">
-          <fieldset class="join-form-group">
-            <legend>Applicant Info</legend>
+          <fieldset class="join-form-group shaddow">
+            <legend class="shaddow">Applicant Info</legend>
             <label
-              >First name:<input type="text" name="fname" required
+              >First name:<input
+                type="text"
+                name="fname"
+                required
+                placeholder="Business Owner"
             /></label>
-            <label>Last name:<input type="text" name="lname" required /></label>
+            <label
+              >Last name:<input
+                type="text"
+                name="lname"
+                required
+                placeholder="Business Owner"
+            /></label>
             <label
               >Title:<input
                 type="text"
                 name="lname"
-                pattern="[a-zA-Z0-9]+[a-zA-Z0-9 -]+{3}"
+                pattern="[a-zA-Z-\s]+"
+                minlength="7"
+                placeholder="At least 7 digits. Valid Chars(A-Z, a-z, - ' ')"
             /></label>
             <label
               >Email:<input
@@ -114,12 +126,22 @@
                 placeholder="yourname@company.com"
                 required
             /></label>
-            <label>Cell #:<input type="tel" name="phone" required /></label>
-          </fieldset>
-          <fieldset class="join-form-group">
-            <legend>Business</legend>
             <label
-              >Business Name:<input type="text" name="bname" required
+              >Cell Phone #:<input
+                type="tel"
+                name="phone"
+                required
+                placeholder="1235551234"
+            /></label>
+          </fieldset>
+          <fieldset class="join-form-group shaddow">
+            <legend class="shaddow">Business</legend>
+            <label
+              >Business Name:<input
+                type="text"
+                name="bname"
+                required
+                placeholder="No Abbreviations"
             /></label>
             <label
               >Membership Level (Refer to details tab)
@@ -127,30 +149,50 @@
                 <option value="np">Non Profit</option>
                 <option value="bronze">Bronze</option>
                 <option value="silver">Silver</option>
-                <option value="gold">Gold</option>
+                <option value="gold" selected>Gold</option>
               </select>
             </label>
             <label
               >Business Description
-              <textarea name="bdescription" rows="5"></textarea>
+              <textarea
+                name="bdescription"
+                rows="5"
+                placeholder="Breif description of what your company does."
+              ></textarea>
             </label>
+            <input type="text" name="date" id="join-date" hidden />
           </fieldset>
-          <fieldset class="join-form-details">
-            <legend>Membership Details</legend>
-            <h2>Gold Membership</h2>
-            <p>Gets you a full page ad on our members page. Gold members are fetured on our front page</p>
-            <span>$5,000.00 - Anually</span>
-            <h2>Silver Membership</h2>
-            <p>Gets you a half page ad on our members page.</p>
-            <span>$2,500.00 - Anually</span>
-            <h2>Bronze Membership</h2>
-            <p>Gets you a small 1 paragraph ad on our members page.</p>
-            <span>$1,000.00 - Anually</span>
-            <h2>NP Membership</h2>
-            <p>Exclusivly for Non Profit businesses. Free</p>
-            <span>Free</span>
+          <fieldset class="join-form-details shaddow">
+            <legend class="shaddow">Membership Details</legend>
+            <div class="membership-option">
+              <h2>Gold Membership</h2>
+              <p>
+                Gets you a full page ad on our members page. Gold members are
+                fetured on our front page
+              </p>
+              <span class="join-price">$5,000.00 - Annually</span>
+            </div>
+            <div class="membership-option">
+              <h2>Silver Membership</h2>
+              <p>Gets you a half page ad on our members page.</p>
+              <span class="join-price">$2,500.00 - Annually</span>
+            </div>
+            <div class="membership-option">
+              <h2>Bronze Membership</h2>
+              <p>Gets you a small 1 paragraph ad on our members page.</p>
+              <span class="join-price">$1,000.00 - Annually</span>
+            </div>
+            <div class="membership-option">
+              <h2>NP Membership</h2>
+              <p>Exclusivly for Non Profit businesses. Free</p>
+              <span class="join-price">Free</span>
+            </div>
           </fieldset>
-          <button class="join-button menu-font" type="submit" value="Submit">
+          <button
+            class="join-button menu-font shaddow"
+            type="submit"
+            value="Submit"
+          >
             Join Now!
           </button>
         </form>
@@ -191,7 +233,5 @@
       </footer>
     </div>
     <script src="js/script.js"></script>
-    <script src="js/lastvisit.js"></script>
-    <script src="js/lazyload.js"></script>
   </body>
 </html>

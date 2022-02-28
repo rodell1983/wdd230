@@ -40,3 +40,9 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 // long, medium, short options ... try them
 
 datefield.innerHTML = `<em>${fulldateUK}</em>`;
+
+//Test for join page them load date
+let joinDateEl = document.getElementById("join-date");
+if(joinDateEl){
+    joinDateEl.value = now;
+}

@@ -175,6 +175,10 @@ footer {
   grid-column: 1/5;
 }
 
+.shaddow{
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .banner {
   background-color: var(--orange);
   color: #fff;
@@ -190,7 +194,6 @@ footer {
 .home-block {
   background-color: #fff;
   border-radius: 4px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   padding: 0.75rem;
 }
 
@@ -227,7 +230,6 @@ footer {
   background-color: var(--dark-blue);
   padding: .5rem;
   border: 1px solid #fff;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   margin: 1rem;
   cursor: pointer;
 }
@@ -274,7 +276,6 @@ footer {
 
 .visits {
   background-color: #fff;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   justify-self: center;
   padding: 0.5rem;
   font-weight: bold;
@@ -289,7 +290,6 @@ footer {
 }
 
 fieldset, legend {
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   padding: 5px 10px;
   border-radius: 4px;
 }
@@ -316,6 +316,26 @@ input, textarea, button, select {
 label,input{
   display:flex;
   flex-direction:column;
+}
+
+.membership-option{
+  display: grid;
+  border-bottom: 2px solid var(--light-blue);
+}
+
+.join-price{
+  justify-self: right;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* Thank You Page */
+
+.thankyou{
+  display: grid;
+   background-color: var(--orange);
+   border-radius: 8px;
+
 }
 
 /* Siteplan */
