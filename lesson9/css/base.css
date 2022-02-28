@@ -43,12 +43,12 @@ footer{
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-  background: radial-gradient(#999, #bbb, #555);
+  background: radial-gradient(#eee, #ccc);
   border: 10px double gold;
 }
 
 .card img {
   width: 260px;
   border-radius: 5px;
-  box-shadow:inset 0 0 10px rgba(255, 255, 255, 0.3);
+  box-shadow:inset 0 0 10px #fff;
 }
