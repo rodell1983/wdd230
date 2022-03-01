@@ -29,6 +29,14 @@ main,
 .header-logo-container {
   border: 1px solid var(--dark-blue);
 }
+
+main {
+  display: grid;
+  grid-gap: 0.5rem;
+  background-color: var(--light-blue);
+  padding: 1rem;
+}
+
 h2 {
   text-align: center;
 }
@@ -83,16 +91,6 @@ footer {
 .social-bar img:hover {
   filter: brightness(115%);
   transition: all 0.5s ease-out;
-}
-
-.home-main,
-.discover-main,
-.join-main,
-.discover-blocks {
-  display: grid;
-  grid-gap: 0.5rem;
-  background-color: var(--light-blue);
-  padding: 1rem;
 }
 
 /* Navigation */
@@ -190,13 +188,15 @@ footer {
   padding: 0.75rem;
 }
 
-/* Home Page */
-
-.home-block {
+.block {
+  display: grid;
+  justify-items: center;
+  border-radius: 6px;
   background-color: #fff;
-  border-radius: 4px;
   padding: 0.75rem;
 }
+
+/* Home Page */
 
 .hero img {
   width: 100%;
@@ -255,6 +255,11 @@ footer {
 }
 
 /* Discover Page */
+
+.discover-blocks{
+  display: grid;
+  grid-gap: .5rem;
+}
 
 .discover-block {
   display: grid;
@@ -358,11 +363,19 @@ input {
 
 /* Thank You Page */
 
+.thanks-main {
+  display: grid;
+  justify-items: center;
+}
+
 .thankyou {
   display: grid;
   padding: 2rem;
-  background-color: var(--orange);
-  border-radius: 8px;
+  background-color: #fff;
+}
+
+.thankyou h2 {
+  color: var(--dark-blue);
 }
 
 /* Siteplan */
