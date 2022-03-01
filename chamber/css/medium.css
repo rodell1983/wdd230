@@ -72,17 +72,17 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .discover-block:hover {
+  .discover-blocks .block:hover {
 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
   }
   
-  .discover-block picture img{
+  .discover-blocks picture img{
     width: 100%;
     transform: scale(1.3);
   
   }
-  .discover-block picture img:hover {
+  .discover-blocks picture img:hover {
     transform: scale(1);
     height: auto;
     transition: .3s ease-in-out;
