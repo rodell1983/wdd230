@@ -362,6 +362,20 @@ input {
   width: 100%;
 }
 
+/* Directory Page */
+
+.business-cards {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 1rem;
+}
+
+.card img {
+  width: 200px;
+}
+
+
+
 /* Thank You Page */
 
 .thanks-main {

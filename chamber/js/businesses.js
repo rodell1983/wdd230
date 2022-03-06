@@ -15,22 +15,33 @@ fetch(requestURL)
 function displayBusiness(business) {
   // Create elements to add to the document
   let card = document.createElement("section");
-  let h2 = document.createElement("h2");
   let image = document.createElement("img");
+  let h2 = document.createElement("h2");
+  let address = document.createElement("p");
+  let phone = document.createElement("p");
+  
 
+// Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
+  image.setAttribute("src", business.logourl);
+  image.setAttribute("loading", "lazy");
 
   // Change the textContent property of the h2 element to contain the prophet's full name
   h2.textContent = `${business.name}`;
 
-  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
-  image.setAttribute("src", business.logourl);
-  image.setAttribute("loading", "lazy");
+  address.textContent = business.address;
+
+  phone.textContent = business.phone;
+
+  
 
 
 
   // Add/append the section(card) with the h2 element
-  card.appendChild(h2);
   card.appendChild(image);
+  card.appendChild(h2);
+  card.appendChild(address)
+  card.appendChild(phone)
+  
   card.classList.add("card");
   card.classList.add("block");
   card.classList.add("shadow");
