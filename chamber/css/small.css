@@ -393,15 +393,24 @@ input {
   
 }
 
+.card-list > * { flex: 1; }
+
+.card-list p {
+  padding: 1rem;
+}
+
 .card-list:nth-child(odd){
   background-color: #fff;
+  color: #000;
 }
 .card-list:nth-child(even){
-  background-color: lightblue;
+  background-color: var(--dark-blue);
+  color: #fff;
 }
 
 .card-list>* {
   text-align: left;
+  margin: 0;
 }
 
 .card-list img{
@@ -415,26 +424,19 @@ input {
 .business-view {
   display: flex;
   justify-self: center;
+  justify-content: space-around;
 }
 
 .list-view-button,
 .grid-view-button {
-  color: white;
-  border: 1px solid white;
-  padding: 5px;
-  font-size: 14px;
+  padding: 0;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
-.list-view-button:hover,
-.grid-view-button:hover {
-  background: white;
-  color: #0e2439;
-}
-
-.list-view-button {
-  margin-right: 10px;
+.list-view-button img,
+.grid-view-button img{
+  width: 100px;
 }
 
 
