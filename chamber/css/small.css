@@ -367,8 +367,11 @@ input {
 
 .grid{
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
+
+
 }
 
 .list{
@@ -429,14 +432,23 @@ input {
 
 .list-view-button,
 .grid-view-button {
-  padding: 0;
+  padding: .5rem;
+  color: #fff;
+  background-color: var(--dark-blue);
   cursor: pointer;
+  font-size: 3rem;
+  margin: 1rem;
   border-radius: 5px;
+  border: solid 3px #fff;
 }
 
-.list-view-button img,
-.grid-view-button img{
-  width: 100px;
+.list-view-button:hover,
+.grid-view-button:hover {
+  color: var(--orange);
+  border: solid 3px var(--orange);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
 }
 
 
