@@ -1,5 +1,5 @@
 const requestURL =
-  "https://https://rodell1983.github.io/wdd230/chamber/data/data.json";
+  "https://rodell1983.github.io/wdd230/chamber/data/data.json";
 
 fetch(requestURL)
   .then(function (response) {
@@ -7,8 +7,8 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject); // temporary checking for valid response and data parsing
-    const prophets = jsonObject["prophets"];
-    prophets.forEach(displayProphets);
+    const businesses= jsonObject["business"];
+    businesses.forEach(displayBusiness);
   });
 
 
