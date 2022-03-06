@@ -411,6 +411,14 @@ input {
   color: #fff;
 }
 
+.card-list:nth-child(odd) a {
+  color: var(--dark-blue);
+}
+
+.card-list:nth-child(even) a {
+  color: #fff;
+}
+
 .card-list>* {
   text-align: left;
   margin: 0;
