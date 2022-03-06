@@ -23,13 +23,18 @@ function displayBusiness(business) {
   h2.textContent = `${business.name}`;
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
-  image.setAttribute("src", business.imageurl);
+  image.setAttribute("src", business.logourl);
+  image.setAttribute("loading", "lazy");
+
 
 
   // Add/append the section(card) with the h2 element
   card.appendChild(h2);
+  card.appendChild(image);
   card.classList.add("card");
+  card.classList.add("block");
+  card.classList.add("shadow");
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  document.querySelector("div.cards").appendChild(card);
+  document.querySelector("div.business-cards").appendChild(card);
 }
