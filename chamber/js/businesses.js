@@ -22,6 +22,7 @@ function displayBusiness(business) {
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
   image.setAttribute("src", business.logourl);
+  image.setAttribute("alt", business.name);
   image.setAttribute("loading", "lazy");
 
   // Change the textContent property of the h2 element to contain the prophet's full name
@@ -35,6 +36,7 @@ function displayBusiness(business) {
   website.appendChild(linkText);
   website.title = business.name;
   website.href = business.website;
+  website.target = "_blank";
 
   // Add/append the section(card) with the h2 element
   card.appendChild(image);
