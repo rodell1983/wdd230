@@ -4,7 +4,7 @@
       "name": "Ethel M Chocolates",
       "address": "2 Cactus Garden Dr, Las Vegas, NV 89014",
       "phone": "702-435-2608",
-      "logourl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/howard-w-hunter-82921-gallery.jpg",
+      "logourl": "images/companies/ethelm.webp",
       "membership": "Gold"
     },
 
@@ -12,7 +12,7 @@
       "name": "Quick Tow",
       "address": "2108 W WYOMING AVE, LAS VEGAS, NV 89102",
       "phone": "702-450-1222",
-      "logourl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/howard-w-hunter-82921-gallery.jpg",
+      "logourl": "images/companies/quick_tow.png",
       "membership": "Silver"
     },
 
@@ -20,7 +20,7 @@
       "name": "Aggregate Industries",
       "address": "4675 W Teco Ave, Las Vegas, NV 89118",
       "phone": "702-649-6250",
-      "logourl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/howard-w-hunter-82921-gallery.jpg",
+      "logourl": "images/companies/aggregate.png",
       "membership": "Gold"
     },
 
@@ -28,7 +28,7 @@
       "name": "Bob Taylors Ranch House",
       "address": "6250 Rio Vista St, Las Vegas, NV 89130",
       "phone": "702-645-1399",
-      "logourl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/howard-w-hunter-82921-gallery.jpg",
+      "logourl": "images/companies/ranch_house.png",
       "membership": "Bronze"
 
       
@@ -38,7 +38,7 @@
       "name": "Lion Habitat Ranch",
       "address": "382 Bruner Ave, Las Vegas, NV 89044",
       "phone": "702-595-6666",
-      "logourl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/howard-w-hunter-82921-gallery.jpg",
+      "logourl": "images/companies/lion_habitat.png",
       "membership": "NP"
     }
   ]
