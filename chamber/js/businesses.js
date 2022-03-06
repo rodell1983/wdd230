@@ -14,17 +14,25 @@ fetch(requestURL)
 function displayBusiness(business) {
   // Create elements to add to the document
   let card = document.createElement("section");
-  let image = document.createElement("img");
+  let imageLogo = document.createElement("img");
+  let imageMember = document.createElement("img");
   let name = document.createElement("p");
   let address = document.createElement("p");
   let phone = document.createElement("p");
   let website = document.createElement("a");
-  let webText = document.createElement("p")
+  let webText = document.createElement("p");
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
-  image.setAttribute("src", business.logourl);
-  image.setAttribute("alt", `${business.name} logo`);
-  image.setAttribute("loading", "lazy");
+  imageLogo.setAttribute("src", business.logourl);
+  imageLogo.setAttribute("alt", `${business.name} logo`);
+  imageLogo.setAttribute("loading", "lazy");
+  imageLogo.classList.add("card-logo");
+
+  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
+  imageMember.setAttribute("src", `images/${String(business.membership).toLowerCase()}.webp`);
+  imageMember.setAttribute("alt", `${business.membership} logo`);
+  imageMember.setAttribute("loading", "lazy");
+  imageMember.classList.add("card-medal");
 
   // Change the textContent property of the h2 element to contain the prophet's full name
   name.textContent = business.name;
@@ -42,7 +50,11 @@ function displayBusiness(business) {
   webText.appendChild(website);
 
   // Add/append the section(card) with the h2 element
-  card.appendChild(image);
+  card.appendChild(imageLogo);
+  if (business.membership.toLowerCase() == "gold" || business.membership.toLowerCase() == "silver"){
+    card.appendChild(imageMember);
+  }
+  
   card.appendChild(name);
   card.appendChild(address);
   card.appendChild(phone);

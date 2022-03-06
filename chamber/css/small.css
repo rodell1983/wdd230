@@ -66,7 +66,7 @@ footer {
 }
 
 .title p {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .logo {
@@ -159,8 +159,8 @@ footer {
   text-align: right;
   background-color: var(--dark-blue);
   position: absolute;
-    top: 1rem;
-    right: 0;
+  top: 1rem;
+  right: 0;
 }
 
 .page {
@@ -256,9 +256,9 @@ footer {
 
 /* Discover Page */
 
-.discover-blocks{
+.discover-blocks {
   display: grid;
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
 }
 
 .discover-block {
@@ -288,14 +288,13 @@ footer {
 
 /* Join Page */
 
-.join-main{
+.join-main {
   justify-items: center;
 }
 
 .join-form {
   display: grid;
   grid-gap: 1rem;
-
 }
 
 fieldset,
@@ -348,10 +347,9 @@ input {
   text-align: right;
   font-variant: small-caps;
   font-weight: bold;
-  
 }
 
-.medal{
+.medal {
   margin: 1rem;
   width: 100px;
   float: left;
@@ -363,26 +361,23 @@ input {
 
 /* Directory Page */
 
-
-.grid{
+.grid {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
-
-
 }
 
-.list{
+.list {
   display: block;
 }
 
-.card-grid{
+.card-grid {
   line-height: 1rem;
-  
+  position: relative;
 }
 
-.card-grid p:first-of-type{
+.card-grid p:first-of-type {
   display: none;
 }
 
@@ -390,22 +385,22 @@ input {
   text-align: center;
 }
 
-.card-list{
+.card-list {
   display: block;
   padding: 1rem;
-  
+  position: relative;
 }
 
-.card-list > * { 
-  flex: 1; 
+.card-list > * {
+  flex: 1;
   text-align: center;
 }
 
-.card-list:nth-child(odd){
+.card-list:nth-child(odd) {
   background-color: #fff;
   color: #000;
 }
-.card-list:nth-child(even){
+.card-list:nth-child(even) {
   background-color: var(--dark-blue);
   color: #fff;
 }
@@ -418,16 +413,23 @@ input {
   color: #fff;
 }
 
-.card-list>* {
+.card-medal{
+  width: 32px;
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+}
+
+.card-list > * {
   text-align: left;
   margin: 0;
 }
 
-.card-list img{
+.card-list .card-logo{
   display: none;
 }
 
-.card img {
+.card-logo {
   width: 200px;
 }
 
@@ -438,7 +440,7 @@ input {
 
 .list-view-button,
 .grid-view-button {
-  padding: .5rem;
+  padding: 0.5rem;
   color: #fff;
   background-color: var(--dark-blue);
   cursor: pointer;
@@ -456,8 +458,6 @@ input {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: 0.5s;
 }
-
-
 
 /* Thank You Page */
 
@@ -489,6 +489,3 @@ input {
 .orange-tab {
   background-color: var(--orange);
 }
-
-
-
