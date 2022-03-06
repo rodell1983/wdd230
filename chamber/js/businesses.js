@@ -15,10 +15,11 @@ function displayBusiness(business) {
   // Create elements to add to the document
   let card = document.createElement("section");
   let image = document.createElement("img");
-  let name = document.createElement("span");
+  let name = document.createElement("p");
   let address = document.createElement("p");
-  let phone = document.createElement("span");
+  let phone = document.createElement("p");
   let website = document.createElement("a");
+  let webText = document.createElement("p")
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
   image.setAttribute("src", business.logourl);
@@ -38,12 +39,14 @@ function displayBusiness(business) {
   website.href = business.website;
   website.target = "_blank";
 
+  webText.appendChild(website);
+
   // Add/append the section(card) with the h2 element
   card.appendChild(image);
   card.appendChild(name);
   card.appendChild(address);
   card.appendChild(phone);
-  card.appendChild(website);
+  card.appendChild(webText);
 
   card.classList.add("card");
 
