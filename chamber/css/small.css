@@ -387,13 +387,9 @@ input {
 
 .card-list {
   display: block;
-  padding: 1rem;
   position: relative;
-}
+  padding: 1rem;
 
-.card-list > * {
-  flex: 1;
-  text-align: center;
 }
 
 .card-list:nth-child(odd) {
@@ -415,6 +411,9 @@ input {
 
 .card-medal{
   width: 32px;
+}
+
+.grid .card-medal{
   position: absolute;
   top: .5rem;
   right: .5rem;

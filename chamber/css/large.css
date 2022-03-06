@@ -95,4 +95,10 @@
     grid-template-columns: 20% 25% 15% 40%;
     grid-column-gap: 1rem;
   }
+
+  .list .card-medal{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+  }
 }

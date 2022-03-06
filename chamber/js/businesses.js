@@ -30,7 +30,7 @@ function displayBusiness(business) {
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
   imageMember.setAttribute("src", `images/${String(business.membership).toLowerCase()}.webp`);
-  imageMember.setAttribute("alt", `${business.membership} logo`);
+  imageMember.setAttribute("alt", `${business.membership} Member logo`);
   imageMember.setAttribute("loading", "lazy");
   imageMember.classList.add("card-medal");
 
@@ -51,13 +51,12 @@ function displayBusiness(business) {
 
   // Add/append the section(card) with the h2 element
   card.appendChild(imageLogo);
-  if (business.membership.toLowerCase() == "gold" || business.membership.toLowerCase() == "silver"){
-    card.appendChild(imageMember);
-  }
-  
   card.appendChild(name);
   card.appendChild(address);
   card.appendChild(phone);
+  if (business.membership.toLowerCase() == "gold" || business.membership.toLowerCase() == "silver"){
+    card.appendChild(imageMember);
+  }
   card.appendChild(webText);
 
   card.classList.add("card");
