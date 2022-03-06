@@ -1,5 +1,4 @@
-const requestURL =
-  "https://rodell1983.github.io/wdd230/chamber/data/data.json";
+const requestURL = "https://rodell1983.github.io/wdd230/chamber/data/data.json";
 
 fetch(requestURL)
   .then(function (response) {
@@ -7,10 +6,9 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject); // temporary checking for valid response and data parsing
-    const businesses= jsonObject["business"];
+    const businesses = jsonObject["business"];
     businesses.forEach(displayBusiness);
   });
-
 
 function displayBusiness(business) {
   // Create elements to add to the document
@@ -19,9 +17,8 @@ function displayBusiness(business) {
   let h2 = document.createElement("h2");
   let address = document.createElement("p");
   let phone = document.createElement("p");
-  
 
-// Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
+  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
   image.setAttribute("src", business.logourl);
   image.setAttribute("loading", "lazy");
 
@@ -32,20 +29,48 @@ function displayBusiness(business) {
 
   phone.textContent = business.phone;
 
-  
-
-
-
   // Add/append the section(card) with the h2 element
   card.appendChild(image);
   card.appendChild(h2);
-  card.appendChild(address)
-  card.appendChild(phone)
-  
+  card.appendChild(address);
+  card.appendChild(phone);
+
   card.classList.add("card");
-  card.classList.add("block");
-  card.classList.add("shadow");
 
   // Add/append the existing HTML div with the cards class with the section(card)
   document.querySelector("div.business-cards").appendChild(card);
 }
+
+document
+  .querySelector(".list-view-button")
+  .addEventListener("click", function () {
+    const cards = document.querySelectorAll(".card");
+
+    for (const c of cards) {
+      c.classList.add("card-list");
+      c.classList.remove("card-grid");
+      c.classList.remove("block");
+      c.classList.remove("shadow");
+    }
+
+    let frame = document.querySelector(".business-cards");
+    frame.classList.remove("grid");
+    frame.classList.add("list");
+  });
+
+document
+  .querySelector(".grid-view-button")
+  .addEventListener("click", function () {
+    const cards = document.querySelectorAll(".card");
+
+    for (const c of cards) {
+      c.classList.remove("card-list");
+      c.classList.add("card-grid");
+      c.classList.add("block");
+      c.classList.add("shadow");
+    }
+
+    let frame = document.querySelector(".business-cards");
+    frame.classList.add("grid");
+    frame.classList.remove("list");
+  });
