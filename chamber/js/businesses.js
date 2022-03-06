@@ -15,9 +15,9 @@ function displayBusiness(business) {
   // Create elements to add to the document
   let card = document.createElement("section");
   let image = document.createElement("img");
-  let name = document.createElement("p");
+  let name = document.createElement("span");
   let address = document.createElement("p");
-  let phone = document.createElement("p");
+  let phone = document.createElement("span");
   let website = document.createElement("a");
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
@@ -62,6 +62,7 @@ function listView() {
   let frame = document.querySelector(".business-cards");
   frame.classList.remove("grid");
   frame.classList.add("list");
+  frame.classList.add("shadow");
 
   localStorage.setItem("view", "list");
 }
@@ -79,6 +80,7 @@ function gridView() {
   let frame = document.querySelector(".business-cards");
   frame.classList.add("grid");
   frame.classList.remove("list");
+  frame.classList.remove("shadow");
 
   localStorage.setItem("view", "grid");
 }
