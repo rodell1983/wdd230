@@ -8,7 +8,6 @@
 
 body {
   font-family: "Montserrat Alternates", Arial, sans-serif;
-  line-height: 1.75rem;
 }
 
 header,
@@ -379,27 +378,27 @@ input {
 }
 
 .card-grid{
-  display: grid;
+  line-height: 1rem;
   
 }
 
-.card-grid img{
-  display: block;
-  
+.card-grid p:first-of-type{
+  display: none;
+}
+
+.card-grid p {
+  text-align: center;
 }
 
 .card-list{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: block;
   padding: 1rem;
   
 }
 
-.card-list > * { flex: 1; }
-
-.card-list p {
-  padding: 1rem;
+.card-list > * { 
+  flex: 1; 
+  text-align: center;
 }
 
 .card-list:nth-child(odd){
@@ -435,7 +434,6 @@ input {
 .business-view {
   display: flex;
   justify-self: center;
-  justify-content: space-around;
 }
 
 .list-view-button,
