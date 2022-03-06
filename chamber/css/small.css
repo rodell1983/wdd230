@@ -406,3 +406,29 @@ grid-gap: 1rem;
 .orange-tab {
   background-color: var(--orange);
 }
+
+
+.business-view {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.list-view-button,
+.grid-view-button {
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.list-view-button:hover,
+.grid-view-button:hover {
+  background: white;
+  color: #0e2439;
+}
+
+.list-view-button {
+  margin-right: 10px;
+}
