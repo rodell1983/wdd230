@@ -16,55 +16,63 @@ function displayBusiness(business) {
   let card = document.createElement("section");
   let imageLogo = document.createElement("img");
   let imageMember = document.createElement("img");
+  let memberLink = document.createElement("a");
   let name = document.createElement("p");
   let address = document.createElement("p");
   let phone = document.createElement("p");
   let website = document.createElement("a");
   let webText = document.createElement("p");
 
-  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
+  // Set values for image logo
   imageLogo.setAttribute("src", business.logourl);
   imageLogo.setAttribute("alt", `${business.name} logo`);
   imageLogo.setAttribute("loading", "lazy");
   imageLogo.classList.add("card-logo");
 
-  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
-  imageMember.setAttribute("src", `images/${String(business.membership).toLowerCase()}.webp`);
+  // Set values for the Medal Icon
+  imageMember.setAttribute(
+    "src",
+    `images/${String(business.membership).toLowerCase()}.webp`
+  );
   imageMember.setAttribute("alt", `${business.membership} Member logo`);
   imageMember.setAttribute("loading", "lazy");
   imageMember.classList.add("card-medal");
+  memberLink.href = "join.html";
+  memberLink.title = "View Membership Details";
+  memberLink.appendChild(imageMember);
 
-  // Change the textContent property of the h2 element to contain the prophet's full name
+  // Name, address, phone #
   name.textContent = business.name;
-
   address.textContent = business.address;
+  phone.innerHTML = `<strong>${business.phone}</strong>`;
 
-  phone.innerHTML =`<strong> ${business.phone}` ;
-
+  // Web link
   let linkText = document.createTextNode(business.website);
   website.appendChild(linkText);
   website.title = business.name;
   website.href = business.website;
   website.target = "_blank";
-
   webText.appendChild(website);
 
-  // Add/append the section(card) with the h2 element
+  // Add elements to card
   card.appendChild(imageLogo);
   card.appendChild(name);
   card.appendChild(address);
   card.appendChild(phone);
-  if (business.membership.toLowerCase() == "gold" || business.membership.toLowerCase() == "silver"){
-    card.appendChild(imageMember);
+  if (
+    business.membership.toLowerCase() == "gold" ||
+    business.membership.toLowerCase() == "silver"
+  ) {
+    card.appendChild(memberLink);
   }
   card.appendChild(webText);
-
   card.classList.add("card");
 
-  // Add/append the existing HTML div with the cards class with the section(card)
+  // Add card to business cards
   document.querySelector("div.business-cards").appendChild(card);
 }
 
+// List view button click
 function listView() {
   const cards = document.querySelectorAll(".card");
 
@@ -83,6 +91,7 @@ function listView() {
   localStorage.setItem("view", "list");
 }
 
+// Grid view button click
 function gridView() {
   const cards = document.querySelectorAll(".card");
 
@@ -101,6 +110,7 @@ function gridView() {
   localStorage.setItem("view", "grid");
 }
 
+// LocalStorage settings
 function loadSettings() {
   //Load Local Storage
   const v = localStorage.getItem("view");
@@ -117,5 +127,6 @@ function loadSettings() {
   }
 }
 
+// Add events
 document.querySelector(".list-view-button").addEventListener("click", listView);
 document.querySelector(".grid-view-button").addEventListener("click", gridView);
