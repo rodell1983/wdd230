@@ -96,7 +96,7 @@
     grid-column-gap: 1rem;
   }
 
-  .list .card-medal{
+  .list .card-medal-link{
     position: absolute;
     top: .5rem;
     right: .5rem;

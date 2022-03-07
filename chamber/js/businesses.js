@@ -39,6 +39,7 @@ function displayBusiness(business) {
   imageMember.classList.add("card-medal");
   memberLink.href = "join.html";
   memberLink.title = "View Membership Details";
+  memberLink.classList.add("card-medal-link");
   memberLink.appendChild(imageMember);
 
   // Name, address, phone #
