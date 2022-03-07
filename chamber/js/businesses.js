@@ -39,7 +39,7 @@ function displayBusiness(business) {
 
   address.textContent = business.address;
 
-  phone.textContent = business.phone;
+  phone.innerHTML =`<strong> ${business.phone}` ;
 
   let linkText = document.createTextNode(business.website);
   website.appendChild(linkText);
