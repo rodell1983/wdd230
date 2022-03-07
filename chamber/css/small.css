@@ -439,6 +439,7 @@ input {
 
 .list-view-button,
 .grid-view-button {
+  display: grid;
   padding: 0.5rem;
   color: #fff;
   background-color: var(--dark-blue);
@@ -447,16 +448,22 @@ input {
   margin: 1rem;
   border-radius: 5px;
   border: solid 3px #fff;
+  
 }
 
 .list-view-button:hover,
 .grid-view-button:hover {
   color: var(--orange);
-  border: solid 3px var(--orange);
-  background-color: #fff;
+  background-color: var(--orange);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: 0.5s;
 }
+
+.svg-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
 
 /* Thank You Page */
 
