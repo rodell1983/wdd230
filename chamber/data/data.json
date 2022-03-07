@@ -47,96 +47,43 @@
       "website": "https://lionhabitatranch.org"
     },
     {
-      "name": "Ethel M Chocolates",
-      "address": "2 Cactus Garden Dr, Las Vegas, NV 89014",
-      "phone": "702-435-2608",
-      "logourl": "images/companies/ethelm.webp",
-      "membership": "Gold",
-      "website": "https://www.ethelm.com"
+      "name": "Nevada SPCA",
+      "address": "5375 S. Procyon St. Las Vegas, NV",
+      "phone": "702-873-7722",
+      "logourl": "images/companies/spca.webp",
+      "membership": "NP",
+      "website": "https://nevadaspca.org"
     },
 
     {
-      "name": "Quick Tow",
-      "address": "2108 W WYOMING AVE, LAS VEGAS, NV 89102",
-      "phone": "702-450-1222",
-      "logourl": "images/companies/quick_tow.webp",
-      "membership": "Silver",
-      "website": "https://www.quiktowlv.com"
-    },
-
-    {
-      "name": "Aggregate Industries",
-      "address": "4675 W Teco Ave, Las Vegas, NV 89118",
-      "phone": "702-649-6250",
-      "logourl": "images/companies/aggregate.webp",
-      "membership": "Gold",
-      "website": "https://www.aggregate.com"
-    },
-
-    {
-      "name": "Bob Taylors Ranch House",
-      "address": "6250 Rio Vista St, Las Vegas, NV 89130",
-      "phone": "702-645-1399",
-      "logourl": "images/companies/ranch_house.webp",
+      "name": "Omelet House",
+      "address": "2160 W Charleston Blvd A, Las Vegas, NV 89102",
+      "phone": "702-384-6868",
+      "logourl": "images/companies/omelet_house.webp",
       "membership": "Bronze",
-      "website": "https://bobtaylorsranchhouse.com"
+      "website": "https://omelethouselv.com"
+    },
+
+    {
+      "name": "Ricks Restoration",
+      "address": "800 W. Mesquite Avenue, Las Vegas, NV 89106",
+      "phone": "702-655-5544",
+      "logourl": "images/companies/ricks.webp",
+      "membership": "Gold",
+      "website": "http://www.ricksrestorations.com"
+    },
+
+    {
+      "name": "Gold & Silver Pawn",
+      "address": "713 S Las Vegas Blvd, Las Vegas, NV 89101",
+      "phone": "702-385-7912",
+      "logourl": "images/companies/gs_pawn.webp",
+      "membership": "Gold",
+      "website": "https://gspawn.com"
 
       
-    },
-
-    {
-      "name": "Lion Habitat Ranch",
-      "address": "382 Bruner Ave, Las Vegas, NV 89044",
-      "phone": "702-595-6666",
-      "logourl": "images/companies/lion_habitat.webp",
-      "membership": "NP",
-      "website": "https://lionhabitatranch.org"
-    },
-    {
-      "name": "Ethel M Chocolates",
-      "address": "2 Cactus Garden Dr, Las Vegas, NV 89014",
-      "phone": "702-435-2608",
-      "logourl": "images/companies/ethelm.webp",
-      "membership": "Gold",
-      "website": "https://www.ethelm.com"
-    },
-
-    {
-      "name": "Quick Tow",
-      "address": "2108 W WYOMING AVE, LAS VEGAS, NV 89102",
-      "phone": "702-450-1222",
-      "logourl": "images/companies/quick_tow.webp",
-      "membership": "Silver",
-      "website": "https://www.quiktowlv.com"
-    },
-
-    {
-      "name": "Aggregate Industries",
-      "address": "4675 W Teco Ave, Las Vegas, NV 89118",
-      "phone": "702-649-6250",
-      "logourl": "images/companies/aggregate.webp",
-      "membership": "Gold",
-      "website": "https://www.aggregate.com"
-    },
-
-    {
-      "name": "Bob Taylors Ranch House",
-      "address": "6250 Rio Vista St, Las Vegas, NV 89130",
-      "phone": "702-645-1399",
-      "logourl": "images/companies/ranch_house.webp",
-      "membership": "Bronze",
-      "website": "https://bobtaylorsranchhouse.com"
-
-      
-    },
-
-    {
-      "name": "Lion Habitat Ranch",
-      "address": "382 Bruner Ave, Las Vegas, NV 89044",
-      "phone": "702-595-6666",
-      "logourl": "images/companies/lion_habitat.webp",
-      "membership": "NP",
-      "website": "https://lionhabitatranch.org"
     }
+
+    
   ]
 }
