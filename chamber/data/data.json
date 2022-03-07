@@ -39,6 +39,15 @@
     },
 
     {
+      "name": "Ricks Restoration",
+      "address": "800 W. Mesquite Avenue, Las Vegas, NV 89106",
+      "phone": "702-655-5544",
+      "logourl": "images/companies/ricks.webp",
+      "membership": "Gold",
+      "website": "http://www.ricksrestorations.com"
+    },
+
+    {
       "name": "Lion Habitat Ranch",
       "address": "382 Bruner Ave, Las Vegas, NV 89044",
       "phone": "702-595-6666",
@@ -46,6 +55,18 @@
       "membership": "NP",
       "website": "https://lionhabitatranch.org"
     },
+
+    {
+      "name": "Northwest Landscape",
+      "address": "5060 E Cartier Ave, Las Vegas, NV 89115",
+      "phone": "702-990-1303",
+      "logourl": "images/companies/northwest_landscape.webp",
+      "membership": "Silver",
+      "website": "https://landscaping.vegas"
+
+      
+    },
+
     {
       "name": "Nevada SPCA",
       "address": "5375 S. Procyon St. Las Vegas, NV",
@@ -65,35 +86,32 @@
     },
 
     {
-      "name": "Ricks Restoration",
-      "address": "800 W. Mesquite Avenue, Las Vegas, NV 89106",
-      "phone": "702-655-5544",
-      "logourl": "images/companies/ricks.webp",
-      "membership": "Gold",
-      "website": "http://www.ricksrestorations.com"
-    },
-
-    {
       "name": "Gold & Silver Pawn",
       "address": "713 S Las Vegas Blvd, Las Vegas, NV 89101",
       "phone": "702-385-7912",
       "logourl": "images/companies/gs_pawn.webp",
       "membership": "Gold",
       "website": "https://gspawn.com"
-
-      
     },
 
     {
-      "name": "Northwest Landscape",
-      "address": "5060 E Cartier Ave, Las Vegas, NV 89115",
-      "phone": "702-990-1303",
-      "logourl": "images/companies/northwest_landscape.webp",
-      "membership": "Silver",
-      "website": "https://landscaping.vegas"
+      "name": "Findlay Honda",
+      "address": "7494 W Azure Dr Las Vegas, NV 89130-4414",
+      "phone": "702-466-1278",
+      "logourl": "images/companies/findlay.webp",
+      "membership": "Gold",
+      "website": "https://findlayhonda.com"
+    },
 
-      
+    {
+      "name": "Maximum Comics",
+      "address": "7950 W. Tropical Pkwy #120, Las Vegas, NV 89149",
+      "phone": "702-722-6642",
+      "logourl": "images/companies/maximum.webp",
+      "membership": "Silver",
+      "website": "https://www.maximumcomics.com"
     }
+
 
     
   ]
