@@ -366,7 +366,7 @@ input {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: .5rem;
 }
 
 .list {
@@ -450,6 +450,10 @@ input {
   border-radius: 5px;
   border: solid 3px #fff;
   
+}
+
+.card-medal:hover{
+  transform: scale(1.2);
 }
 
 .list-view-button:hover,
