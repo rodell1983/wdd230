@@ -241,8 +241,17 @@ footer {
 }
 
 .spotlight {
+  position: relative;
   border: 2px solid var(--dark-blue);
   margin-bottom: 0.5rem;
+}
+
+.spotlights {
+  display: block;
+}
+
+.spotlights:first{
+  background-color: pink;
 }
 
 .weather {
@@ -414,7 +423,8 @@ input {
   width: 32px;
 }
 
-.grid .card-medal{
+.grid .card-medal,
+.spotlight .card-medal{
   position: absolute;
   top: .5rem;
   right: .5rem;

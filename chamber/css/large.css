@@ -59,6 +59,10 @@
     display: grid;
   }
 
+  .spotlights:last-child{
+    display: block;
+  }
+
   .join{
     grid-column: 1;
     grid-row: 3;
