@@ -262,6 +262,7 @@ footer {
 .temp {
   font-size: 2rem;
   font-weight: bold;
+  vertical-align: super;
 }
 
 /* Discover Page */
