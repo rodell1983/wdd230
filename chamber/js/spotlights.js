@@ -19,17 +19,21 @@ function displayBusiness(business) {
   // Create elements to add to the document
   let card = document.createElement("section");
   let imageLogo = document.createElement("img");
+  let webLink = document.createElement("a");
   let imageMember = document.createElement("img");
   let memberLink = document.createElement("a");
   let slogan = document.createElement("p");
 
-  slogan.innerText = business.slogan;
+  slogan.innerText = `"${business.slogan}"`;
 
   // Set values for image logo
   imageLogo.setAttribute("src", business.logourl);
   imageLogo.setAttribute("alt", `${business.name} logo`);
   imageLogo.setAttribute("loading", "lazy");
   imageLogo.classList.add("card-logo");
+  webLink.href = business.website;
+  webLink.title = "Visit Website";
+  webLink.appendChild(imageLogo);
 
   // Set values for the Medal Icon
   imageMember.setAttribute(
@@ -45,7 +49,7 @@ function displayBusiness(business) {
   memberLink.appendChild(imageMember);
 
   // Add elements to card
-  card.appendChild(imageLogo);
+  card.appendChild(webLink);
   card.appendChild(slogan);
 
   if (

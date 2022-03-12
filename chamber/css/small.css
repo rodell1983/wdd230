@@ -244,6 +244,7 @@ footer {
   position: relative;
   border: 2px solid var(--dark-blue);
   margin-bottom: 0.5rem;
+  width: 90%;
 }
 
 .spotlights {
