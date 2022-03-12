@@ -6,7 +6,8 @@
       "phone": "702-435-2608",
       "logourl": "images/companies/ethelm.webp",
       "membership": "Gold",
-      "website": "https://www.ethelm.com"
+      "website": "https://www.ethelm.com",
+      "slogan": "A Tradition of Craft"
     },
 
     {
@@ -15,7 +16,8 @@
       "phone": "702-450-1222",
       "logourl": "images/companies/quick_tow.webp",
       "membership": "Bronze",
-      "website": "https://www.quiktowlv.com"
+      "website": "https://www.quiktowlv.com",
+      "slogan": "We get you home and safe"
     },
 
     {
@@ -24,7 +26,8 @@
       "phone": "702-649-6250",
       "logourl": "images/companies/aggregate.webp",
       "membership": "Gold",
-      "website": "https://www.aggregate.com"
+      "website": "https://www.aggregate.com",
+      "slogan": "Building for Growth"
     },
 
     {
@@ -33,9 +36,8 @@
       "phone": "702-645-1399",
       "logourl": "images/companies/ranch_house.webp",
       "membership": "Bronze",
-      "website": "https://bobtaylorsranchhouse.com"
-
-      
+      "website": "https://bobtaylorsranchhouse.com",
+      "slogan": "Best steaks in the state"
     },
 
     {
@@ -44,7 +46,8 @@
       "phone": "702-655-5544",
       "logourl": "images/companies/ricks.webp",
       "membership": "Gold",
-      "website": "http://www.ricksrestorations.com"
+      "website": "http://www.ricksrestorations.com",
+      "slogan": "From trash to treasure"
     },
 
     {
@@ -53,7 +56,8 @@
       "phone": "702-595-6666",
       "logourl": "images/companies/lion_habitat.webp",
       "membership": "NP",
-      "website": "https://lionhabitatranch.org"
+      "website": "https://lionhabitatranch.org",
+      "slogan": "Fall in love with our lions"
     },
 
     {
@@ -62,8 +66,8 @@
       "phone": "702-990-1303",
       "logourl": "images/companies/northwest_landscape.webp",
       "membership": "Silver",
-      "website": "https://landscaping.vegas"
-
+      "website": "https://landscaping.vegas",
+      "slogan": "We’re a full-service landscaping company"
       
     },
 
@@ -73,7 +77,8 @@
       "phone": "702-873-7722",
       "logourl": "images/companies/spca.webp",
       "membership": "NP",
-      "website": "https://nevadaspca.org"
+      "website": "https://nevadaspca.org",
+      "slogan": "Advance the safety and well-being of animals"
     },
 
     {
@@ -82,7 +87,8 @@
       "phone": "702-384-6868",
       "logourl": "images/companies/omelet_house.webp",
       "membership": "Bronze",
-      "website": "https://omelethouselv.com"
+      "website": "https://omelethouselv.com",
+      "slogan": "Big Breakfast | Best Burgers"
     },
 
     {
@@ -91,7 +97,8 @@
       "phone": "702-385-7912",
       "logourl": "images/companies/gs_pawn.webp",
       "membership": "Gold",
-      "website": "https://gspawn.com"
+      "website": "https://gspawn.com",
+      "slogan": "As seen on TV"
     },
 
     {
@@ -100,7 +107,8 @@
       "phone": "702-466-1278",
       "logourl": "images/companies/findlay.webp",
       "membership": "Gold",
-      "website": "https://findlayhonda.com"
+      "website": "https://findlayhonda.com",
+      "slogan": "We will buy your car with an instant offer"
     },
 
     {
@@ -109,7 +117,8 @@
       "phone": "702-722-6642",
       "logourl": "images/companies/maximum.webp",
       "membership": "Silver",
-      "website": "https://www.maximumcomics.com"
+      "website": "https://www.maximumcomics.com",
+      "slogan": "Thousands of books in stock"
     }
 
 

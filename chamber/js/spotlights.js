@@ -6,12 +6,13 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const businesses = jsonObject["business"];
-    let premium = businesses.filter(a => a.membership == "Gold" || a.membership == "Silver");
-    premium = premium.sort(() => Math.random() - 0.5)
+    let premium = businesses.filter(
+      (a) => a.membership == "Gold" || a.membership == "Silver"
+    );
+    premium = premium.sort(() => Math.random() - 0.5);
     displayBusiness(premium[0]);
     displayBusiness(premium[1]);
     displayBusiness(premium[2]);
-
   });
 
 function displayBusiness(business) {
@@ -20,8 +21,9 @@ function displayBusiness(business) {
   let imageLogo = document.createElement("img");
   let imageMember = document.createElement("img");
   let memberLink = document.createElement("a");
-  let name = document.createElement("p");
+  let slogan = document.createElement("p");
 
+  slogan.innerText = business.slogan;
 
   // Set values for image logo
   imageLogo.setAttribute("src", business.logourl);
@@ -42,10 +44,10 @@ function displayBusiness(business) {
   memberLink.classList.add("card-medal-link");
   memberLink.appendChild(imageMember);
 
-
   // Add elements to card
   card.appendChild(imageLogo);
-  card.appendChild(name);
+  card.appendChild(slogan);
+
   if (
     business.membership.toLowerCase() == "gold" ||
     business.membership.toLowerCase() == "silver"
@@ -58,4 +60,3 @@ function displayBusiness(business) {
   // Add card to business cards
   document.querySelector("div.spotlights").appendChild(card);
 }
-
