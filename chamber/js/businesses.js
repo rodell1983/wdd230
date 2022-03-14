@@ -31,6 +31,7 @@ function displayBusiness(business) {
   webLink.href = business.website;
   webLink.title = `Visit ${business.name} Website`;
   webLink.appendChild(imageLogo);
+  webLink.classList.add("card-logo-link");
 
   // Set values for the Medal Icon
   imageMember.setAttribute(

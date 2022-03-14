@@ -442,6 +442,10 @@ input {
   display: none;
 }
 
+.card-list .card-logo-link{
+  display: none;
+}
+
 .card-logo {
   width: 200px;
 }
