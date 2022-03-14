@@ -88,7 +88,8 @@ footer {
   padding: 0.25rem;
 }
 
-.social-bar img:hover {
+.social-bar img:hover,
+.header-logo:hover {
   filter: brightness(115%);
   transition: all 0.5s ease-out;
 }
