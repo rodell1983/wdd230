@@ -59,7 +59,7 @@
     display: grid;
   }
 
-  .spotlights:last-child{
+  .spotlight:last-child{
     display: block;
   }
 

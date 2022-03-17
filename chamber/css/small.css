@@ -253,8 +253,8 @@ footer {
   display: block;
 }
 
-.spotlights:first{
-  background-color: pink;
+.spotlight:last-child{
+  display: none;
 }
 
 .weather {
