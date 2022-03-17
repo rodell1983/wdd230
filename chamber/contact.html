@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Las Vegas Chamber of Commerce</title>
+    <title>Las Vegas Chamber of Commerce - Join</title>
     <meta
       name="description"
-      content="Las Vegas Chamber of Commerce. A place where small buisnesses can get together and improve the community."
+      content="Las Vegas Chamber of Commerce Join. Four membership tiers to join our great chamber"
     />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,7 +31,7 @@
       </div>
       <header>
         <div class="logo">
-          <a href="index.html" title="LVCOC Chamber"
+          <a href="index.html" title="Las Vegas Chamber"
             ><picture
               ><img
                 class="header-logo"
@@ -89,53 +89,62 @@
             <li>
               <a class="menu-font" href="join.html">Join</a>
             </li>
-            <li><a class="menu-font" href="contact.html">Contact</a></li>
+            <li><a class="menu-font active" href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="date"></div>
       </header>
-
-      <main class="home-main">
-        <div class="hero block shadow">
-          <h2>Welcome to Las Vegas</h2>
-          <picture>
-            <source media="(min-width: 60em)" srcset="images/hero-large.webp" />
-            <source media="(min-width: 32.5em)" srcset="images/hero-med.webp" />
-            <source
-              media="(max-width: 520px)"
-              srcset="images/hero-small.webp"
-            />
-            <img src="images/hero-small.webp" alt="" />
-          </picture>
-          <div class="join-button shadow floating">
-            <a class="menu-font btn-link" href="join.html">Join Chamber!</a>
-          </div>
-        </div>
-        <div class="event block shadow">
-          <h2>Ribbon Cutting</h2>
-          <h3>Mom's Diner</h3>
-          <p>Join us this Saturday for our grand opening. 10% off.</p>
-        </div>
-        <div class="weather block shadow">
-          <h2>Weather</h2>
-        </div>
-        <div class="news block shadow">
-          <h2>News</h2>
-          <p>
-            Be sure to visit the 50th annual LVCOC benefit dinner next Friday.
-            Proceeds will go to the local library. Gold and Silver chamber
-            members can invite one guest for free with purchase of dinner.
-          </p>
-        </div>
-        <div class="spotlights block shadow">
-
-        </div>
-        <div class="join block shadow">
-          <div class="join-button shadow">
-            <a class="menu-font" href="join.html">Join Us</a>
-          </div>
-          <p>Click Now! to discover all the benefits of being a member.</p>
-        </div>
+      <main class="contact-main">
+        <form class="contact-form" method="get" action="thanks.html">
+          <fieldset class="join-form-details shadow">
+            <legend class="shadow">Contact Us</legend>
+            <label
+              >First name:<input
+                type="text"
+                name="fname"
+                required
+                placeholder="* Your Name"
+            /></label>
+            <label
+              >Last name:<input
+                type="text"
+                name="lname"
+                required
+                placeholder="* Your Name"
+            /></label>
+            <label
+              >Email:<input
+                type="email"
+                name="email"
+                placeholder="* yourname@company.com"
+                required
+            /></label>
+            <label
+              >Cell Phone #:<input
+                type="tel"
+                name="phone"
+                required
+                placeholder="* 1235551234"
+            /></label>
+            <label
+            >Detailed Question
+            <textarea
+              name="bdescription"
+              rows="5"
+              placeholder="Please let us know how we're doing"
+            ></textarea>
+          </label>
+          <p>* Required Information</p>
+            
+          </fieldset>
+          <button
+            class="join-button menu-font shadow"
+            type="submit"
+            value="Submit"
+          >
+            Send Message
+          </button>
+        </form>
       </main>
       <footer>
         <div class="footer-logo">
@@ -152,13 +161,11 @@
           <p>123 Sunny Lane</p>
           <p>Las Vegas, Nevada 89111</p>
         </div>
-
         <div>
           <p>info@lvcoc.com</p>
           <p>702-555-3427</p>
           <p>Location</p>
         </div>
-
         <div class="time-stamp">
           <span class="time-el">
             &copy; <span id="current-year"></span> Las Vegas Chamber
@@ -172,7 +179,5 @@
       </footer>
     </div>
     <script src="js/script.js"></script>
-    <script src="js/weather.js"></script>
-    <script src="js/spotlights.js"></script>
   </body>
 </html>
