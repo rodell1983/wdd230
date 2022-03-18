@@ -100,6 +100,10 @@ footer {
   content: "\2630";
 }
 
+.navigation a.ham {
+  border-radius: 6px 0 0 6px;
+}
+
 .main-menu {
   margin: 0;
   background-color: var(--light-blue);
