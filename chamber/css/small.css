@@ -237,10 +237,6 @@ footer {
   cursor: pointer;
 }
 
-.join {
-  display: grid;
-}
-
 .spotlight {
   position: relative;
   border: 2px solid var(--dark-blue);
@@ -253,13 +249,8 @@ footer {
   display: block;
 }
 
-.spotlight:last-child{
+.spotlight:last-child {
   display: none;
-}
-
-.weather {
-  display: grid;
-  justify-content: center;
 }
 
 .temp {
@@ -275,22 +266,14 @@ footer {
   grid-gap: 0.5rem;
 }
 
-.discover-block {
-  display: grid;
-  justify-items: center;
-  border-radius: 1rem;
-  background-color: #fff;
-  padding: 0.5rem;
-}
 .discover-block-text {
   align-items: start;
 }
 .discover-block-pic {
   width: 100%;
   height: fit-content;
-  background: #fff;
   overflow: hidden;
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 6px 6pc 0 0;
 }
 
 .visits {
@@ -379,7 +362,7 @@ input {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
 }
 
 .list {
@@ -403,7 +386,6 @@ input {
   display: block;
   position: relative;
   padding: 1rem;
-
 }
 
 .card-list:nth-child(odd) {
@@ -423,15 +405,15 @@ input {
   color: #fff;
 }
 
-.card-medal{
+.card-medal {
   width: 32px;
 }
 
 .grid .card-medal,
-.spotlight .card-medal{
+.spotlight .card-medal {
   position: absolute;
-  top: .5rem;
-  right: .5rem;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 .card-list > * {
@@ -439,11 +421,11 @@ input {
   margin: 0;
 }
 
-.card-list .card-logo{
+.card-list .card-logo {
   display: none;
 }
 
-.card-list .card-logo-link{
+.card-list .card-logo-link {
   display: none;
 }
 
@@ -467,15 +449,14 @@ input {
   margin: 1rem;
   border-radius: 5px;
   border: solid 3px #fff;
-  
 }
 
-.card-medal:hover{
+.card-medal:hover {
   transform: scale(1.2);
 }
 
 .list-view-button:hover,
-.grid-view-button:hover{
+.grid-view-button:hover {
   color: var(--orange);
   background-color: var(--orange);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -489,15 +470,14 @@ input {
 
 /* Contact Page */
 
-.contact-info{
+.contact-info {
   display: grid;
   justify-items: center;
 }
 
-.contact-info p{
+.contact-info p {
   margin: 0;
 }
-
 
 /* Thank You Page */
 
