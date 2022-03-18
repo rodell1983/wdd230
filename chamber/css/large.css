@@ -105,4 +105,8 @@
     top: .5rem;
     right: .5rem;
   }
+
+  .contact-main{
+    grid-template-columns: 1fr 1fr;
+  }
 }

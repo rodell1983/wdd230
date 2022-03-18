@@ -475,7 +475,7 @@ input {
 }
 
 .list-view-button:hover,
-.grid-view-button:hover {
+.grid-view-button:hover{
   color: var(--orange);
   background-color: var(--orange);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -485,6 +485,17 @@ input {
 .svg-icon {
   width: 3rem;
   height: 3rem;
+}
+
+/* Contact Page */
+
+.contact-info{
+  display: grid;
+  justify-items: center;
+}
+
+.contact-info p{
+  margin: 0;
 }
 
 
