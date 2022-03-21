@@ -1,15 +1,9 @@
 :root {
-  --dark-blue: #29528B;
-  --light-blue: #5992B7;
-  --light-orange: #F2AF81;
-  --orange: #D37560;
-  --peach: #FBE0B4;
-
-
   --light-teal :#cad8d8;
   --teal: #6e8a91;
   --off-white: #fffbfb;
   --purple: #9f6067;
+  --dark-teal:#014d4e;
 }
 
 body {
@@ -40,6 +34,7 @@ main {
   display: grid;
   padding: 1rem;
   background-color: var(--off-white);
+  color: var(--dark-teal);
 }
 
 footer {
@@ -109,25 +104,24 @@ footer {
   height: 100px;
 }
 
-.dark-blue-tab {
-  background-color: var(--dark-blue);
+.light-teal-tab {
+  background-color: var(--light-teal);
+  color: var(--dark-teal);
 }
 
-.light-blue-tab {
-  background-color: var(--light-blue);
+.teal-tab {
+  background-color: var(--teal);
 }
 
-.orange-tab {
-  background-color: var(--orange);
-}
-.light-orange-tab {
-  background-color: var(--light-orange);
-}
-
-.peach-tab {
-  background-color: var(--peach);
+.off-white-tab {
+  background-color: var(--off-white);
+  color: var(--dark-teal);
 }
 
 .purple-tab {
   background-color: var(--purple);
+}
+
+.dark-teal-tab {
+  background-color: var(--dark-teal);
 }
