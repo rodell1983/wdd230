@@ -20,7 +20,7 @@ body {
 
 header,
 footer {
-  background-color: var(--teal);
+  background-color: var(--purple);
   color: #fff;
   text-align: center;
 }
@@ -33,7 +33,7 @@ header {
 
 header,
 main {
-  border: 1px solid var(--light-teal);
+  border: 1px solid var(--purple);
 }
 
 main {
@@ -56,7 +56,7 @@ footer {
 }
 
 .main-menu {
-  background-color: var(--purple);
+  background-color: var(--teal);
 }
 
 .main-menu ul {
@@ -77,12 +77,12 @@ footer {
 }
 
 .main-menu a:hover {
-  background-color: var(--teal);
+  background-color: var(--purple);
 
 }
 
 .main-menu ul li.active a {
-  background-color: var(--teal);
+  background-color: var(--purple);
 }
 
 .menu-font {
