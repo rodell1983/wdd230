@@ -3,7 +3,7 @@
   --teal: #6e8a91;
   --off-white: #fffbfb;
   --purple: #9f6067;
-  --dark-teal:#014d4e;
+  --dark-teal:#18454b;
 }
 
 body {
@@ -48,6 +48,7 @@ footer {
 
 .logo{
   width: 200px;
+  background-color: var(--purple);
 }
 
 .main-menu {
@@ -72,12 +73,12 @@ footer {
 }
 
 .main-menu a:hover {
-  background-color: var(--purple);
+  background-color: var(--light-teal);
+  color: var(--dark-teal);
 
 }
 
 .main-menu ul li.active a {
-  background-color: var(--purple);
 }
 
 .menu-font {
@@ -99,9 +100,11 @@ footer {
   padding: .5rem;
 }
 
+
 .color-tab {
   width: 200px;
   height: 100px;
+  border: 1px solid #000;
 }
 
 .light-teal-tab {
