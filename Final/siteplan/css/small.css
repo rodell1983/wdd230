@@ -1,0 +1,133 @@
+:root {
+  --dark-blue: #29528B;
+  --light-blue: #5992B7;
+  --light-orange: #F2AF81;
+  --orange: #D37560;
+  --peach: #FBE0B4;
+
+
+  --light-teal :#cad8d8;
+  --teal: #6e8a91;
+  --off-white: #fffbfb;
+  --purple: #9f6067;
+}
+
+body {
+  font-family: 'Libre Baskerville', Arial, sans-serif;
+  background-color: var(--light-teal);
+  line-height: 1.75rem;
+}
+
+header,
+footer {
+  background-color: var(--teal);
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+}
+
+header,
+main {
+  border: 1px solid var(--light-teal);
+}
+
+main {
+  display: grid;
+  padding: 1rem;
+  background-color: var(--off-white);
+}
+
+footer {
+  padding: 1rem;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo{
+  width: 200px;
+}
+
+.main-menu {
+  background-color: var(--purple);
+}
+
+.main-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-menu ul li:last-child {
+  border-right: 2px solid #fff;
+}
+
+.main-menu ul li a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  background-color: var(--teal);
+
+}
+
+.main-menu ul li.active a {
+  background-color: var(--teal);
+}
+
+.menu-font {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.persona-group{
+  display: grid;
+  grid-gap: .5rem;
+}
+
+.persona{
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: .5rem;
+}
+
+.color-tab {
+  width: 200px;
+  height: 100px;
+}
+
+.dark-blue-tab {
+  background-color: var(--dark-blue);
+}
+
+.light-blue-tab {
+  background-color: var(--light-blue);
+}
+
+.orange-tab {
+  background-color: var(--orange);
+}
+.light-orange-tab {
+  background-color: var(--light-orange);
+}
+
+.peach-tab {
+  background-color: var(--peach);
+}
+
+.purple-tab {
+  background-color: var(--purple);
+}
