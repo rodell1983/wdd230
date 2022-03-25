@@ -138,3 +138,7 @@ footer {
 .dark-teal-tab {
   background-color: var(--dark-teal);
 }
+
+@media print {
+  .page-break {page-break-after: always;}
+}
