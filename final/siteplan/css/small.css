@@ -1,13 +1,13 @@
 :root {
-  --light-teal :#cad8d8;
+  --light-teal: #cad8d8;
   --teal: #6e8a91;
   --off-white: #fffbfb;
   --purple: #9f6067;
-  --dark-teal:#18454b;
+  --dark-teal: #18454b;
 }
 
 body {
-  font-family: 'Libre Baskerville', Arial, sans-serif;
+  font-family: "Libre Baskerville", Arial, sans-serif;
   background-color: var(--light-teal);
   line-height: 1.75rem;
 }
@@ -37,6 +37,18 @@ main {
   color: var(--dark-teal);
 }
 
+h1,
+h2 {
+  font-family: "Cookie", cursive, sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+
 footer {
   padding: 1rem;
 }
@@ -46,7 +58,7 @@ footer {
   margin: 0 auto;
 }
 
-.logo{
+.logo {
   width: 200px;
   background-color: var(--purple);
 }
@@ -75,7 +87,6 @@ footer {
 .main-menu a:hover {
   background-color: var(--light-teal);
   color: var(--dark-teal);
-
 }
 
 .main-menu ul li.active a {
@@ -89,17 +100,16 @@ footer {
   font-weight: bold;
 }
 
-.persona-group{
+.persona-group {
   display: grid;
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
 }
 
-.persona{
+.persona {
   border: 1px solid #000;
   border-radius: 5px;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-
 
 .color-tab {
   width: 200px;
