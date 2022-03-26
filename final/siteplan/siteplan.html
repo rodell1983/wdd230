@@ -15,9 +15,149 @@
       href="https://fonts.googleapis.com/css2?family=Cookie&family=Libre+Baskerville&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
+    <style>
+      :root {
+  --light-teal: #cad8d8;
+  --teal: #6e8a91;
+  --off-white: #fffbfb;
+  --purple: #9f6067;
+  --dark-teal: #18454b;
+}
+
+body {
+  font-family: "Libre Baskerville", Arial, sans-serif;
+  background-color: var(--light-teal);
+  line-height: 1.75rem;
+}
+
+header,
+footer {
+  background-color: var(--purple);
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+}
+
+header,
+main {
+  border: 1px solid var(--purple);
+}
+
+main {
+  display: grid;
+  padding: 1rem;
+  background-color: var(--off-white);
+  color: var(--dark-teal);
+}
+
+h1,
+h2 {
+  font-family: "Cookie", cursive, sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+
+footer {
+  padding: 1rem;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 200px;
+  background-color: var(--purple);
+}
+
+.main-menu {
+  background-color: var(--teal);
+}
+
+.main-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-menu ul li:last-child {
+  border-right: 2px solid #fff;
+}
+
+.main-menu ul li a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  background-color: var(--light-teal);
+  color: var(--dark-teal);
+}
+
+.main-menu ul li.active a {
+}
+
+.menu-font {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.persona-group {
+  display: grid;
+  grid-gap: 0.5rem;
+}
+
+.persona {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.color-tab {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #000;
+}
+
+.light-teal-tab {
+  background-color: var(--light-teal);
+  color: var(--dark-teal);
+}
+
+.teal-tab {
+  background-color: var(--teal);
+}
+
+.off-white-tab {
+  background-color: var(--off-white);
+  color: var(--dark-teal);
+}
+
+.purple-tab {
+  background-color: var(--purple);
+}
+
+.dark-teal-tab {
+  background-color: var(--dark-teal);
+}
+
+    </style>
   </head>
   <body>
     <header>
