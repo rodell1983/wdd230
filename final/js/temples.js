@@ -22,7 +22,7 @@ function displayTemples(temple) {
 
   let templeLike = document.createElement("div");
   templeLike.classList.add("temple-like");
-  templeLike.textContent = "&#10084;";
+  templeLike.textContent = "\u2665";
 
   let cardBody = document.createElement("div");
   cardBody.classList.add("temple-card-body");

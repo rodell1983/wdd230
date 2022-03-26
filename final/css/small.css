@@ -80,10 +80,9 @@ footer {
   overflow: hidden;
 }
 
-
 .main-menu ul li a {
   display: block;
-  padding: 0.25rem .75rem .25rem .75rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
   text-decoration: none;
 }
 
@@ -92,7 +91,6 @@ footer {
   background-color: var(--light-teal);
   color: var(--dark-teal);
 }
-
 
 .menu-font {
   color: #fff;
@@ -136,4 +134,24 @@ label,
 input {
   display: flex;
   flex-direction: column;
+}
+/* Temple Cards */
+.temple-cards {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.temple-card {
+  display: grid;
+  position: relative;
+}
+
+.temple-card img {
+  width: 200px;
+}
+
+.temple-like {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
