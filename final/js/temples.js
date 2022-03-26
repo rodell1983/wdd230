@@ -32,7 +32,7 @@ function displayTemples(temple) {
   cardBody.appendChild(templeTitle);
 
   let templeAddress = document.createElement("p");
-  templeAddress.innerHTML = `${temple.address} ${temple.phone} ${temple.email}`;
+  templeAddress.innerHTML = `${temple.address}<br>${temple.phone}<br>${temple.email}`;
   cardBody.appendChild(templeAddress);
 
   let templeHistoryT = document.createElement("h3");
@@ -42,6 +42,14 @@ function displayTemples(temple) {
   let templeHistory = document.createElement("p");
   templeHistory.textContent = temple.history;
   cardBody.appendChild(templeHistory);
+
+  let templeServicesT = document.createElement("h3");
+  templeServicesT.textContent = "Services";
+  cardBody.appendChild(templeServicesT);
+
+  let templeServices = document.createElement("p");
+  templeServices.textContent = temple.services;
+  cardBody.appendChild(templeServices);
 
   card.appendChild(templeImage);
   card.appendChild(templeLike);
