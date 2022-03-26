@@ -5,9 +5,10 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    const temples = jsonObject["temple"];
-    temples.forEach(displayTemples);
-    loadSettings();
+    let temples = jsonObject["temple"];
+      //temples = temples.sort(() => Math.random() - 0.5);
+      displayTemples(temples[0]);
+
   });
 
 function displayTemples(temple) {
@@ -31,10 +32,6 @@ function displayTemples(temple) {
   templeTitle.textContent = temple.name;
   cardBody.appendChild(templeTitle);
 
-  let templeAddress = document.createElement("p");
-  templeAddress.innerHTML = `${temple.address}<br>${temple.phone}<br>${temple.email}`;
-  cardBody.appendChild(templeAddress);
-
   let templeHistoryT = document.createElement("h3");
   templeHistoryT.textContent = "History";
   cardBody.appendChild(templeHistoryT);
@@ -43,26 +40,13 @@ function displayTemples(temple) {
   templeHistory.textContent = temple.history;
   cardBody.appendChild(templeHistory);
 
-  let templeServicesT = document.createElement("h3");
-  templeServicesT.textContent = "Services";
-  cardBody.appendChild(templeServicesT);
-
-
-  let serviceList = document.createElement('ul');
-  for (let i in temple.services) {
-    item = document.createElement("li");
-    item.textContent = temple.services[i];
-
-    serviceList.appendChild(item);
-  }
-  cardBody.appendChild(serviceList);
 
   card.appendChild(templeImage);
   card.appendChild(templeLike);
   card.appendChild(cardBody);
 
   // Add card to temple cards
-  document.querySelector("div.temple-cards").appendChild(card);
+  document.querySelector("spotlight").appendChild(card);
 
   // LocalStorage settings
   function loadSettings() {}
