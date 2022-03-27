@@ -57,3 +57,11 @@
     border-bottom: 1px solid var(--light-teal);
   }
 }
+
+@media only screen and (min-width: 40em) {
+
+    .slide-show {
+        grid-column: 1/3;
+      }
+
+}

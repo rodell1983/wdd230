@@ -33,6 +33,7 @@ main {
 main {
   display: grid;
   padding: 1rem;
+  grid-gap: .5rem;
   background-color: var(--off-white);
   color: var(--dark-teal);
 }
@@ -163,6 +164,7 @@ footer {
 .weather-forecast{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .25rem;
   background-color: var(--dark-teal);
   color: #fff;
   justify-items: center;
