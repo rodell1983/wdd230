@@ -173,3 +173,46 @@ input {
   transition: ease-out .5s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
 }
+
+/* Weather */
+
+.weather-sky{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: var(--dark-teal);
+  color: #fff;
+  justify-items: center;
+  padding: .5rem;
+}
+
+.weather-sky span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: .5rem;
+}
+
+.weather-img{
+  grid-row: 1/4;
+}
+
+.weather-forecast{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--dark-teal);
+  color: #fff;
+  justify-items: center;
+  padding: .5rem;
+}
+
+.weather-daily{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--teal);
+  padding: .5rem 1rem .5rem 1rem;
+  border-radius: 5px;
+  justify-items: center;
+}
+
+.weather-daily img {
+  width: 24px;
+}

@@ -14,6 +14,7 @@ fetch(apiURL)
     let weatherDesc = jsonObject.weather[0].main.toLowerCase();
     let weatherDescText = jsonObject.weather[0].description;
 
+
     let sky = document.createElement("div");
     let weatherImg = document.createElement("img");
     let weatherTemp = document.createElement("span");

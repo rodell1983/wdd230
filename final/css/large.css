@@ -1,12 +1,28 @@
-
 @media only screen and (min-width: 60em) {
-header{
-  grid-template-columns: minmax(200px, auto) auto minmax(100px, auto) ;
-}
-.main-menu {
-  display: block;
-}
-.nav-ham {
-  display: none;
-}
+  header {
+    grid-template-columns: minmax(200px, auto) auto minmax(100px, auto);
+  }
+  .main-menu {
+    display: block;
+  }
+  .nav-ham {
+    display: none;
+  }
+
+  .home-main {
+    display: grid;
+    grid-template-columns: 33% 67%;
+  }
+
+  .weather {
+    grid-column: 1;
+  }
+
+  .spotlight {
+    grid-column: 1;
+  }
+
+  .slide-show {
+    grid-column: 2;
+  }
 }

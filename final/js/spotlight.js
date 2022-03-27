@@ -46,7 +46,7 @@ function displayTemples(temple) {
   card.appendChild(cardBody);
 
   // Add card to temple cards
-  document.querySelector("spotlight").appendChild(card);
+  document.querySelector(".spotlight").appendChild(card);
 
   // LocalStorage settings
   function loadSettings() {}
