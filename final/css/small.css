@@ -207,14 +207,18 @@ input {
 .weather-daily{
   display: grid;
   grid-template-columns: 1fr;
-  background-color: var(--teal);
+  background-color: var(--light-teal);
+  color: var(--dark-teal);
   padding: .5rem 1rem .5rem 1rem;
   border-radius: 5px;
   justify-items: center;
 }
 
 .weather-daily img {
-  width: 24px;
+  width: 32px;
+  background-color: var(--dark-teal);
+  padding: .5rem;
+  border-radius: 5px;
 }
 
 /* Spotlight */
