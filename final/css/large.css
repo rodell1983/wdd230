@@ -11,7 +11,8 @@
 
   .home-main {
     display: grid;
-    grid-template-columns: 33% 67%;
+    grid-template-columns: 300px 1fr;
+    grid-gap: .5rem;
   }
 
   .weather {
@@ -24,5 +25,6 @@
 
   .slide-show {
     grid-column: 2;
+    grid-row: 1/3;
   }
 }

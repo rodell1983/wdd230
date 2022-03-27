@@ -216,3 +216,8 @@ input {
 .weather-daily img {
   width: 24px;
 }
+
+/* Spotlight */
+.spotlight img {
+  width: 100%;
+}
