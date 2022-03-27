@@ -2,12 +2,7 @@
   header {
     grid-template-columns: minmax(200px, auto) auto minmax(100px, auto);
   }
-  .main-menu {
-    display: block;
-  }
-  .nav-ham {
-    display: none;
-  }
+ 
 
   .home-main {
     display: grid;
@@ -27,4 +22,14 @@
     grid-column: 2;
     grid-row: 1/3;
   }
+
+  .temple-cards{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  
+
 }

@@ -66,38 +66,7 @@ footer {
   text-align: left;
 }
 
-.main-menu {
-  display: none;
-  background-color: var(--purple);
-}
 
-.main-menu ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.main-menu ul li a {
-  display: block;
-  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-  text-decoration: none;
-}
-
-.main-menu a:hover {
-  border-radius: 16px;
-  background-color: var(--light-teal);
-  color: var(--dark-teal);
-}
-
-.menu-font {
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
 
 .header-logo {
   width: 100px;
@@ -113,6 +82,16 @@ footer {
   content: "\2630";
 }
 
+.responsive{
+  display: block;
+}
+
+.responsive ul{
+  position: absolute;
+  display: grid;
+  right: 0;
+}
+
 .site-map {
   list-style-type: none;
   margin: 0;
@@ -120,23 +99,10 @@ footer {
   overflow: hidden;
 }
 
-input,
-textarea,
-button,
-select {
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-  border-radius: 4px;
-  border: 2px solid var(--teal);
-}
-
-label,
-input {
-  display: flex;
-  flex-direction: column;
 }
 /* Temple Cards */
-.temple-cards {
+ 
+.temple-cards{
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
@@ -147,9 +113,7 @@ input {
   position: relative;
 }
 
-.temple-card img {
 
-}
 
 .temple-like {
   display: grid;
@@ -182,6 +146,7 @@ input {
   background-color: var(--dark-teal);
   color: #fff;
   justify-items: center;
+  align-items: center;
   padding: .5rem;
 }
 
@@ -224,4 +189,129 @@ input {
 /* Spotlight */
 .spotlight img {
   width: 100%;
+}
+
+/* Forms */
+button{
+  background-color: var(--purple);
+  color: var(--dark-teal);
+}
+
+button:hover{
+  background-color: var(--light-teal);
+  color: var(--dark-teal);
+}
+
+
+input,
+textarea,
+button,
+select {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 2px solid var(--teal);
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+}
+
+/* New Nav */
+  
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--purple);
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu > li {
+  margin: 0 1rem;
+}
+
+
+.menu li a {
+  display: block;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  border-radius: 16px;
+  background-color: var(--light-teal);
+  color: var(--dark-teal);
+}
+
+.menu-font {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+  
+  
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
 }
