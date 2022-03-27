@@ -10,6 +10,7 @@ fetch(apiURL)
   });
 
 function capWords(str) {
+
   const words = str.split(" ");
 
   for (let i = 0; i < words.length; i++) {
@@ -19,6 +20,7 @@ function capWords(str) {
   return words.join(" ");
 }
 
+
 function getDaily(day) {
   let dayName = new Date(day.dt * 1000).toLocaleDateString("en", {
     weekday: "short",
@@ -27,7 +29,7 @@ function getDaily(day) {
   let weatherDesc = day.weather[0].main;
   let weatherImg = document.createElement("img");
 
-  weatherImg.src = `images/weather/${weatherDesc}.png`;
+  weatherImg.src = `images/weather/${weatherDesc.toLowerCase()}.png`;
   weatherImg.alt = weatherDesc;
   weatherImg.addEventListener("error", function (event) {
     event.target.src = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
@@ -75,7 +77,7 @@ function loadWeatherCard(jsonObject) {
   weatherRH.classList.add("rh");
 
   //Weather Icon Image
-  weatherImg.src = `images/weather/${weatherDesc}.png`;
+  weatherImg.src = `images/weather/${weatherDesc.toLowerCase()}.png`;
   weatherImg.alt = weatherDesc;
   weatherImg.addEventListener("error", function (event) {
     event.target.src = `https://openweathermap.org/img/w/${current.weather[0].icon}.png`;
