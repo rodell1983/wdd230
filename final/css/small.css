@@ -51,6 +51,10 @@ h2 {
   font-size: 2.2rem;
 }
 
+img {
+  width: 100%;
+}
+
 footer {
   padding: 1rem;
 }
@@ -113,9 +117,16 @@ footer {
 .temple-card {
   display: grid;
   position: relative;
+  border: solid 2px var(--teal);
 }
 
+.temple-card image {
+  width: 100%;
+}
 
+.temple-card-body {
+  padding: .5rem;
+}
 
 .temple-like {
   display: grid;
@@ -134,10 +145,14 @@ footer {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
 }
 
-.temple-like:hover {
+.temple-like:hover{
   transform: scale(1.2);
   transition: ease-out .5s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+}
+
+.temple-like-liked{
+  color: pink;
 }
 
 /* Weather */
@@ -167,12 +182,11 @@ footer {
 }
 
 .weather-forecast{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   grid-gap: .25rem;
   background-color: var(--dark-teal);
   color: #fff;
-  justify-items: center;
+  justify-content: center;
   padding: .5rem;
 }
 
@@ -239,8 +253,8 @@ input {
   justify-content: space-between;
   background-color: var(--purple);
   color: #FFF;
-  height: 50px;
-  padding: 1em;
+
+  padding: 1rem;
 }
 
 .menu {
@@ -333,4 +347,22 @@ input {
 
 .slides {
   transition: ease-in 2s;
+}
+
+.slide-show{
+  position: relative;
+}
+
+.book{
+  background-color: #607B80;
+  color: #cad8d8;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+/* Untilty Classes */
+
+.shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
 }

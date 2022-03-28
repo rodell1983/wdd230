@@ -14,6 +14,7 @@ function displayTemples(temple) {
   // Create elements to add to the document
   let card = document.createElement("div");
   card.classList.add("temple-card");
+  card.classList.add("shadow");
 
   let templeImage = document.createElement("img");
   templeImage.setAttribute("src", temple.image);
@@ -22,6 +23,20 @@ function displayTemples(temple) {
 
   let templeLike = document.createElement("div");
   templeLike.classList.add("temple-like");
+  if(localStorage.getItem(temple.name) === "true"){
+    templeLike.classList.add("temple-like-liked");
+  }
+
+  templeLike.addEventListener("click", function () {
+    if(localStorage.getItem(temple.name) === "true"){
+      templeLike.classList.remove("temple-like-liked");
+      localStorage.setItem(temple.name,"false");
+    }else if(localStorage.getItem(temple.name) === "false"){
+      templeLike.classList.add("temple-like-liked");
+      localStorage.setItem(temple.name,"true");
+    }
+    weatherBlock.removeChild(weatherAlert);
+  });
   templeLike.textContent = "\u2665";
 
   let cardBody = document.createElement("div");
