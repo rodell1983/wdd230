@@ -1,6 +1,7 @@
 :root {
   --light-teal: #cad8d8;
-  --teal: #6e8a91;
+  /*--teal: #6e8a91;*/
+  --teal: #607B80;
   --off-white: #fffbfb;
   --purple: #9f6067;
   --dark-teal: #18454b;
@@ -141,10 +142,14 @@ footer {
 
 /* Weather */
 
+.weather{
+  width: auto;
+}
+
 .weather-sky{
   display: grid;
   grid-template-columns: auto auto;
-  background-color: var(--dark-teal);
+  background-color: var(--teal);
   color: #fff;
   justify-items: center;
   align-items: center;
@@ -165,7 +170,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: .25rem;
-  background-color: var(--dark-teal);
+  background-color: var(--teal);
   color: #fff;
   justify-items: center;
   padding: .5rem;
@@ -174,8 +179,8 @@ footer {
 .weather-daily{
   display: grid;
   grid-template-columns: 1fr;
-  background-color: var(--light-teal);
-  color: var(--dark-teal);
+  background-color: var(--dark-teal);
+  color: #fff;
   padding: .5rem 1rem .5rem 1rem;
   border-radius: 5px;
   justify-items: center;
@@ -183,9 +188,7 @@ footer {
 
 .weather-daily img {
   width: 32px;
-  background-color: var(--dark-teal);
-  padding: .5rem;
-  border-radius: 5px;
+
 }
 
 /* Spotlight */
@@ -195,13 +198,15 @@ footer {
 
 /* Forms */
 button{
-  background-color: var(--purple);
-  color: var(--dark-teal);
+  background-color: var(--teal);
+  color: var(--off-white);
+  border: solid 1px var(--off-white);
 }
 
 button:hover{
   background-color: var(--light-teal);
   color: var(--dark-teal);
+  border: solid 1px var(--dark-teal);
 }
 
 
@@ -316,4 +321,8 @@ input {
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
+}
+
+.form-inline{
+  display: flex;
 }

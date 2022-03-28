@@ -100,7 +100,70 @@
         </div>
       </header>
 
-      <main class="main-service">
+      <main>
+        <fieldset class="join-form-group shadow">
+          <legend class="shadow">Applicant Info</legend>
+          <div class="form-inline"><label
+            >First name:<input
+              type="text"
+              name="fname"
+              required
+              placeholder="* Business Owner"
+          /></label>
+          <label
+            >Last name:<input
+              type="text"
+              name="lname"
+              required
+              placeholder="* Business Owner"
+          /></label></div>
+          
+          <label
+            >address:<input
+              type="address"
+              name="address"
+              minlength="7"
+              placeholder="Street address"
+          /></label>
+          <div class="form-inline">
+            <label
+            >State:<input
+              type="state"
+              name="state"
+              placeholder="NV"
+              required
+          /></label>
+          <label
+            >Zip:<input
+              type="zip"
+              name="zip"
+              placeholder="12345"
+              required
+          /></label>
+          </div>
+          <label
+            >Email:<input
+              type="email"
+              name="email"
+              placeholder="* yourname@company.com"
+              required
+          /></label>
+          <label
+            >Cell Phone #:<input
+              type="tel"
+              name="phone"
+              required
+              placeholder="* 1235551234"
+          /></label>
+        
+          <button
+            class="join-button menu-font shadow"
+            type="submit"
+            value="Submit"
+          >
+            Join Now!
+          </button>
+        </fieldset>
         
       </main>
       <footer>

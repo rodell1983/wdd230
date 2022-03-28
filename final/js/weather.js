@@ -99,6 +99,21 @@ function loadWeatherCard(jsonObject) {
   weatherBlock = document.querySelector(".weather");
   weatherBlock.appendChild(sky);
   weatherBlock.appendChild(forecast);
+
+  let weatherAlert = document.createElement("div");
+  weatherAlert.textContent = jsonObject.alerts[0].event;
+
+  let btnRemove = document.createElement("button");
+  btnRemove.textContent = "❌";
+  btnRemove.ariaLabel = "Remove Alert";
+
+  weatherAlert.append(btnRemove);
+
+  btnRemove.addEventListener("click", function () {
+    weatherBlock.removeChild(weatherAlert);
+  });
+
+  weatherBlock.appendChild(weatherAlert)
 }
 
 function windChill(t, s) {
