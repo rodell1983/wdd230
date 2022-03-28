@@ -2,30 +2,76 @@
   "temple": [
     {
       "name": "Las Vegas Temple",
+      "address": "10060 Bramalea Rd, Brampton ON L6R 1A1, Canada",
+      "phone": "(1) 905-799-1122",
+      "image": "images/temples/toronto_temple_flowers.webp",
+      "email": "",
+      "services": [
+        "Clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+
+      "history": "The Las Vegas Temple was dedicated on December 16th 1989 by Gordon B. Hinckley, becoming the 43rd temple overall. It was also the first temple in the state of Nevada.",
+      "ordinanceSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
+      "sessionSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
+      "closureSched": [
+        "Saturday, 2 April 2022",
+        "Monday, 11 July 2022 - Monday, 25 July 2022",
+        "Saturday, 1 October 2022",
+        "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+        "Saturday, 24 December 2022"
+      ]
+    },
+
+    {
+      "name": "Toronto Ontario Temple",
       "address": "827 Temple View Dr, Las Vegas NV 89110-2920, United States",
       "phone": "(1) 702-452-5011",
       "image": "images/temples/las_vegas_temple.webp",
       "email": "",
-      "services": ["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
-      "history": "The Las Vegas Temple was dedicated on December 16th 1989 by Gordon B. Hinckley, becoming the 43rd temple overall. It was also the first temple in the state of Nevada.",
+      "services": [
+        "Clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "history": "On June 22, 1986, Thomas S. Monson, then a counselor in the First Presidency, created the LDS Church's 1,600th stake in Kitchener, Ontario, and announced a temple would be built in the Toronto area. Ground was broken to signify beginning of construction on 10 October 1987.",
       "ordinanceSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
       "sessionSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
-      "closureSched": ["Saturday, 2 April 2022","Monday, 11 July 2022 - Monday, 25 July 2022","Saturday, 1 October 2022","Wednesday, 23 November 2022 - Thursday, 24 November 2022","Saturday, 24 December 2022"]
 
+      "closureSched": [
+        "Saturday, 2 April 2022",
+        "Friday, 1 July 2022",
+        "Monday, 22 August 2022 - Monday, 5 September 2022",
+        "Saturday, 1 October 2022",
+        "Saturday, 24 December 2022",
+        "Saturday, 31 December 2022"
+      ]
     },
-
     {
       "name": "Las Vegas Temple",
       "address": "827 Temple View Dr, Las Vegas NV 89110-2920, United States",
       "phone": "(1) 702-452-5011",
       "image": "images/temples/las_vegas_temple.webp",
       "email": "",
-      "services": ["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
+      "services": [
+        "Clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
       "history": "The Las Vegas Temple was dedicated on December 16th 1989 by Gordon B. Hinckley, becoming the 43rd temple overall. It was also the first temple in the state of Nevada.",
       "ordinanceSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
       "sessionSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
-      "closureSched": ["Saturday, 2 April 2022","Monday, 11 July 2022 - Monday, 25 July 2022","Saturday, 1 October 2022","Wednesday, 23 November 2022 - Thursday, 24 November 2022","Saturday, 24 December 2022"]
-
+      "closureSched": [
+        "Saturday, 2 April 2022",
+        "Monday, 11 July 2022 - Monday, 25 July 2022",
+        "Saturday, 1 October 2022",
+        "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+        "Saturday, 24 December 2022"
+      ]
     },
     {
       "name": "Las Vegas Temple",
@@ -33,25 +79,22 @@
       "phone": "(1) 702-452-5011",
       "image": "images/temples/las_vegas_temple.webp",
       "email": "",
-      "services": ["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
+      "services": [
+        "Clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
       "history": "The Las Vegas Temple was dedicated on December 16th 1989 by Gordon B. Hinckley, becoming the 43rd temple overall. It was also the first temple in the state of Nevada.",
       "ordinanceSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
       "sessionSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
-      "closureSched": ["Saturday, 2 April 2022","Monday, 11 July 2022 - Monday, 25 July 2022","Saturday, 1 October 2022","Wednesday, 23 November 2022 - Thursday, 24 November 2022","Saturday, 24 December 2022"]
-
-    },
-    {
-      "name": "Las Vegas Temple",
-      "address": "827 Temple View Dr, Las Vegas NV 89110-2920, United States",
-      "phone": "(1) 702-452-5011",
-      "image": "images/temples/las_vegas_temple.webp",
-      "email": "",
-      "services": ["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
-      "history": "The Las Vegas Temple was dedicated on December 16th 1989 by Gordon B. Hinckley, becoming the 43rd temple overall. It was also the first temple in the state of Nevada.",
-      "ordinanceSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
-      "sessionSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
-      "closureSched": ["Saturday, 2 April 2022","Monday, 11 July 2022 - Monday, 25 July 2022","Saturday, 1 October 2022","Wednesday, 23 November 2022 - Thursday, 24 November 2022","Saturday, 24 December 2022"]
-
+      "closureSched": [
+        "Saturday, 2 April 2022",
+        "Monday, 11 July 2022 - Monday, 25 July 2022",
+        "Saturday, 1 October 2022",
+        "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+        "Saturday, 24 December 2022"
+      ]
     }
   ]
 }
