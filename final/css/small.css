@@ -149,7 +149,7 @@ footer {
 .weather-sky{
   display: grid;
   grid-template-columns: auto auto;
-  background-color: var(--teal);
+  background-color: var(--dark-teal);
   color: #fff;
   justify-items: center;
   align-items: center;
@@ -170,7 +170,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: .25rem;
-  background-color: var(--teal);
+  background-color: var(--dark-teal);
   color: #fff;
   justify-items: center;
   padding: .5rem;
@@ -179,7 +179,7 @@ footer {
 .weather-daily{
   display: grid;
   grid-template-columns: 1fr;
-  background-color: var(--dark-teal);
+  background-color: var(--teal);
   color: #fff;
   padding: .5rem 1rem .5rem 1rem;
   border-radius: 5px;
@@ -189,6 +189,10 @@ footer {
 .weather-daily img {
   width: 32px;
 
+}
+
+.weather-alert {
+  background-color: red;
 }
 
 /* Spotlight */
@@ -325,4 +329,8 @@ input {
 
 .form-inline{
   display: flex;
+}
+
+.slides {
+  transition: ease-in 2s;
 }
