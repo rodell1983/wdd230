@@ -37,7 +37,7 @@ function displayTemples(temple) {
     }
     weatherBlock.removeChild(weatherAlert);
   });
-  templeLike.textContent = "\u2665";
+  templeLike.textContent = "\u2764";
 
   let cardBody = document.createElement("div");
   cardBody.classList.add("temple-card-body");
