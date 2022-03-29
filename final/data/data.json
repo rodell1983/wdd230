@@ -52,10 +52,10 @@
       ]
     },
     {
-      "name": "Las Vegas Temple",
-      "address": "827 Temple View Dr, Las Vegas NV 89110-2920, United States",
-      "phone": "(1) 702-452-5011",
-      "image": "images/temples/las_vegas_temple.webp",
+      "name": "Salt Lake Temple",
+      "address": "50 W North Temple St, Salt Lake City UT 84150-9709, United States",
+      "phone": "(1) 801-240-2640",
+      "image": "images/temples/salt_lake_temple.webp",
       "email": "",
       "services": [
         "Clothing rental available",
@@ -63,15 +63,11 @@
         "No patron housing available",
         "Distribution center nearby"
       ],
-      "history": "The Las Vegas Temple was dedicated on December 16th 1989 by Gordon B. Hinckley, becoming the 43rd temple overall. It was also the first temple in the state of Nevada.",
-      "ordinanceSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
-      "sessionSched": "All ordinances are available by appointment only. Click the Appointments button below to schedule or modify an appointment.",
+      "history": "As the world's largest Mormon temple, the 210-foot-tall Salt Lake Temple, with its granite edifice in a neo-Gothic style, took 40 years to build, from 1853 to 1893. With walls nine feet thick at the base and six feet thick at the top, this impressive six-spire structure serves as a universal icon of the Mormon Church.",
+      "ordinanceSched": "Temple closed during renovation",
+      "sessionSched": "Temple closed during renovation",
       "closureSched": [
-        "Saturday, 2 April 2022",
-        "Monday, 11 July 2022 - Monday, 25 July 2022",
-        "Saturday, 1 October 2022",
-        "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
-        "Saturday, 24 December 2022"
+        "Temple closed during renovation"
       ]
     },
     {
