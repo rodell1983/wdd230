@@ -36,20 +36,20 @@ function displayTemples(temple) {
   );
   svg.appendChild(path1);
 
-  //if (localStorage.getItem(temple.name) === "true") {
-  //  svg.classList.add("temple-like-liked");
-  //}
+  if (localStorage.getItem(temple.name) === "true") {
+    svg.classList.add("temple-liked");
+  }
 
-  //svg.addEventListener("click", function () {
-  //  if (localStorage.getItem(temple.name) === "true") {
-  //    svg.classList.remove("temple-like-liked");
-  //    localStorage.setItem(temple.name, "false");
-  //  } else if (localStorage.getItem(temple.name) === "false") {
-  //    svg.classList.add("temple-like-liked");
-  //    localStorage.setItem(temple.name, "true");
-  //  }
-  //  weatherBlock.removeChild(weatherAlert);
-  //});
+svg.addEventListener("click", function () {
+
+  if (localStorage.getItem(temple.name) === "true") {
+    svg.classList.remove("temple-liked");
+    localStorage.setItem(temple.name, "false");
+  } else  {
+    svg.classList.add("temple-liked");
+    localStorage.setItem(temple.name, "true");
+  }
+});
 
 
   //templeLike.textContent = "\u2764";

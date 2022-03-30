@@ -381,18 +381,24 @@ legend {
 }
 
 .heart:hover{
-  fill: red;
+  
   transform: scale(1.2);
   transition: ease-out .5s;
 
 }
 
 .heart {
-
+fill: gainsboro;
+stroke: gray;
   position: absolute;
   top: 1rem;
   right: 1rem;
   
 
   cursor: pointer;
+}
+
+.temple-liked{
+  fill: red;
+  transform: scale(1.2);
 }
