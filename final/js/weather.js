@@ -10,7 +10,6 @@ fetch(apiURL)
   });
 
 function capWords(str) {
-
   const words = str.split(" ");
 
   for (let i = 0; i < words.length; i++) {
@@ -19,7 +18,6 @@ function capWords(str) {
 
   return words.join(" ");
 }
-
 
 function getDaily(day) {
   let dayName = new Date(day.dt * 1000).toLocaleDateString("en", {
@@ -100,20 +98,26 @@ function loadWeatherCard(jsonObject) {
   weatherBlock.appendChild(sky);
   weatherBlock.appendChild(forecast);
 
-  let weatherAlert = document.createElement("div");
-  weatherAlert.textContent = jsonObject.alerts[0].event;
+  // load alerts
+  jsonObject.alerts.forEach((wa) => {
+    let weatherAlert = document.createElement("div");
+    let weatherAlertText = document.createElement("p");
+    weatherAlertText.textContent = wa.event;
+    weatherAlert.classList.add("weather-alert");
 
-  let btnRemove = document.createElement("button");
-  btnRemove.textContent = "❌";
-  btnRemove.ariaLabel = "Remove Alert";
+    let btnRemove = document.createElement("button");
+    btnRemove.textContent = "❌";
+    btnRemove.ariaLabel = "Remove Alert";
 
-  weatherAlert.append(btnRemove);
+    weatherAlert.appendChild(weatherAlertText);
+    weatherAlert.appendChild(btnRemove);
 
-  btnRemove.addEventListener("click", function () {
-    weatherBlock.removeChild(weatherAlert);
+    btnRemove.addEventListener("click", function () {
+      weatherBlock.removeChild(weatherAlert);
+    });
+
+    weatherBlock.appendChild(weatherAlert);
   });
-
-  weatherBlock.appendChild(weatherAlert)
 }
 
 function windChill(t, s) {

@@ -152,9 +152,6 @@ footer {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
 }
 
-.temple-like-liked{
-  color: pink;
-}
 
 /* Weather */
 
@@ -207,7 +204,15 @@ footer {
 }
 
 .weather-alert {
-  background-color: red;
+  background-color: var(--dark-teal);
+    display: flex;
+    color: #fff;
+    justify-content: center;
+
+}
+
+.weather-alert p {
+  margin-right: .5rem;
 }
 
 /* Spotlight */
@@ -343,6 +348,14 @@ input {
 
 .form-inline{
   display: flex;
+  justify-content: space-between;
+}
+
+legend {
+  background-color: var(--light-teal);
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 .slides {
@@ -365,4 +378,21 @@ input {
 
 .shadow {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.heart:hover{
+  fill: red;
+  transform: scale(1.2);
+  transition: ease-out .5s;
+
+}
+
+.heart {
+
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  
+
+  cursor: pointer;
 }

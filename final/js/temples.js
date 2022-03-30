@@ -7,7 +7,6 @@ fetch(requestURL)
   .then(function (jsonObject) {
     const temples = jsonObject["temple"];
     temples.forEach(displayTemples);
-    loadSettings();
   });
 
 function displayTemples(temple) {
@@ -21,23 +20,43 @@ function displayTemples(temple) {
   templeImage.setAttribute("alt", temple.name);
   templeImage.setAttribute("loading", "lazy");
 
-  let templeLike = document.createElement("div");
-  templeLike.classList.add("temple-like");
-  if(localStorage.getItem(temple.name) === "true"){
-    templeLike.classList.add("temple-like-liked");
-  }
+  let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+  let path1 = document.createElementNS("http://www.w3.org/2000/svg", 'path');
 
-  templeLike.addEventListener("click", function () {
-    if(localStorage.getItem(temple.name) === "true"){
-      templeLike.classList.remove("temple-like-liked");
-      localStorage.setItem(temple.name,"false");
-    }else if(localStorage.getItem(temple.name) === "false"){
-      templeLike.classList.add("temple-like-liked");
-      localStorage.setItem(temple.name,"true");
-    }
-    weatherBlock.removeChild(weatherAlert);
-  });
-  templeLike.textContent = "\u2764";
+  svg.setAttribute("aria-hidden","true");
+  svg.setAttribute("viewbox", "0 0 36 36");
+  svg.setAttribute("width", "36px");
+  svg.setAttribute("height", "36px");
+  svg.setAttribute("fill","red");
+  svg.classList.add("heart");
+
+  path1.setAttribute(
+    "d",
+    "M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2,c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"
+  );
+  svg.appendChild(path1);
+
+  //if (localStorage.getItem(temple.name) === "true") {
+  //  svg.classList.add("temple-like-liked");
+  //}
+
+  //svg.addEventListener("click", function () {
+  //  if (localStorage.getItem(temple.name) === "true") {
+  //    svg.classList.remove("temple-like-liked");
+  //    localStorage.setItem(temple.name, "false");
+  //  } else if (localStorage.getItem(temple.name) === "false") {
+  //    svg.classList.add("temple-like-liked");
+  //    localStorage.setItem(temple.name, "true");
+  //  }
+  //  weatherBlock.removeChild(weatherAlert);
+  //});
+
+
+  //templeLike.textContent = "\u2764";
+  //templeLike.innerHTML = `<svg class="heart" viewBox="0 0 36 36">
+  //<path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+  //c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+  //</svg> `
 
   let cardBody = document.createElement("div");
   cardBody.classList.add("temple-card-body");
@@ -62,8 +81,7 @@ function displayTemples(temple) {
   templeServicesT.textContent = "Services";
   cardBody.appendChild(templeServicesT);
 
-
-  let serviceList = document.createElement('ul');
+  let serviceList = document.createElement("ul");
   for (let i in temple.services) {
     item = document.createElement("li");
     item.textContent = temple.services[i];
@@ -73,12 +91,9 @@ function displayTemples(temple) {
   cardBody.appendChild(serviceList);
 
   card.appendChild(templeImage);
-  card.appendChild(templeLike);
+  card.appendChild(svg);
   card.appendChild(cardBody);
 
   // Add card to temple cards
   document.querySelector("div.temple-cards").appendChild(card);
-
-  // LocalStorage settings
-  function loadSettings() {}
 }
