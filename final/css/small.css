@@ -1,7 +1,6 @@
 :root {
   --light-teal: #cad8d8;
-  /*--teal: #6e8a91;*/
-  --teal: #607B80;
+  --teal: #607b80;
   --off-white: #fffbfb;
   --purple: #9f6067;
   --dark-teal: #18454b;
@@ -34,7 +33,7 @@ main {
 main {
   display: grid;
   padding: 1rem;
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
   background-color: var(--off-white);
   color: var(--dark-teal);
 }
@@ -51,7 +50,8 @@ h2 {
   font-size: 2.2rem;
 }
 
-.slides picture img, .temple-card img {
+.slides picture img,
+.temple-card img {
   width: 100%;
 }
 
@@ -72,8 +72,6 @@ footer {
   text-align: left;
 }
 
-
-
 .header-logo {
   width: 100px;
 }
@@ -89,11 +87,11 @@ footer {
   content: "\2630";
 }
 
-.responsive{
+.responsive {
   display: block;
 }
 
-.responsive ul{
+.responsive ul {
   position: absolute;
   display: grid;
   right: 0;
@@ -106,10 +104,9 @@ footer {
   overflow: hidden;
 }
 
-}
 /* Temple Cards */
- 
-.temple-cards{
+
+.temple-cards {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
@@ -126,7 +123,7 @@ footer {
 }
 
 .temple-card-body {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .temple-like {
@@ -143,76 +140,74 @@ footer {
   background-color: red;
   border-radius: 24px;
   cursor: pointer;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.temple-like:hover{
+.temple-like:hover {
   transform: scale(1.2);
-  transition: ease-out .5s;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+  transition: ease-out 0.5s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
-
 
 /* Weather */
 
-.weather{
+.weather {
   width: auto;
 }
 
-.weather-sky{
+.weather-sky {
   display: grid;
   grid-template-columns: auto auto;
   background-color: var(--dark-teal);
   color: #fff;
   justify-items: center;
   align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .weather-sky span {
   font-size: 1.5rem;
   font-weight: bold;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-.weather-img{
+.weather-img {
   grid-row: 1/4;
 }
 
-.weather-forecast{
+.weather-forecast {
   display: flex;
-  grid-gap: .25rem;
+  grid-gap: 0.25rem;
   background-color: var(--dark-teal);
   color: #fff;
   justify-content: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-.weather-daily{
-  display: grid;
-  grid-template-columns: 1fr;
+.weather-daily {
+  display: flex;
+  flex-wrap: wrap;
   background-color: var(--teal);
-  color: #fff;
-  padding: .5rem 1rem .5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 5px;
-  justify-items: center;
+  grid-gap: 0.5rem;
+  justify-content: center;
 }
 
 .weather-daily img {
   width: 32px;
-
+  height: fit-content;
 }
 
 .weather-alert {
   background-color: var(--dark-teal);
-    display: flex;
-    color: #fff;
-    justify-content: center;
-
+  display: flex;
+  color: #fff;
+  justify-content: center;
 }
 
 .weather-alert p {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 /* Spotlight */
@@ -221,18 +216,17 @@ footer {
 }
 
 /* Forms */
-button{
+button {
   background-color: var(--teal);
   color: var(--off-white);
   border: solid 1px var(--off-white);
 }
 
-button:hover{
+button:hover {
   background-color: var(--light-teal);
   color: var(--dark-teal);
   border: solid 1px var(--dark-teal);
 }
-
 
 input,
 textarea,
@@ -251,14 +245,15 @@ input {
 }
 
 /* New Nav */
-  
+
+
 .top-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: var(--purple);
-  color: #FFF;
+  color: #fff;
 }
 
 .menu {
@@ -267,16 +262,26 @@ input {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 100%
+  width: 100%;
 }
 
+.site-map {
+  list-style-type: none;
+}
+
+.site-map li a {
+  color: #fff;
+}
+
+.site-map li a:hover{
+  font-weight: bold;
+}
 
 .menu > li {
   margin: 0 1rem;
 }
 
-
-.menu li a {
+.menu li a, .site-map li a {
   display: block;
   padding: 0.25rem 0.75rem 0.25rem 0.75rem;
   text-decoration: none;
@@ -308,8 +313,7 @@ input {
 #menu-toggle {
   display: none;
 }
-  
-  
+
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -323,12 +327,12 @@ input {
 }
 
 .menu-button::before {
-  content: '';
+  content: "";
   margin-top: -8px;
 }
 
 .menu-button::after {
-  content: '';
+  content: "";
   margin-top: 8px;
 }
 
@@ -346,8 +350,9 @@ input {
   transform: rotate(-405deg);
 }
 
-.form-inline{
+.form-inline {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -362,12 +367,12 @@ legend {
   transition: ease-in 2s;
 }
 
-.slide-show{
+.slide-show {
   position: relative;
 }
 
-.book{
-  background-color: #607B80;
+.book {
+  background-color: #607b80;
   color: #cad8d8;
   position: absolute;
   top: 1rem;
@@ -377,28 +382,24 @@ legend {
 /* Untilty Classes */
 
 .shadow {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.heart:hover{
-  
+.heart:hover {
   transform: scale(1.2);
-  transition: ease-out .5s;
-
+  transition: ease-out 0.5s;
 }
 
 .heart {
-fill: gainsboro;
-stroke: gray;
+  fill: gainsboro;
   position: absolute;
   top: 1rem;
   right: 1rem;
-  
 
   cursor: pointer;
 }
 
-.temple-liked{
+.temple-liked {
   fill: red;
   transform: scale(1.2);
 }
