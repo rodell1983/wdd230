@@ -109,8 +109,9 @@ function loadWeatherCard(jsonObject) {
     btnRemove.textContent = "❌";
     btnRemove.ariaLabel = "Remove Alert";
 
-    weatherAlert.appendChild(weatherAlertText);
     weatherAlert.appendChild(btnRemove);
+    weatherAlert.appendChild(weatherAlertText);
+    
 
     btnRemove.addEventListener("click", function () {
       weatherBlock.removeChild(weatherAlert);

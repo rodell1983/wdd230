@@ -79,4 +79,14 @@
   .social-bar {
     flex-direction: row;
   }
+
+  .form-inline{
+
+    flex-direction: row;
+    grid-column-gap: 1rem;
+  }
+
+  .form-inline label {
+    width: 100%;
+  }
 }
