@@ -403,5 +403,7 @@ legend {
   left: 1rem;
 }
 
-
+.clear-li {
+  list-style: none;
+}
 
