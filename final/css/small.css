@@ -295,7 +295,7 @@ legend {
   border-radius: 20px;
   background-color: var(--light-teal);
   color: var(--dark-teal);
-  border: 1px solid var(--dark-teal);
+  border: 1px solid var(--teal);
   font-weight: bold;
 }
 
