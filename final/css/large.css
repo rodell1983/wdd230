@@ -3,7 +3,6 @@
     grid-template-columns: minmax(200px, auto) auto minmax(100px, auto);
   }
  
-
   .home-main {
     display: grid;
     grid-template-columns:  1fr 33%;
@@ -33,6 +32,9 @@
     grid-row: 1;
   }
 
+  .service-page{
+    grid-template-columns: auto auto;
+  }
 
   
 

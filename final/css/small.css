@@ -12,6 +12,7 @@ body {
   line-height: 1.75rem;
 }
 
+
 header,
 footer {
   background-color: var(--purple);
@@ -42,22 +43,21 @@ h1,
 h2 {
   font-family: "Cookie", cursive, sans-serif;
   font-weight: 400;
+  margin: .5rem;
 }
 h1 {
   font-size: 3rem;
+  line-height: 3rem;
 }
 h2 {
   font-size: 2.2rem;
 }
 
-.slides picture img,
-.temple-card img {
-  width: 100%;
-}
-
 footer {
   padding: 1rem;
 }
+
+/* Header, Footer, All page Classes */
 
 .page {
   max-width: 1200px;
@@ -82,20 +82,6 @@ footer {
   flex-direction: column;
 }
 
-.nav-ham::after {
-  font-size: 2.5rem;
-  content: "\2630";
-}
-
-.responsive {
-  display: block;
-}
-
-.responsive ul {
-  position: absolute;
-  display: grid;
-  right: 0;
-}
 
 .site-map {
   list-style-type: none;
@@ -103,6 +89,19 @@ footer {
   padding: 0;
   overflow: hidden;
 }
+
+.site-map {
+  list-style-type: none;
+}
+
+.site-map li a {
+  color: #fff;
+}
+
+.site-map li a:hover{
+  font-weight: bold;
+}
+
 
 /* Temple Cards */
 
@@ -115,7 +114,6 @@ footer {
 .temple-card {
   display: grid;
   position: relative;
-  border: solid 2px var(--teal);
 }
 
 .temple-card image {
@@ -126,28 +124,29 @@ footer {
   padding: 0.5rem;
 }
 
-.temple-like {
-  display: grid;
-  width: 48px;
-  height: 48px;
-  text-align: center;
-  align-content: center;
+.heart:hover {
+  transition: ease-out 0.5s;
+  transform: scale(1.2);
+}
+
+.heart {
+  fill: gainsboro;
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 3rem;
-  color: white;
-  background-color: red;
-  border-radius: 24px;
+
   cursor: pointer;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.temple-like:hover {
-  transform: scale(1.2);
-  transition: ease-out 0.5s;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+.temple-liked {
+  fill: red;
+
 }
+
+.temple-unlike {
+  fill: gainsboro;
+}
+
 
 /* Weather */
 
@@ -210,16 +209,12 @@ footer {
   margin-right: 0.5rem;
 }
 
-/* Spotlight */
-.spotlight img {
-  width: 100%;
-}
-
 /* Forms */
 button {
   background-color: var(--teal);
   color: var(--off-white);
   border: solid 1px var(--off-white);
+  cursor: pointer;
 }
 
 button:hover {
@@ -244,8 +239,30 @@ input {
   flex-direction: column;
 }
 
-/* New Nav */
+.form-inline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.res-form{
+  display: grid;
+  grid-gap: 0.5rem;
+}
+
+.res-button {
+  float: right;
+}
+
+legend {
+  background-color: var(--teal);
+  color: #fff;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* New Nav */
 
 .top-nav {
   display: flex;
@@ -260,21 +277,9 @@ input {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 0 .5rem;
   padding: 0;
   width: 100%;
-}
-
-.site-map {
-  list-style-type: none;
-}
-
-.site-map li a {
-  color: #fff;
-}
-
-.site-map li a:hover{
-  font-weight: bold;
 }
 
 .menu > li {
@@ -291,6 +296,7 @@ input {
   border-radius: 16px;
   background-color: var(--light-teal);
   color: var(--dark-teal);
+  border: 1px solid var(--dark-teal);
 }
 
 .menu-font {
@@ -350,17 +356,35 @@ input {
   transform: rotate(-405deg);
 }
 
-.form-inline {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+/* Utility Classes */
+
+.slides picture img,
+.temple-card img,
+.spotlight img {
+  width: 100%;
 }
 
-legend {
+.shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.block {
+  border: solid 1px var(--dark-teal);
   background-color: var(--light-teal);
-  padding: 0.25rem 1rem;
-  border-radius: 20px;
-  font-weight: bold;
+}
+
+.float-right {
+  float: right;
+  margin: 1rem;
+}
+.float-left {
+  float: left;
+  margin-right: 2rem;
+}
+
+.service-page{
+  display: grid;
+  grid-gap: .5rem;
 }
 
 .slides {
@@ -379,27 +403,5 @@ legend {
   left: 1rem;
 }
 
-/* Untilty Classes */
 
-.shadow {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
 
-.heart:hover {
-  transform: scale(1.2);
-  transition: ease-out 0.5s;
-}
-
-.heart {
-  fill: gainsboro;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-
-  cursor: pointer;
-}
-
-.temple-liked {
-  fill: red;
-  transform: scale(1.2);
-}
