@@ -210,26 +210,25 @@ footer {
 }
 
 /* Forms */
-button {
+button,legend {
   background-color: var(--teal);
   color: var(--off-white);
-  border: solid 1px var(--off-white);
+}
+button{
   cursor: pointer;
 }
-
-button:hover {
-  background-color: var(--light-teal);
-  color: var(--dark-teal);
-  border: solid 1px var(--dark-teal);
+legend {
+  padding: 0.25rem 1rem;
+  font-weight: bold;
 }
 
 input,
 textarea,
 button,
 select {
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-  border-radius: 4px;
+  padding: 0.5rem 1rem .5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 20px;
   border: 2px solid var(--teal);
 }
 
@@ -292,11 +291,12 @@ legend {
   text-decoration: none;
 }
 
-.menu a:hover {
-  border-radius: 16px;
+.menu a:hover, button:hover {
+  border-radius: 20px;
   background-color: var(--light-teal);
   color: var(--dark-teal);
   border: 1px solid var(--dark-teal);
+  font-weight: bold;
 }
 
 .menu-font {
