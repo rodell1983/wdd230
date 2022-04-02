@@ -45,5 +45,17 @@
   .room{
     grid-template-columns: 2fr 1fr;
   }
+
+  .res-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .missionary-main{
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .missionary-main section {
+    grid-column: 1/3;
+  }
 }
 

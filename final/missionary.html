@@ -116,81 +116,130 @@
         <!--<div class="nav-ham" role="button"></div>-->
       </header>
 
-      <main>
-        <div class="room block shadow">
-          <section>
-            <h2>Standard Room</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto,
-              eaque doloremque deserunt ea ipsa illo dolore consectetur possimus
-              corrupti suscipit cum cumque rerum similique natus, rem ducimus
-              dignissimos repellendus id?
-            </p>
-          </section>
-          <picture>
-            <img src="images/room_standard.jpg" alt="Standard Room" />
-          </picture>
-        </div>
-        <div class="room block shadow">
-          <section>
-            <h2>Small Suit</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto,
-              eaque doloremque deserunt ea ipsa illo dolore consectetur possimus
-              corrupti suscipit cum cumque rerum similique natus, rem ducimus
-              dignissimos repellendus id?
-            </p>
-          </section>
+      <main class="missionary-main">
+        <section>
+          <h2>Special accommodations for log-term Missionaries</h2>
+          <p>
+            We are proud to provide some of the best accommodations for our
+            Long-term missionaries. Look at our suit selection bellow. To book
+            your long-term stay please visit our
+            <a href="reservations.html" alt="Room Reservations">reservations</a>
+            page. For additional information or to ask a question please fill out our contact form.
+          </p>
+        </section>
+        <form class="contact-form">
+          <fieldset class="block shadow">
+            <legend>Contact Us</legend>
+            <label
+              >First name:<input
+                class="shadow"
+                type="text"
+                name="fname"
+                required
+                placeholder="* First Name *"
+            /></label>
+            <label
+              >Last name:<input
+                class="shadow"
+                type="text"
+                name="lname"
+                required
+                placeholder="* Last Name *"
+            /></label>
+            <label
+              >Email:<input
+                class="shadow"
+                type="email"
+                name="email"
+                placeholder="* yourname@company.com *"
+                required
+            /></label>
+            <label
+              >Detailed Question
+              <textarea
+                name="bdescription"
+                rows="5"
+                placeholder="* Please let us know how we're doing"
+                required
+              ></textarea>
+            </label>
+            <button
+              class="res-button menu-font shadow"
+              class="res-button menu-font shadow"
+              type="submit"
+              value="Submit"
+            >
+              Ask Now
+            </button>
+          </fieldset>
+        </form>
 
-          <picture>
-            <img src="images/room_small_suit.jpg" alt="Small Suit" />
-          </picture>
-        </div>
-        <div class="room block shadow">
-          <section>
-            <h2>Suit</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto,
-              eaque doloremque deserunt ea ipsa illo dolore consectetur possimus
-              corrupti suscipit cum cumque rerum similique natus, rem ducimus
-              dignissimos repellendus id?
-            </p>
-          </section>
+        <div class="room-group">
+          <div class="room block shadow">
+            <section>
+              <h2>Small Suit</h2>
+              <ul>
+                <li>King Size Bed</li>
+                <li>Half wall between sitting room</li>
+                <li>1 TV</li>
+                <li>Mini Fridge</li>
+              </ul>
+              <p>Perfect for the budget conscience stay</p>
+            </section>
 
-          <picture>
-            <img src="images/room_suit.jpg" alt="Suit" />
-          </picture>
-        </div>
+            <picture>
+              <img src="images/room_small_suit.jpg" alt="Small Suit" />
+            </picture>
+          </div>
+          <div class="room block shadow">
+            <section>
+              <h2>Suit</h2>
+              <ul>
+                <li>King Size Bed</li>
+                <li>Separate bedroom</li>
+                <li>2 TV's</li>
+                <li>Small kitchenette</li>
+              </ul>
+              <p>Standard suit with basic amenities</p>
+            </section>
 
-        <div class="room block shadow">
-          <section>
-            <h2>Luxury Suit</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto,
-              eaque doloremque deserunt ea ipsa illo dolore consectetur possimus
-              corrupti suscipit cum cumque rerum similique natus, rem ducimus
-              dignissimos repellendus id?
-            </p>
-          </section>
+            <picture>
+              <img src="images/room_suit.jpg" alt="Suit" />
+            </picture>
+          </div>
 
-          <picture>
-            <img src="images/room_suit_luxury.jpg" alt="Luxury Suit" />
-          </picture>
-        </div>
-        <div class="room block shadow">
-          <section>
-            <h2>Premium Suit</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto,
-              eaque doloremque deserunt ea ipsa illo dolore consectetur possimus
-              corrupti suscipit cum cumque rerum similique natus, rem ducimus
-              dignissimos repellendus id?
-            </p>
-          </section>
+          <div class="room block shadow">
+            <section>
+              <h2>Luxury Suit</h2>
+              <ul>
+                <li>2 King Size Beds</li>
+                <li>1 Master bedroom + kids room</li>
+                <li>3 TV's</li>
+                <li>Full-size Kitchen</li>
+              </ul>
+              <p>Big enough to feel like home</p>
+            </section>
 
-          <picture>
-            <img src="images/room_suit_prem.jpg" alt="Premium Suit" />
-          </picture>
+            <picture>
+              <img src="images/room_suit_luxury.jpg" alt="Luxury Suit" />
+            </picture>
+          </div>
+          <div class="room block shadow">
+            <section>
+              <h2>Premium Suit</h2>
+              <ul>
+                <li>All the features of the Luxury suit</li>
+                <li>Private patio/balcony</li>
+                <li>Free Laundry Service</li>
+                <li>Gold reward membership</li>
+              </ul>
+              <p>The ultimate lodging experience</p>
+            </section>
+
+            <picture>
+              <img src="images/room_suit_prem.jpg" alt="Premium Suit" />
+            </picture>
+          </div>
         </div>
       </main>
       <footer>
