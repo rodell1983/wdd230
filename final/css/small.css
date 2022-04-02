@@ -315,6 +315,7 @@ legend {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--purple);
 }
 
 #menu-toggle {
