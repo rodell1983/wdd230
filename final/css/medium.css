@@ -103,6 +103,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  footer {
+    grid-template-columns: auto auto auto;
+}
+
+footer .header-logo {
+  width: 200px;
+}
+
+  .time-stamp, .news-letter {
+    grid-column: 1/4;
+  }
 }
 
 }

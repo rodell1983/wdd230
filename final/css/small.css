@@ -14,14 +14,14 @@ body {
 
 
 header,
-footer {
+footer {display: grid;
   background-color: var(--purple);
   color: #fff;
   text-align: center;
 }
 
 header {
-  display: grid;
+  
   grid-template-columns: minmax(200px, auto) minmax(100px, auto) auto;
   align-items: center;
 }
@@ -437,12 +437,12 @@ li:hover{
 .sub-menu ul{
 
   position: absolute;
-  visibility: hidden;
+  width: 100%;
   transition: all .5s ease;
   left: 0;
   margin: 0;
   top: 100%;
-  opacity: 0;
+
 }
 
 .sub-menu:hover > ul,
