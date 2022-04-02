@@ -5,7 +5,7 @@
  
   .home-main {
     display: grid;
-    grid-template-columns:  1fr 33%;
+    grid-template-columns:  2fr 1fr;
     grid-gap: .5rem;
   }
 
@@ -35,7 +35,15 @@
   .service-page{
     grid-template-columns: auto auto;
   }
+  .sub-menu ul{
 
-  
+    background-color: var(--purple);
 
+
+  }
+
+  .room{
+    grid-template-columns: 2fr 1fr;
+  }
 }
+

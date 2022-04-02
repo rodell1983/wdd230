@@ -89,6 +89,22 @@
   .form-inline label {
     width: 100%;
   }
+
+  .news-letter{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .news-letter label {
+    flex-direction: row;
+    align-items: center;
+  }
+  .room{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 }
 
 /* Small Only */

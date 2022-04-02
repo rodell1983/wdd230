@@ -53,9 +53,9 @@
           </div>
         </div>
         <nav class="top-nav">
-          <input id="menu-toggle" type="checkbox" />
-          <label class="menu-button-container" aria-label="Menu Button" for="menu-toggle">
-            <span class="menu-button"></span>
+          <input aria-label="Menu" id="menu-toggle" type="checkbox" />
+          <label aria-label="Menu" class="menu-button-container" for="menu-toggle">
+            <span aria-label="Menu" class="menu-button"></span>
           </label>
           <ul class="menu">
             <li>
@@ -67,7 +67,11 @@
             <li>
               <a class="menu-font" href="reservations.html">Reservations</a>
             </li>
-            <li><a class="menu-font" href="services.html">Services</a></li>
+            <li class="sub-menu "><a class="menu-font" href="services.html">Services</a><ul class="shadow">
+              <li><a class="menu-font" href="reception.html">Reception</a></li>
+              <li><a class="menu-font" href="missionary.html">Missionary</a></li>
+            </ul>
+            </li>
           </ul>
         </nav>
         <div class="social-bar">
@@ -139,7 +143,7 @@
             </ul>
           </nav>
         </section>
-        <form>
+        <form class="news-letter">
           <label
             >News Letter<input
               type="email"
