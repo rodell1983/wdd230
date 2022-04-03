@@ -64,11 +64,15 @@
 
 /* Medium + Large */
 @media only screen and (min-width: 40em) {
+
+  .home-main {
+    grid-template-columns: 1fr 2fr;
+  }
   .slide-show {
     grid-column: 1/3;
   }
 
-  .temple-card img {
+ .temple-cards .temple-card img {
     grid-column: 2;
     grid-row: 1/2;
   }

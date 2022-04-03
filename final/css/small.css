@@ -105,7 +105,7 @@ footer {
 .temple-cards {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+
 }
 
 .temple-card {
@@ -147,6 +147,7 @@ footer {
 
 .weather {
   width: auto;
+  height: fit-content;
 }
 
 .weather-sky {
@@ -510,4 +511,9 @@ label {
 .room-options {
   display: grid;
 grid-template-columns: 1fr 2fr;
+}
+
+.social-icon:hover{
+  filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.3));
+
 }

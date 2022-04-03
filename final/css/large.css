@@ -23,11 +23,10 @@
   }
 
   .temple-cards {
-    display: grid;
-    grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
   }
-  .temple-card img {
+
+  .temple-cards .temple-card img {
     grid-column: 1;
     grid-row: 1;
   }
