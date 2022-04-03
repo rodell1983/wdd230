@@ -1,5 +1,5 @@
 const apiURL =
-  "https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=ca6d3a3994d6211dbf7bfd04bd2903b4&lang=en&units=imperial";
+  "https://api.openweathermap.org/data/2.5/onecall?lat=38.98&lon=-77.10&appid=ca6d3a3994d6211dbf7bfd04bd2903b4&lang=en&units=imperial";
 
 fetch(apiURL)
   .then(function (response) {
@@ -99,7 +99,8 @@ function loadWeatherCard(jsonObject) {
   weatherBlock.appendChild(forecast);
 
   // load alerts
-  if (jsonObject["alerts"]) {
+
+  if ( "alerts" in jsonObject) {
     jsonObject.alerts.forEach((wa) => {
       let weatherAlert = document.createElement("div");
       let weatherAlertText = document.createElement("p");
@@ -107,7 +108,7 @@ function loadWeatherCard(jsonObject) {
       weatherAlert.classList.add("weather-alert");
 
       let btnRemove = document.createElement("button");
-      btnRemove.textContent = "❌";
+      btnRemove.textContent = "X";
       btnRemove.ariaLabel = "Remove Alert";
 
       weatherAlert.appendChild(btnRemove);

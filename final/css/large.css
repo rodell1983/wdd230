@@ -37,11 +37,6 @@
   .sub-menu ul {
     background-color: var(--purple);
   }
-
-  .room {
-    grid-template-columns: 2fr 1fr;
-  }
-
   .res-form {
     grid-template-columns: 1fr 1fr;
   }
@@ -88,5 +83,7 @@
     white-space: nowrap;
     overflow: visible;
   }
-  
+
+
+  }  
 }

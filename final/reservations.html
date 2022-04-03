@@ -41,7 +41,7 @@
     <div class="page">
       <header>
         <div class="logo">
-          <a href="#" title="Temple Inn"
+          <a href="index.html" title="Temple Inn"
             ><picture
               ><img
                 class="header-logo"
@@ -59,7 +59,7 @@
             class="menu-button-container"
             for="menu-toggle"
           >
-          menu<span class="menu-button"></span>
+            menu<span class="menu-button"></span>
           </label>
           <ul class="menu">
             <li>
@@ -117,13 +117,13 @@
 
       <main>
         <form class="res-form" method="get" action="thanks.html">
-          
           <fieldset class="block shadow">
             <legend class="shadow">Room Specifications</legend>
             <div class="room-options">
               <label for="adults">
                 * Adults
-                <input class="shadow"
+                <input
+                  class="shadow"
                   type="number"
                   name="adults"
                   id="adults"
@@ -136,7 +136,8 @@
               </label>
               <label for="children">
                 Children
-                <input class="shadow"
+                <input
+                  class="shadow"
                   type="number"
                   name="children"
                   id="children"
@@ -146,22 +147,100 @@
                   value="0"
                 />
               </label>
-              <label for="fday">* First Day:
-              <input class="shadow" type="date" id="fday" name="fday" required /></label>
-              <label for="lday">* Last Day:
-              <input class="shadow" type="date" id="lday" name="lday" required /></label>
+              <label for="fday"
+                >* First Day:
+                <input
+                  class="shadow"
+                  type="date"
+                  id="fday"
+                  name="fday"
+                  required
+              /></label>
+              <label for="lday"
+                >* Last Day:
+                <input
+                  class="shadow"
+                  type="date"
+                  id="lday"
+                  name="lday"
+                  required
+              /></label>
             </div>
 
             <div class="room-selection">
-              <label>
-                <input type="radio" name="test" value="small" checked />
-                <img src="images/room_small_suit.webp" />
-              </label>
+              <section>
+                <h2>Standard Room</h2>
+                <label>
+                  <input type="radio" name="room-sel" value="std" checked />
+                  <img src="images/room_standard.jpg" />
+                  <select name="bed-options" id="bed-options">
+                    <option value="1">1 King</option>
+                    <option value="2">2 Queen</option>
+                  </select>
+                </label>
+              </section>
 
-              <label>
-                <input type="radio" name="test" value="big" />
-                <img src="images/room_standard.webp" />
-              </label>
+              <section>
+                <h2>Small Suite</h2>
+                <label>
+                  <input type="radio" name="room-sel" value="ss" />
+                  <img src="images/room_small_suit.webp" />
+                  <select name="bed-options" id="bed-options">
+                    <option value="1">1 King</option>
+                    <option value="2">2 Queen</option>
+                  </select>
+                </label>
+              </section>
+
+              <section>
+                <h2>Suite</h2>
+                <label>
+                  <input type="radio" name="room-sel" value="ss" />
+                  <img src="images/room_suit.webp" />
+                  <select name="bed-options" id="bed-options">
+                    <option value="1">1 King</option>
+                    <option value="2">2 Queen</option>
+                  </select>
+                </label>
+              </section>
+
+              <section>
+                <h2>Premium Suite</h2>
+                <label>
+                  <input type="radio" name="room-sel" value="ps" />
+                  <img src="images/room_suit_prem.webp" />
+                  <select name="bed-options" id="bed-options">
+                    <option value="1">2 Kings</option>
+                    <option value="2">2 Queen</option>
+                    <option value="3">3 Fulls</option>
+                  </select>
+                </label>
+              </section>
+
+              <section>
+                <h2>Luxury Suite</h2>
+                <label>
+                  <input type="radio" name="room-sel" value="ls" />
+                  <img src="images/room_suit_luxury.webp" />
+                  <select name="bed-options" id="bed-options">
+                    <option value="1">2 Kings</option>
+                    <option value="2">2 Queen</option>
+                    <option value="3">3 Fulls</option>
+                  </select>
+                </label>
+              </section>
+
+              <section>
+                <h2>Penthouse</h2>
+                <label>
+                  <input type="radio" name="room-sel" value="pent" />
+                  <img src="images/room_penthouse.webp" />
+                  <select name="bed-options" id="bed-options">
+                    <option value="1">3 Kings</option>
+                    <option value="2">3 Queen + 1 Full</option>
+                  </select>
+                </label>
+              </section>
             </div>
           </fieldset>
           <fieldset class="block shadow">
