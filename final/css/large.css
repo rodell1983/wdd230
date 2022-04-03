@@ -84,6 +84,7 @@
     overflow: visible;
   }
 
-
-  }  
+  .reception-main {
+    grid-template-columns: 1fr 3fr;
+  }
 }

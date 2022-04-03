@@ -132,6 +132,9 @@
     display: grid;
     justify-items: center;
   }
+  .reception-main {
+    grid-template-columns: 1fr 2fr;
+  }
 
 }
 
