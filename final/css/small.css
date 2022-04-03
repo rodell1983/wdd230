@@ -272,9 +272,9 @@ legend {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  margin: 0 0 0 0.5rem;
+  margin: 0 ;
   padding: 0;
-  width: 100%;
+  width: calc(100% - 1rem);
 }
 
 .menu > li {
@@ -314,6 +314,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   color: var(--purple);
+  font-size: .01rem;
 }
 
 #menu-toggle {
@@ -398,9 +399,8 @@ button:hover {
   position: relative;
 }
 
-.book {
+.book-now {
   background-color: #607b80;
-  color: #cad8d8;
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -418,24 +418,19 @@ header {
   z-index: 100;
 }
 
-.sub-menu ul {
-  margin: 0;
-  top: 100%;
-  background-color: var(--teal);
-  width: 100%;
-  padding: 0.5rem;
-}
 
 .sub-menu:hover {
   cursor: pointer;
 }
 .sub-menu ul {
   position: absolute;
-  width: 100%;
   transition: all 0.5s ease;
-  left: 0;
+  right: 0;
   margin: 0;
   top: 101%;
+  background-color: var(--teal);
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
 }
 
 .sub-menu ul li {

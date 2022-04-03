@@ -22,11 +22,9 @@
   }
   .menu {
     position: absolute;
-    z-index: 1;
     top: 100%;
     right: 0.5rem;
     flex-direction: column;
-    width: auto;
     align-items: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   }
@@ -115,15 +113,18 @@ footer .header-logo {
   .time-stamp, .news-letter {
     grid-column: 1/4;
   }
+
+  .menu {
+    width: auto;
+  }
 }
 
-}
+
 
 /* Small Only */
 @media only screen and (max-width: 40em) {
   /* Menu for small only */
   .menu {
-    width: 100%;
     box-shadow: none;
   }
 }
