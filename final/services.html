@@ -54,7 +54,11 @@
         </div>
         <nav class="top-nav">
           <input id="menu-toggle" type="checkbox" />
-          <label aria-label="Menu" class="menu-button-container" for="menu-toggle">
+          <label
+            aria-label="Menu"
+            class="menu-button-container"
+            for="menu-toggle"
+          >
             menu<span class="menu-button"></span>
           </label>
           <ul class="menu">
@@ -67,12 +71,18 @@
             <li>
               <a class="menu-font" href="reservations.html">Reservations</a>
             </li>
-            <li class="sub-menu "><a class="menu-font" href="services.html"
-              >Services<i class="arrow down"></i
-            ></a><ul class="shadow">
-              <li><a class="menu-font" href="reception.html">Reception</a></li>
-              <li><a class="menu-font" href="missionary.html">Missionary</a></li>
-            </ul>
+            <li class="sub-menu">
+              <a class="menu-font" href="services.html"
+                >Services<i class="arrow down"></i
+              ></a>
+              <ul class="shadow">
+                <li>
+                  <a class="menu-font" href="reception.html">Reception</a>
+                </li>
+                <li>
+                  <a class="menu-font" href="missionary.html">Missionary</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -107,8 +117,25 @@
       </header>
 
       <main>
+        <h2>Service at your fingertips</h2>
+        <p>
+          Temple Inn & Suites provides you with the most premier service to give
+          you the best vacation experience. Our Specialized services and free
+          amenities are listed bellow. For
+          <a href="reception.html" alt="Wedding Receptions"
+            >Wedding Receptions</a
+          >
+          or
+          <a
+            href="missionary.html"
+            alt="Full-time
+           Missionary"
+            >Full-time Missionary</a
+          >
+          stays please check out our links above.
+        </p>
         <div class="service-page">
-          <div class="block shadow">
+          <section class="block shadow">
             <h2>Specialized Services</h2>
             <ul>
               <li>
@@ -143,22 +170,23 @@
                 work
               </li>
             </ul>
-          </div>
+          </section>
 
-          <div class="block shadow">
+          <section class="block shadow">
             <h2>Free Amenities</h2>
             <ul>
-              <li>Breakfast</li><li class="clear-li">
+              <li>Breakfast</li>
+              <li class="clear-li">
                 <img
                   class="service-img float-left"
                   src="images/pool.jpg"
                   alt="Pool"
                 />
+              </li>
+
               <li>Exercise/workout room</li>
 
               <li>Indoor pool</li>
-              
-              </li>
               <li>WiFi high-speed internet access and smart TVs</li>
               <li>Parking</li>
               <li>Temple shuttle</li>
@@ -166,7 +194,7 @@
                 Family history consultation and family ordinance card service
               </li>
             </ul>
-          </div>
+          </section>
         </div>
       </main>
       <footer>
@@ -222,11 +250,9 @@
         </form>
         <div class="time-stamp">
           <span class="time-el">
-            &copy; <span id="current-year"></span> Temple Inn & Suits
+            &copy; <span id="current-year"></span> Temple Inn & Suites
           </span>
-          <span class="time-el">
-            Last Modification: <span id="current-date"></span>
-          </span>
+          <span class="time-el"> | <span id="current-date"></span> </span>
         </div>
       </footer>
     </div>

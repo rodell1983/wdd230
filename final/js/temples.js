@@ -55,7 +55,7 @@ svg.addEventListener("click", function () {
 });
 
 
-  let cardBody = document.createElement("div");
+  let cardBody = document.createElement("section");
   cardBody.classList.add("temple-card-body");
 
   let templeTitle = document.createElement("h2");

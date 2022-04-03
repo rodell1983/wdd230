@@ -408,9 +408,12 @@ button:hover {
   position: relative;
 }
 
+.float{
+  position: absolute;
+}
+
 .call-to-action {
   display: grid;
-  position: absolute;
   justify-items: center;
   top: 1rem;
   left: 1rem;
@@ -420,7 +423,6 @@ button:hover {
 }
 .call-to-action:hover{
   background-color: var(--off-white);
-
   transition: ease-in-out .6s;
 }
 
@@ -468,12 +470,14 @@ label {
 }
 
 .arrow {
-  border: solid var(--off-white);
+  border: solid;
   border-width: 0 3px 3px 0;
   display: inline-block;
   margin-left: 1rem;
   padding: 3px;
 }
+
+
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -536,10 +540,24 @@ label {
   grid-gap: .5rem;
 }
 
+.room-group{
+  margin-top: 1rem;
+}
+
 .reception-main aside {
   display: grid;
   grid-gap: .5rem;
 }
 .reception-main aside h2{
   text-align: center;
+}
+
+section h2 {
+  text-align: center;
+}
+
+.missionary-body {
+  display: grid;
+  grid-gap: .5rem;
+  
 }
