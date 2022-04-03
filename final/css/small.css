@@ -105,7 +105,6 @@ footer {
 .temple-cards {
   display: grid;
   grid-gap: 1rem;
-
 }
 
 .temple-card {
@@ -127,7 +126,6 @@ footer {
 }
 
 .heart {
-
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -265,7 +263,7 @@ legend {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
   width: calc(100% - 1rem);
 }
@@ -307,7 +305,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   color: var(--purple);
-  font-size: .01rem;
+  font-size: 0.01rem;
 }
 
 #menu-toggle {
@@ -392,11 +390,19 @@ button:hover {
   position: relative;
 }
 
-.book-now {
-  background-color: #607b80;
+.call-to-action {
+  display: grid;
   position: absolute;
+  justify-items: center;
+  opacity: 0.7;
   top: 1rem;
   left: 1rem;
+  background-color: var(--purple);
+  color: #fff;
+}
+.call-to-action:hover{
+  opacity: 1;
+  transition: ease .3s;
 }
 
 .clear-li {
@@ -410,7 +416,6 @@ header {
   position: relative;
   z-index: 100;
 }
-
 
 .sub-menu:hover {
   cursor: pointer;
@@ -502,10 +507,9 @@ label {
 
 .room-options {
   display: grid;
-grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
 }
 
-.social-icon:hover{
+.social-icon:hover {
   filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.3));
-
 }
