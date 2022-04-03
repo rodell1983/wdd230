@@ -394,16 +394,16 @@ button:hover {
   display: grid;
   position: absolute;
   justify-items: center;
-  opacity: 0.5;
   top: 1rem;
   left: 1rem;
   color: var(--purple);
-  background-color: #fff;
+  background-color: transparent;
   border: 3px solid var(--purple);
 }
 .call-to-action:hover{
-  opacity: 1;
-  transition: ease .3s;
+  background-color: var(--off-white);
+
+  transition: ease-in-out .6s;
 }
 
 .clear-li {
