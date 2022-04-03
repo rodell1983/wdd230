@@ -127,20 +127,12 @@ footer {
 }
 
 .heart {
-  fill: gainsboro;
+
   position: absolute;
   top: 1rem;
   right: 1rem;
 
   cursor: pointer;
-}
-
-.temple-liked {
-  fill: red;
-}
-
-.temple-unlike {
-  fill: gainsboro;
 }
 
 /* Weather */

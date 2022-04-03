@@ -28,7 +28,7 @@ function displayTemples(temple) {
   svg.setAttribute("viewbox", "0 0 36 36");
   svg.setAttribute("width", "36px");
   svg.setAttribute("height", "36px");
-  svg.setAttribute("fill","red");
+
   svg.classList.add("heart");
 
   path1.setAttribute(
@@ -38,20 +38,18 @@ function displayTemples(temple) {
   svg.appendChild(path1);
 
   if (localStorage.getItem(temple.name) === "true") {
-    svg.classList.add("temple-liked");
+    svg.setAttribute("fill","red");
   }else{
-    svg.classList.add("temple-unlike");
+    svg.setAttribute("fill","gainsboro");
   }
 
 svg.addEventListener("click", function () {
 
   if (localStorage.getItem(temple.name) === "true") {
-    svg.classList.remove("temple-liked");
-    svg.classList.add("temple-unlike");
+    svg.setAttribute("fill","gainsboro");
     localStorage.setItem(temple.name, "false");
   } else  {
-    svg.classList.add("temple-liked");
-    svg.classList.remove("temple-unlike");
+    svg.setAttribute("fill","red");
     localStorage.setItem(temple.name, "true");
   }
 });
