@@ -16,10 +16,14 @@ function displayTemples(temple) {
   card.classList.add("shadow");
   card.classList.add("block");
 
+  let templePicture = document.createElement("picture");
+
   let templeImage = document.createElement("img");
   templeImage.setAttribute("src", temple.image);
   templeImage.setAttribute("alt", `Exterior view of the ${temple.name}`);
   templeImage.setAttribute("loading", "lazy");
+
+  templePicture.appendChild(templeImage);
 
   let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
   let path1 = document.createElementNS("http://www.w3.org/2000/svg", 'path');
@@ -103,7 +107,7 @@ svg.addEventListener("click", function () {
   templeSessionSched.textContent = temple.sessionSched;
   cardBody.appendChild(templeSessionSched);
 
-  card.appendChild(templeImage);
+  card.appendChild(templePicture);
   card.appendChild(svg);
   card.appendChild(cardBody);
 

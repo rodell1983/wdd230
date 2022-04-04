@@ -7,12 +7,12 @@
 }
 
 p a:link{
-  color: var(--teal);
+  color: var(--dark-teal);
 
 }
 
 p a:visited{
-  color: var(--purple);
+  color: darkred;
 }
 
 body {
@@ -83,7 +83,6 @@ footer {
 
 .logo {
   display: grid;
-  background-color: var(--purple);
   grid-template-columns: auto 1fr;
   align-items: center;
   text-align: left;
@@ -126,8 +125,8 @@ footer {
 }
 
 .temple-card {
-  display: grid;
   position: relative;
+  grid-template-rows: auto 1fr;
 }
 
 .temple-card image {
@@ -270,11 +269,6 @@ legend {
 
 .top-nav {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--purple);
-  color: #fff;
 }
 
 .menu {
@@ -379,6 +373,8 @@ button:hover {
 }
 
 .block {
+  display: grid;
+  grid-gap: .5rem;
   border: solid 1px var(--dark-teal);
   background-color: var(--light-teal);
 }
@@ -561,3 +557,6 @@ section h2 {
   grid-gap: .5rem;
   
 }
+ picture {
+   overflow: hidden;
+ }
