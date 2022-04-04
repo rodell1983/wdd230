@@ -6,12 +6,11 @@
   --dark-teal: #18454b;
 }
 
-p a:link{
+p a:link {
   color: var(--dark-teal);
-
 }
 
-p a:visited{
+p a:visited {
   color: darkred;
 }
 
@@ -67,7 +66,7 @@ h3 {
 }
 
 p {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 footer {
@@ -121,7 +120,7 @@ footer {
 
 .temple-cards {
   display: grid;
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
 }
 
 .temple-card {
@@ -233,7 +232,7 @@ legend {
 input,
 textarea,
 button,
-select{
+select {
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin: 0.5rem;
   border-radius: 20px;
@@ -378,10 +377,10 @@ button:hover {
 
 .block {
   display: grid;
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
   border: solid 1px var(--dark-teal);
   background-color: var(--light-teal);
-  grid-template-rows:min-content 1fr;
+  grid-template-rows: min-content 1fr;
 }
 
 .float-right {
@@ -405,7 +404,7 @@ button:hover {
   transition: ease-in 2s;
 }
 
-.float{
+.float {
   position: absolute;
 }
 
@@ -418,9 +417,9 @@ button:hover {
   background-color: transparent;
   border: 3px solid var(--purple);
 }
-.call-to-action:hover{
+.call-to-action:hover {
   background-color: var(--off-white);
-  transition: ease-in-out .6s;
+  transition: ease-in-out 0.6s;
 }
 
 .clear-li {
@@ -474,7 +473,6 @@ label {
   padding: 3px;
 }
 
-
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -483,7 +481,6 @@ label {
 .reception-main {
   display: grid;
 }
-
 
 .social-icon:hover {
   filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.3));
@@ -506,14 +503,13 @@ label {
 }
 
 /* CHECKED STYLES */
-.room-selection [type="radio"]:checked + img{
+.room-selection [type="radio"]:checked + img {
   outline: 6px solid var(--teal);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .room picture img {
   width: 100%;
-
 }
 
 .room {
@@ -530,22 +526,22 @@ label {
   padding-left: 1rem;
 }
 
-.room-selection{
+.room-selection {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
 }
 
-.room-group{
+.room-group {
   margin-top: 1rem;
 }
 
 .reception-main aside {
   display: grid;
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
 }
-.reception-main aside h2{
+.reception-main aside h2 {
   text-align: center;
 }
 
@@ -555,13 +551,12 @@ section h2 {
 
 .missionary-body {
   display: grid;
-  grid-gap: .5rem;
-  
+  grid-gap: 0.5rem;
 }
- picture {
-   overflow: hidden;
- }
+picture {
+  overflow: hidden;
+}
 
- .home-body {
+.home-body {
   position: relative;
- }
+}
