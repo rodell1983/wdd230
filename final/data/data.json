@@ -3,7 +3,7 @@
     {
       "name": "Las Vegas Temple",
 
-      "address": "827 Temple View Dr, Las Vegas NV 89110-2920, United States",
+      "address": ["27 Temple View Dr", "Las Vegas NV 89110-2920", "United States"],
       "phone": "(1) 702-452-5011",
       "image": "images/temples/las_vegas_temple.webp",
       "email": "https://www.churchofjesuschrist.org/temples",
@@ -27,7 +27,7 @@
 
     {
       "name": "Toronto Ontario Temple",
-      "address": "10060 Bramalea Rd, Brampton ON L6R 1A1, Canada",
+      "address": ["10060 Bramalea Rd", "Brampton ON L6R 1A1", "Canada"],
       "phone": "(1) 905-799-1122",
       "image": "images/temples/toronto-temple_flowers.webp",
       "email": "https://www.churchofjesuschrist.org/temples",
@@ -53,7 +53,7 @@
     },
     {
       "name": "Salt Lake Temple",
-      "address": "50 W North Temple St, Salt Lake City UT 84150-9709, United States",
+      "address": ["50 W North Temple St", "Salt Lake City UT 84150-9709", "United States"],
       "phone": "(1) 801-240-2640",
       "image": "images/temples/salt_lake_temple.webp", 
       "email": "https://www.churchofjesuschrist.org/temples",
@@ -70,7 +70,7 @@
     },
     {
       "name": "Cedar City Temple",
-      "address": "280 South Cove Dr, Cedar City UT 84720, United States",
+      "address": ["280 South Cove Dr", "Cedar City UT 84720", "United States"],
       "phone": "(1) 435-572-4150",
       "image": "images/temples/cedar_city_utah_temple.webp",
       "email": "https://www.churchofjesuschrist.org/temples",
