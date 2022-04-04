@@ -17,7 +17,7 @@ function displayTemples(temple) {
 
   let templeImage = document.createElement("img");
   templeImage.setAttribute("src", temple.image);
-  templeImage.setAttribute("alt", temple.name);
+  templeImage.setAttribute("alt", `Exterior view of the ${temple.name}`);
   templeImage.setAttribute("loading", "lazy");
 
   let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -74,6 +74,4 @@ function displayTemples(temple) {
   // Add card to temple cards
   document.querySelector(".spotlight").appendChild(card);
 
-  // LocalStorage settings
-  function loadSettings() {}
 }
