@@ -63,7 +63,7 @@ svg.addEventListener("click", function () {
   cardBody.appendChild(templeTitle);
 
   let templeAddress = document.createElement("p");
-  templeAddress.innerHTML = `${temple.address}<br>${temple.phone}<br>${temple.email}`;
+  templeAddress.innerHTML = `${temple.address}<br>${temple.phone}<br> <a href="${temple.email}">Email Temple</a>`;
   cardBody.appendChild(templeAddress);
 
   let templeHistoryT = document.createElement("h3");
@@ -86,6 +86,22 @@ svg.addEventListener("click", function () {
     serviceList.appendChild(item);
   }
   cardBody.appendChild(serviceList);
+
+  let templeOrdinanceSchedT = document.createElement("h3");
+  templeOrdinanceSchedT.textContent = "Ordinance Schedule";
+  cardBody.appendChild(templeOrdinanceSchedT);
+
+  let templeOrdinanceSched = document.createElement("p");
+  templeOrdinanceSched.textContent = temple.ordinanceSched;
+  cardBody.appendChild(templeOrdinanceSched);
+
+  let templeSessionSchedT = document.createElement("h3");
+  templeSessionSchedT.textContent = "Session Schedule";
+  cardBody.appendChild(templeSessionSchedT);
+
+  let templeSessionSched = document.createElement("p");
+  templeSessionSched.textContent = temple.sessionSched;
+  cardBody.appendChild(templeSessionSched);
 
   card.appendChild(templeImage);
   card.appendChild(svg);
