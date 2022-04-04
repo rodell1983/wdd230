@@ -70,7 +70,8 @@
     grid-column: 1/3;
   }
 
-  .temple-cards .temple-card img {
+
+  .temple-cards .temple-card picture {
     grid-column: 2;
     grid-row: 1/2;
   }

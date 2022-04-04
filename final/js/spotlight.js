@@ -10,6 +10,10 @@ fetch(requestURL)
     displayTemples(temples[0]);
   });
 
+function getImage(temple){
+  
+}
+
 function displayTemples(temple) {
   // Create elements to add to the document
   let card = document.createElement("div");
@@ -58,10 +62,6 @@ function displayTemples(temple) {
   let templeTitle = document.createElement("h2");
   templeTitle.textContent = temple.name;
   cardBody.appendChild(templeTitle);
-
-  let templeHistoryT = document.createElement("h3");
-  templeHistoryT.textContent = "History";
-  cardBody.appendChild(templeHistoryT);
 
   let templeHistory = document.createElement("p");
   templeHistory.textContent = temple.history;

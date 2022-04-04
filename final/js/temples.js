@@ -5,17 +5,21 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    const temples = jsonObject["temple"];
-    temples.forEach(displayTemples);
+    let temples = jsonObject["temple"];
+
+    let t = document.getElementsByClassName("temple-cards");
+    if (t.length > 0) {
+      temples.forEach(displayTemples);
+    }
+
+    let s = document.getElementsByClassName("spotlight");
+    if (s.length > 0) {
+      temples = temples.sort(() => Math.random() - 0.5);
+      displaySpotlight(temples[0]);
+    }
   });
 
-function displayTemples(temple) {
-  // Create elements to add to the document
-  let card = document.createElement("div");
-  card.classList.add("temple-card");
-  card.classList.add("shadow");
-  card.classList.add("block");
-
+function getTemplePic(temple) {
   let templePicture = document.createElement("picture");
 
   let templeImage = document.createElement("img");
@@ -24,11 +28,14 @@ function displayTemples(temple) {
   templeImage.setAttribute("loading", "lazy");
 
   templePicture.appendChild(templeImage);
+  return templePicture;
+}
 
-  let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
-  let path1 = document.createElementNS("http://www.w3.org/2000/svg", 'path');
+function getHeart(temple) {
+  let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  let path1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
-  svg.setAttribute("aria-hidden","true");
+  svg.setAttribute("aria-hidden", "true");
   svg.setAttribute("viewbox", "0 0 36 36");
   svg.setAttribute("width", "36px");
   svg.setAttribute("height", "36px");
@@ -42,23 +49,25 @@ function displayTemples(temple) {
   svg.appendChild(path1);
 
   if (localStorage.getItem(temple.name) === "true") {
-    svg.setAttribute("fill","red");
-  }else{
-    svg.setAttribute("fill","gainsboro");
+    svg.setAttribute("fill", "red");
+  } else {
+    svg.setAttribute("fill", "gainsboro");
   }
 
-svg.addEventListener("click", function () {
+  svg.addEventListener("click", function () {
+    if (localStorage.getItem(temple.name) === "true") {
+      svg.setAttribute("fill", "gainsboro");
+      localStorage.setItem(temple.name, "false");
+    } else {
+      svg.setAttribute("fill", "red");
+      localStorage.setItem(temple.name, "true");
+    }
+  });
 
-  if (localStorage.getItem(temple.name) === "true") {
-    svg.setAttribute("fill","gainsboro");
-    localStorage.setItem(temple.name, "false");
-  } else  {
-    svg.setAttribute("fill","red");
-    localStorage.setItem(temple.name, "true");
-  }
-});
+  return svg;
+}
 
-
+function getCardBody(temple) {
   let cardBody = document.createElement("section");
   cardBody.classList.add("temple-card-body");
 
@@ -67,15 +76,13 @@ svg.addEventListener("click", function () {
   cardBody.appendChild(templeTitle);
 
   let templeAddressBlock = document.createElement("div");
-  templeAddressBlock.classList.add("temple-address")
+  templeAddressBlock.classList.add("temple-address");
 
-  temple.address.forEach(element => {
+  temple.address.forEach((element) => {
     let templeAddress = document.createElement("span");
-
 
     templeAddress.innerHTML += `${element} <br>`;
     templeAddressBlock.appendChild(templeAddress);
-  
   });
 
   let templePhone = document.createElement("span");
@@ -83,7 +90,6 @@ svg.addEventListener("click", function () {
   templeAddressBlock.appendChild(templePhone);
 
   cardBody.appendChild(templeAddressBlock);
-  
 
   let templeHistoryT = document.createElement("h3");
   templeHistoryT.textContent = "History";
@@ -122,10 +128,46 @@ svg.addEventListener("click", function () {
   templeSessionSched.textContent = temple.sessionSched;
   cardBody.appendChild(templeSessionSched);
 
-  card.appendChild(templePicture);
-  card.appendChild(svg);
+  return cardBody;
+}
+
+function getCard(temple) {
+  let card = document.createElement("div");
+  card.classList.add("temple-card");
+  card.classList.add("shadow");
+  card.classList.add("block");
+
+  card.appendChild(getTemplePic(temple));
+  card.appendChild(getHeart(temple));
+  card.appendChild(getCardBody(temple));
+
+  return card;
+}
+
+function displayTemples(temple) {
+  // Add card to temple cards
+  document.querySelector(".temple-cards").appendChild(getCard(temple));
+}
+
+function displaySpotlight(temple) {
+  let card = document.createElement("div");
+  card.classList.add("temple-card");
+
+  let cardBody = document.createElement("section");
+  cardBody.classList.add("temple-card-body");
+
+  let templeTitle = document.createElement("h2");
+  templeTitle.textContent = temple.name;
+  cardBody.appendChild(templeTitle);
+
+  let templeHistory = document.createElement("p");
+  templeHistory.textContent = temple.history;
+  cardBody.appendChild(templeHistory);
+
+  card.appendChild(getTemplePic(temple));
+  card.appendChild(getHeart(temple));
   card.appendChild(cardBody);
 
   // Add card to temple cards
-  document.querySelector("div.temple-cards").appendChild(card);
+  document.querySelector(".spotlight").appendChild(card);
 }

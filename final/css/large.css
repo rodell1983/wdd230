@@ -35,7 +35,7 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .temple-cards .temple-card img {
+  .temple-cards .temple-card picture {
     grid-column: 1;
     grid-row: 1;
   }
