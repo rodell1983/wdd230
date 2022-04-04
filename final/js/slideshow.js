@@ -42,9 +42,10 @@ function buildSlide(path){
   let slides = document.createElement("div");
   slides.classList.add("slides");
   let slidePic = document.createElement("picture");
+  
   let slideImg = document.createElement("img");
   slideImg.setAttribute("src", path);
-  //slideImg.setAttribute("loading", "lazy");
+  slideImg.classList.add("shadow");
 
   slidePic.append(slideImg);
   slides.appendChild(slidePic);

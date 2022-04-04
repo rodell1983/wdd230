@@ -401,10 +401,6 @@ button:hover {
   transition: ease-in 2s;
 }
 
-.slide-show {
-  position: relative;
-}
-
 .float{
   position: absolute;
 }
@@ -560,4 +556,8 @@ section h2 {
 }
  picture {
    overflow: hidden;
+ }
+
+ .home-body {
+  position: relative;
  }
