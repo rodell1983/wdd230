@@ -119,7 +119,7 @@
         <h2>Book your stay today</h2>
 
         <form class="res-form" method="get" action="thanks.html">
-          <fieldset class="block shadow">
+          <fieldset class="shadow">
             <legend class="shadow">Room Specifications</legend>
             <div class="room-options">
               <label for="adults">
@@ -247,78 +247,80 @@
           </fieldset>
           <fieldset class="block shadow">
             <legend class="shadow">Guest Info</legend>
-            <div class="form-inline">
-              <label
-                >First name:<input
-                  class="shadow"
-                  type="text"
-                  name="fname"
-                  required
-                  placeholder="* First Name *"
-              /></label>
-              <label
-                >Last name:<input
-                  class="shadow"
-                  type="text"
-                  name="lname"
-                  required
-                  placeholder="* Last Name *"
-              /></label>
-            </div>
+            <div class="group">
+              <div class="form-inline">
+                <label
+                  >First name:<input
+                    class="shadow"
+                    type="text"
+                    name="fname"
+                    required
+                    placeholder="* First Name"
+                /></label>
+                <label
+                  >Last name:<input
+                    class="shadow"
+                    type="text"
+                    name="lname"
+                    required
+                    placeholder="* Last Name"
+                /></label>
+              </div>
 
-            <label
-              >Address:<input
-                class="shadow"
-                type="address"
-                name="address"
-                minlength="6"
-                placeholder="Street Address *"
-                required
-            /></label>
-            <div class="form-inline">
               <label
-                >State:<input
+                >Address:<input
                   class="shadow"
-                  type="state"
-                  name="state"
-                  minlength="2"
-                  placeholder="NV *"
+                  type="address"
+                  name="address"
+                  minlength="6"
+                  placeholder="* Street Address"
+                  required
+              /></label>
+              <div class="form-inline">
+                <label
+                  >State:<input
+                    class="shadow"
+                    type="state"
+                    name="state"
+                    minlength="2"
+                    placeholder="* NV"
+                    required
+                /></label>
+                <label
+                  >Zip:<input
+                    class="shadow"
+                    type="zip"
+                    name="zip"
+                    minlength="5"
+                    placeholder="* 12345"
+                    required
+                /></label>
+              </div>
+              <label
+                >Email:<input
+                  class="shadow"
+                  type="email"
+                  name="email"
+                  placeholder="* yourname@company.com"
                   required
               /></label>
               <label
-                >Zip:<input
+                >Cell Phone #:<input
                   class="shadow"
-                  type="zip"
-                  name="zip"
-                  minlength="5"
-                  placeholder="12345 *"
-                  required
+                  type="tel"
+                  name="phone"
+                  placeholder="1235551234"
               /></label>
+              <span>* Required</span>
+              <button
+                class="res-button menu-font shadow"
+                class="res-button menu-font shadow"
+                type="submit"
+                value="Submit"
+              >
+                Book Room
+              </button>
             </div>
-            <label
-              >Email:<input
-                class="shadow"
-                type="email"
-                name="email"
-                placeholder="* yourname@company.com *"
-                required
-            /></label>
-            <label
-              >Cell Phone #:<input
-                class="shadow"
-                type="tel"
-                name="phone"
-                placeholder="1235551234"
-            /></label>
-
-            <button
-              class="res-button menu-font shadow"
-              class="res-button menu-font shadow"
-              type="submit"
-              value="Submit"
-            >
-              Book Room
-            </button>
           </fieldset>
         </form>
       </main>
@@ -377,9 +379,7 @@
           <span class="time-el">
             &copy; <span id="current-year"></span> Temple Inn & Suites
           </span>
-          <span class="time-el">
-            | <span id="current-date"></span>
-          </span>
+          <span class="time-el"> | <span id="current-date"></span> </span>
         </div>
       </footer>
     </div>

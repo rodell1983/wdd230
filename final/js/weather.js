@@ -66,12 +66,12 @@ function loadWeatherCard(jsonObject) {
   let weatherDT = document.createElement("span");
   let weatherRH = document.createElement("span");
 
-  weatherTemp.innerHTML = `${Math.round(temp)}<sup>°F</sup>`;
+  weatherTemp.innerHTML = `Temp ${Math.round(temp)}<sup>°F</sup>`;
   weatherTemp.classList.add("temp");
 
   weatherDT.innerHTML = capWords(weatherDescText);
 
-  weatherRH.innerHTML = `RH ${Math.round(rh)}<sup>%</sup>`;
+  weatherRH.innerHTML = `Humidity ${Math.round(rh)}<sup>%</sup>`;
   weatherRH.classList.add("rh");
 
   //Weather Icon Image

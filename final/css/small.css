@@ -126,7 +126,6 @@ footer {
 
 .temple-card {
   position: relative;
-  grid-template-rows: auto 1fr;
 }
 
 .temple-card image {
@@ -159,12 +158,13 @@ footer {
 
 .weather-sky {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: min-content 1fr;
   background-color: var(--dark-teal);
   color: #fff;
   justify-items: center;
   align-items: center;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .weather-sky span {
@@ -377,6 +377,7 @@ button:hover {
   grid-gap: .5rem;
   border: solid 1px var(--dark-teal);
   background-color: var(--light-teal);
+  grid-template-rows:min-content 1fr;
 }
 
 .float-right {

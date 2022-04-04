@@ -128,7 +128,7 @@
     width: auto;
   }
 
-  .res-form fieldset:first-child{
+  .res-form fieldset:first-child {
     display: grid;
     justify-items: center;
   }
@@ -136,11 +136,16 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .reception-main aside{
+  .reception-main aside {
     grid-column: 1;
     grid-row: 1;
   }
-
+  .weather-forecast {
+    flex-direction: column;
+  }
+  .weather-sky {
+    grid-template-columns: auto;
+  }
 }
 
 /* Small Only */

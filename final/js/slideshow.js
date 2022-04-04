@@ -1,7 +1,6 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-autoSlides();
-
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 function autoSlides() {
   plusSlides(1);
   setTimeout(autoSlides, 5000); // Change image every 5 seconds
@@ -29,5 +28,9 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex - 1].style.display = "block";
-
 }
+
+// Begin code
+let slideIndex = getRandomInt(4);
+showSlides(slideIndex);
+autoSlides();

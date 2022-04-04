@@ -13,6 +13,15 @@
     grid-column: 2;
   }
 
+  .weather-forecast {
+    flex-direction:row;
+}
+
+  .weather-sky {
+    grid-template-columns: min-content 1fr;
+  }
+
+
   .spotlight {
     grid-column: 2;
   }
