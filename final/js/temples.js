@@ -66,9 +66,24 @@ svg.addEventListener("click", function () {
   templeTitle.textContent = temple.name;
   cardBody.appendChild(templeTitle);
 
-  let templeAddress = document.createElement("p");
-  templeAddress.innerHTML = `${temple.address}<br>${temple.phone}<br> <a href="${temple.email}">Email Temple</a>`;
-  cardBody.appendChild(templeAddress);
+  let templeAddressBlock = document.createElement("div");
+  templeAddressBlock.classList.add("temple-address")
+
+  temple.address.forEach(element => {
+    let templeAddress = document.createElement("span");
+
+
+    templeAddress.innerHTML += `${element} <br>`;
+    templeAddressBlock.appendChild(templeAddress);
+  
+  });
+
+  let templePhone = document.createElement("span");
+  templePhone.innerHTML = `${temple.phone}<br> <a href="${temple.email}">Email Temple</a>`;
+  templeAddressBlock.appendChild(templePhone);
+
+  cardBody.appendChild(templeAddressBlock);
+  
 
   let templeHistoryT = document.createElement("h3");
   templeHistoryT.textContent = "History";
