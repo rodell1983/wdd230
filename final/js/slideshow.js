@@ -1,9 +1,9 @@
 let imgFiles = [
-  "cedar_city_utah_temple_med.webp",
-  "las_vegas_temple_med.webp",
-  "salt_lake_temple_med.webp",
-  "toronto-temple_flowers_med.webp",
-  "los_angeles_temple_med.webp"
+  ["cedar_city_utah_temple_med.webp", "Exterior view Cedar City Temple"],
+  ["las_vegas_temple_med.webp", "Exterior view Las Vegas Temple"],
+  ["salt_lake_temple_med.webp", "Exterior view Salt Lake City Temple"],
+  ["toronto-temple_flowers_med.webp", "Exterior view Toronto Canada Temple"],
+  ["los_angeles_temple_med.webp", "Exterior view Los Angeles Temple"]
 ];
 
 function getRandomInt(max) {
@@ -38,13 +38,14 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
-function buildSlide(path){
+function buildSlide(path, alt){
   let slides = document.createElement("div");
   slides.classList.add("slides");
   let slidePic = document.createElement("picture");
   
   let slideImg = document.createElement("img");
   slideImg.setAttribute("src", path);
+  slideImg.setAttribute("alt", alt);
   slideImg.classList.add("shadow");
 
   slidePic.append(slideImg);
@@ -59,7 +60,7 @@ let slideIndex = 0;
 imgFiles = imgFiles.sort(() => Math.random() - 0.5);
 
 for (let i = 0; i < 3; i++) {
-  buildSlide(`images/temples/${imgFiles[i]}`);
+  buildSlide(`images/temples/${imgFiles[i][0]}`,imgFiles[i][1]);
 }
 document.querySelector("div.default-slide").remove();
 
