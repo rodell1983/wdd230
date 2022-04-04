@@ -136,6 +136,11 @@
     grid-template-columns: 1fr 2fr;
   }
 
+  .reception-main aside{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
 }
 
 /* Small Only */
