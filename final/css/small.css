@@ -370,7 +370,9 @@ button:hover {
 
 .slides picture img,
 .temple-card img,
-.spotlight img {
+.spotlight img,
+.room picture img,
+.reception-main img {
   width: 100%;
 }
 
@@ -511,10 +513,6 @@ label {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.room picture img {
-  width: 100%;
-}
-
 .room {
   display: flex;
   flex-direction: column;
@@ -544,8 +542,8 @@ label {
   display: grid;
   grid-gap: 0.5rem;
 }
-.reception-main aside h2 {
-  text-align: center;
+.reception-main section picture {
+  margin: 0.5rem;
 }
 
 section h2 {
