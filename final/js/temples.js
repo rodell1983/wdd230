@@ -67,14 +67,7 @@ function getHeart(temple) {
   return svg;
 }
 
-function getCardBody(temple) {
-  let cardBody = document.createElement("section");
-  cardBody.classList.add("temple-card-body");
-
-  let templeTitle = document.createElement("h2");
-  templeTitle.textContent = temple.name;
-  cardBody.appendChild(templeTitle);
-
+function getAddressBlock(temple){
   let templeAddressBlock = document.createElement("div");
   templeAddressBlock.classList.add("temple-address");
 
@@ -89,7 +82,18 @@ function getCardBody(temple) {
   templePhone.innerHTML = `${temple.phone}<br> <a href="${temple.email}">Email Temple</a>`;
   templeAddressBlock.appendChild(templePhone);
 
-  cardBody.appendChild(templeAddressBlock);
+  return templeAddressBlock;
+}
+
+function getCardBody(temple) {
+  let cardBody = document.createElement("section");
+  cardBody.classList.add("temple-card-body");
+
+  let templeTitle = document.createElement("h2");
+  templeTitle.textContent = temple.name;
+  cardBody.appendChild(templeTitle);
+
+  cardBody.appendChild(getAddressBlock(temple));
 
   let templeHistoryT = document.createElement("h3");
   templeHistoryT.textContent = "History";
@@ -160,9 +164,7 @@ function displaySpotlight(temple) {
   templeTitle.textContent = temple.name;
   cardBody.appendChild(templeTitle);
 
-  let templeHistory = document.createElement("p");
-  templeHistory.textContent = temple.history;
-  cardBody.appendChild(templeHistory);
+  cardBody.appendChild(getAddressBlock(temple));
 
   card.appendChild(getTemplePic(temple));
   card.appendChild(getHeart(temple));

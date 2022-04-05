@@ -209,6 +209,9 @@ footer {
   display: flex;
   color: #fff;
   justify-content: center;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .weather-alert p {

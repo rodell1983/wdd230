@@ -6,6 +6,9 @@ fetch(apiURL)
     return response.json();
   })
   .then(function (jsonObject) {
+    // load alerts
+    loadWeatherAlerts(jsonObject);
+    // load weather card
     loadWeatherCard(jsonObject);
   });
 
@@ -50,6 +53,32 @@ function getDaily(day) {
 
   return dailyBlock;
 }
+
+function loadWeatherAlerts(jsonObject) {
+  // load alerts
+  if ("alerts" in jsonObject) {
+    jsonObject.alerts.forEach((wa) => {
+      let weatherAlert = document.createElement("div");
+      let weatherAlertText = document.createElement("p");
+      weatherAlertText.textContent = `Weather Alert: ${wa}`;
+      weatherAlert.classList.add("weather-alert");
+
+      let btnRemove = document.createElement("button");
+      btnRemove.textContent = "X";
+      btnRemove.ariaLabel = "Remove Alert";
+
+      weatherAlert.appendChild(weatherAlertText);
+      weatherAlert.appendChild(btnRemove);
+
+      btnRemove.addEventListener("click", function () {
+        document.querySelector("body").removeChild(weatherAlert);
+      });
+
+      document.querySelector("body").prepend(weatherAlert);
+    });
+  }
+}
+
 function loadWeatherCard(jsonObject) {
   // Set Variables
   let temp = jsonObject.current.temp;
@@ -97,30 +126,6 @@ function loadWeatherCard(jsonObject) {
   weatherBlock = document.querySelector(".weather");
   weatherBlock.appendChild(sky);
   weatherBlock.appendChild(forecast);
-
-  // load alerts
-
-  if ( "alerts" in jsonObject) {
-    jsonObject.alerts.forEach((wa) => {
-      let weatherAlert = document.createElement("div");
-      let weatherAlertText = document.createElement("p");
-      weatherAlertText.textContent = wa.event;
-      weatherAlert.classList.add("weather-alert");
-
-      let btnRemove = document.createElement("button");
-      btnRemove.textContent = "X";
-      btnRemove.ariaLabel = "Remove Alert";
-
-      weatherAlert.appendChild(btnRemove);
-      weatherAlert.appendChild(weatherAlertText);
-
-      btnRemove.addEventListener("click", function () {
-        weatherBlock.removeChild(weatherAlert);
-      });
-
-      weatherBlock.appendChild(weatherAlert);
-    });
-  }
 }
 
 function windChill(t, s) {
