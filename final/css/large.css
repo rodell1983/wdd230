@@ -14,13 +14,12 @@
   }
 
   .weather-forecast {
-    flex-direction:row;
-}
+    flex-direction: row;
+  }
 
   .weather-sky {
     grid-template-columns: min-content 1fr;
   }
-
 
   .spotlight {
     grid-column: 2;
@@ -53,7 +52,6 @@
   .missionary-body {
     grid-template-columns: 1fr 2fr;
   }
-
 
   footer {
     grid-template-columns: auto auto auto auto;
