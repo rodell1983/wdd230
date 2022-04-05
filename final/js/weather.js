@@ -60,7 +60,7 @@ function loadWeatherAlerts(jsonObject) {
     jsonObject.alerts.forEach((wa) => {
       let weatherAlert = document.createElement("div");
       let weatherAlertText = document.createElement("p");
-      weatherAlertText.textContent = `Weather Alert: ${wa}`;
+      weatherAlertText.textContent = `Weather Alert: ${wa.event}`;
       weatherAlert.classList.add("weather-alert");
 
       let btnRemove = document.createElement("button");
