@@ -274,6 +274,7 @@
                     class="shadow"
                     type="text"
                     name="state"
+                    pattern="[A-Za-z]{2}"
                     minlength="2"
                     placeholder="* NV"
                     required
@@ -282,7 +283,7 @@
                   >Zip:<input
                     class="shadow"
                     type="text" 
-                    pattern="[0-9]*{5}"
+                    pattern="[0-9]{5}"
                     name="zip"
                     placeholder="12345"
                 /></label>
@@ -300,8 +301,18 @@
                   class="shadow"
                   type="tel"
                   name="phone"
+                  pattern="[7-9]{1}[0-9]{9}"
                   placeholder="1235551234"
               /></label>
+              <label
+                >Special Accommodations and/or Comments
+                <textarea
+                  class="shadow"
+                  name="comments"
+                  rows="5"
+                  placeholder="Additional Info."
+                ></textarea>
+              </label>
               <span>* Required</span>
               <button
                 class="res-button menu-font shadow"
